@@ -1,4 +1,5 @@
-BACKEND\n
+BACKEND
+
   You will have to create a virstual environment under the flask-server folder. 
   Mac:
     - python3 -m venv <name>
@@ -12,7 +13,7 @@ BACKEND\n
   Mac:
     - python3 server.py
   
-  Windows
+  Windows:
     - python server.py
 
 FRONT END
