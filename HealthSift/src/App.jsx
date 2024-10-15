@@ -1,11 +1,19 @@
 import Login from "./Login.jsx"
+import ForgotPassword from "./ForgotPassword.jsx";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
-    <div className="loginPage">
-      <Login/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+            <div className="loginPage">
+              <Login/>
+            </div>}/>
+        <Route path="/forgotPassword" element={<ForgotPassword/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

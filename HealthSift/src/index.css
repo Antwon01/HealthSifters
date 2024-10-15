@@ -9,6 +9,7 @@ body {
   font-style: normal;
 }
 
+/*  ---------------- Login Page -----------------------*/
 .loginPage {
   height: 100vh;
   width: 100vw;
@@ -69,9 +70,94 @@ body {
   border-radius: 10px;
   margin: 30px 0px 0px 0px;
   font-size: 15px;
+  cursor: pointer;
 }
 
-.login a {
+.loginBtns {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
   margin-top: 15px;
-  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -------------- Forgot Password --------------------- */
+.fogotPasswordPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fogotPasswordContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 25%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 30px;
+}
+
+.forgotPasswordTitle {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.forgotPasswordDescription {
+  text-align: center;
+}
+
+.forgotPasswordForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emailInformation {
+  height: 30px;
+  width: 95%;
+  border: none;
+  background-color: #F7BEC0;
+  border-radius: 10px;
+  padding: 10px;
+  height: 40px;
+  font-size:20px;
+}
+
+.forgotPasswordSendBtn {
+  align-self: center;
+  width: 50%;
+  height: 45px;
+  margin: 40px 0px 20px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer; 
+}
+
+.forgotPasswordReturnBtn {
+  font-size: 15px;
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.divider {
+  border-left: 1px solid  black; /* Vertical line */
+  height: 20px; /* Adjust the height of the line */
+  margin: 0px; /* Space between the words and the line */  
+}
+
+.forgotPasswordSignBtn {
+  font-size: 15px;
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

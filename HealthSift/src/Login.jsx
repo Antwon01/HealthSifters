@@ -1,12 +1,8 @@
-import LoginInformation from "./LoginInformation.jsx"
+import RedirectButton from "./RedirectButton.jsx";
 import APIRequest from "./APIRequest.js"
-import {useState} from 'react'
 
 
 function Login() {
-
-    // const [username, setUserName] = useState("");
-    // const [password, setPassWord] = useState("");
 
     
     function handleSubmit(e) {
@@ -36,8 +32,11 @@ function Login() {
 
                 <button className="signInbtn poppinsFont" type="submit">Sign In</button>
             </form>
-            <a className="poppinsFont" href="google.com">Forgot Password?</a>
-            <a className="poppinsFont" href="google.com">Sign Up</a>
+
+            <RedirectButton location="forgotPassword" style="loginBtns" title="Forgot Password"/>
+
+            <RedirectButton location="" style="loginBtns" title="Sign Up"/>
+
         </div>
     )
 }
