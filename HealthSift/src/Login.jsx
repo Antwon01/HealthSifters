@@ -1,41 +1,44 @@
 import RedirectButton from "./RedirectButton.jsx";
+import LoginInformation from "./LoginInformation.jsx";
 import APIRequest from "./APIRequest.js"
+import { useState } from 'react';
 
 
 function Login() {
 
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
     
     function handleSubmit(e) {
         e.preventDefault();
-        
-        const username = e.target.elements.username.value;
-        const password = e.target.elements.password.value;
-
         const data = {username, password};
         APIRequest.userLoginInfo(data);
     }
 
     return (
-        <div className="login">
-            <p className="loginTitle">HealthSift</p>
+        <div className="loginPage">
 
-            <form className="loginForm" onSubmit={handleSubmit}>
+            <div className="login">
 
-                <label className="loginLabel poppinsFont" htmlFor="username"><p>Username</p></label>
-                <input className="loginInformation poppinsFont" type="text" name="username" id="username"></input>
+                <p className="loginTitle">HealthSift</p>
 
-                {/* <LoginInformation type="Username" getInfo={setUserName}/> */}
+                <form className="loginForm" onSubmit={handleSubmit}>
 
-                <label className="loginLabel poppinsFont" htmlFor="password"><p>Password</p></label>
-                <input className="loginInformation poppinsFont" type="password" name="password" id="password"></input>
-                {/* <LoginInformation type="Password" getInfo={setPassWord}/> */}
+                    <LoginInformation text="Username" type="username" getInfo={setUsername} labelStyle="loginLabel" inputStyle="loginInformation"/>
 
-                <button className="signInbtn poppinsFont" type="submit">Sign In</button>
-            </form>
+                    <LoginInformation text="Password" type="password" getInfo={setPassword} labelStyle="loginLabel" inputStyle="loginInformation"/>
 
-            <RedirectButton location="forgotPassword" style="loginBtns" title="Forgot Password"/>
+                    <button className="signInbtn poppinsFont" type="submit">Sign In</button>
 
-            <RedirectButton location="" style="loginBtns" title="Sign Up"/>
+                </form>
+
+                <RedirectButton location="adminLogin" style="loginBtns" title="Login as Admin"/>
+
+                <RedirectButton location="forgotPassword" style="loginBtns" title="Forgot Password"/>
+
+                <RedirectButton location="singUp" style="loginBtns" title="Sign Up"/>
+
+            </div>
 
         </div>
     )

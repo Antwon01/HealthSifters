@@ -1,17 +1,18 @@
 import RedirectButton from "./RedirectButton.jsx";
 import APIRequest from './APIRequest.js';
-
+import LoginInformation from "./LoginInformation.jsx";
+import { useState } from "react";
 
 function ForgotPassword() {
 
-    function handleSubmitt(event) {
+    const [email, setEmail] = useState("");
+
+    function handleSubmit(event) {
         event.preventDefault();
-        
-        const email = event.target.elements.email.value;
-        
         const data = {email};
         APIRequest.forgotPassword(data);
     }
+    
   return (
     <div className='fogotPasswordPage'>
         
@@ -21,10 +22,9 @@ function ForgotPassword() {
            
             <p className=" forgotPasswordDescription poppinsFont">Do not panic! We got your back. Please enter an email where we can send a recovery email.</p>
             
-            <form className='forgotPasswordForm' onSubmit={handleSubmitt}>
+            <form className='forgotPasswordForm' onSubmit={handleSubmit}>
 
-                <label className="loginLabel poppinsFont" htmlFor="email"><p>Email</p></label>
-                <input className="emailInformation poppinsFont" type="text" name="email" id="email"></input>
+                <LoginInformation text="Email" type="email" labelStyle="loginLabel" inputStyle="emailInformation" getInfo={setEmail} />
                 
                 <button className="forgotPasswordSendBtn poppinsFont" type='submit'>Send Email</button>
             
@@ -32,9 +32,11 @@ function ForgotPassword() {
 
             <div> 
                
-                <RedirectButton location="" style="forgotPasswordReturnBtn" title="Return to Login"/>
+                <RedirectButton style="forgotPasswordReturnBtn" title="Return to Login"/>
+
                 <span className='divider'></span>
-                <RedirectButton location="" style="forgotPasswordSignBtn" title="Go to Sign In"/>
+
+                <RedirectButton style="forgotPasswordSignBtn" title="Go to Sign In"/>
             
             </div>
 

@@ -76,10 +76,39 @@ body {
 .loginBtns {
   border: none;
   background-color: transparent;
-  font-size: 18px;
-  margin-top: 15px;
+  font-size: 15px;
+  margin-top: 10px;
   cursor: pointer;
 }
+
+/* -------------- Admin Login --------------------- */
+
+.adminLoginPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* x axis */
+  justify-content: center;
+  /* y axis */
+  align-items: center;
+}
+
+.adminLoginTitle {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.adminLoginReturnBtn {
+  font-size: 15px;
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* -------------- Sign Up --------------------- */
 
 /* -------------- Forgot Password --------------------- */
 .fogotPasswordPage {
