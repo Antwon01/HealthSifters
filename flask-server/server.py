@@ -17,6 +17,16 @@ def loginInformation():
 
     return jsonify({'status' : "Account information received."})
 
+@app.route("/adminInformation", methods=['POST'])
+def adminIinformation():
+    username = request.json.get('username')
+    password = request.json.get('password')
+
+    print(f"Username: {username}")
+    print(f"Password: {password}")
+    print("Admin information has been received.")
+
+    return {'status' : "Admin information has been received"}
 
 @app.route("/forgotPassword", methods=['POST'])
 def forgotPassword():

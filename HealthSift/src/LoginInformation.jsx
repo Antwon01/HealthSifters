@@ -6,10 +6,18 @@ function LoginInformation (props) {
     }
     return (
         <>
-            <label className="loginLabel poppinsFont" htmlFor={props.type}><p>{props.type}</p></label>
-            <input className="loginInformation poppinsFont" type={props.type === "Password" ? "password" : props.type} name={props.type} id={props.type} onChange={handleChange}></input>
+            <label className={"poppinsFont " + props.labelStyle} htmlFor={props.type}><p>{props.text}</p></label>
+            <input className={"poppinsFont " + props.inputStyle} type={props.type} name={props.type} id={props.type} onChange={handleChange}></input>
         </>
     )
 }
+
+LoginInformation.defaultProps = {
+    text: "Email",         // Default label text
+    type: "email",          // Default input type
+    labelStyle: "",        // Default label style (empty string)
+    inputStyle: "",        // Default input style (empty string)
+    getInfo: () => {}      // Default no-op function
+};
 
 export default LoginInformation

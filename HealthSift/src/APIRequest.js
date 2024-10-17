@@ -12,6 +12,17 @@ export default class APIRequest {
         .catch(error => console.log(error))
     }
 
+    static adminLoginInformation(body) {
+        return fetch('http://localhost:8080/adminInformation', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+            body : JSON.stringify(body)
+        })
+        .then(response => response.json())
+        .then(data => console.log(data.status))
+        .then(error => console.log(error))
+    }
+
     static forgotPassword(body) {
         return fetch('http://localhost:8080/forgotPassword', {
             'method' : 'POST',
