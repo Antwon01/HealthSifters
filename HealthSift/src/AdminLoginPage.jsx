@@ -17,19 +17,19 @@ function AdminLoginPage() {
   return (
     <div className="adminLoginPage">
 
-      <div className="login">
+      <div className="admin">
 
-              <p className="loginTitle">HealthSift</p>
+              <p className="adminTitle">HealthSift</p>
 
               <p className="poppinsFont adminLoginTitle">Admin Login</p>
 
-              <form className="loginForm" onSubmit={handleSubmit}>
+              <form className="adminForm" onSubmit={handleSubmit}>
 
-                  <LoginInformation text="Username" type="username" getInfo={setUsername} labelStyle="loginLabel" inputStyle="loginInformation"/>
+                  <LoginInformation text="Username" type="username" getInfo={setUsername} labelStyle="adminLabel" inputStyle="adminInformation"/>
 
-                  <LoginInformation text="Password" type="password" getInfo={setPassword} labelStyle="loginLabel" inputStyle="loginInformation"/>
+                  <LoginInformation text="Password" type="password" getInfo={setPassword} labelStyle="adminLabel" inputStyle="adminInformation"/>
                   
-                  <button className="signInbtn poppinsFont" type="submit">Sign In</button>
+                  <button className="adminbtn poppinsFont" type="submit">Sign In</button>
 
               </form>
 

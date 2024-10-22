@@ -40,6 +40,21 @@ def forgotPassword():
     return jsonify({'status' : "Email has been sent."})
 
 
+@app.route("/signUpInformation", methods=['POST'])
+def signUpInformation():
+    email = request.json.get('email')
+    password = request.json.get('password')
+    rePassword = request.json.get('repassword')
+
+    print("Sign up information has been received.")
+
+    print(f"Email: {email}")
+    print(f"Password: {password}")
+    print(f"Email: {rePassword}")
+
+    return jsonify({'status' : 'Sign up information received.'})
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, port="8080")
