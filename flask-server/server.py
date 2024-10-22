@@ -15,6 +15,15 @@ def loginInformation():
     
     print("Account information received.")
 
+
+    # I created a mock up password check just to test the login feature.
+    # return -1 if the passwords dont match and 1 if they do
+    if password.strip() == "password":
+            return jsonify({'status' : 1})
+    else:
+            return jsonify({'status' : -1})
+
+
     return jsonify({'status' : "Account information received."})
 
 @app.route("/adminInformation", methods=['POST'])

@@ -6,11 +6,12 @@ function HomePage() {
     <div className='homePage'>
 
         <Navbar/>
+
         {/* search bar */}
         
         <Search/>
-
         {/* ai button */}
+
     </div>
   )
 }

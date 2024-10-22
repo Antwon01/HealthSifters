@@ -1,18 +1,41 @@
-import RedirectButton from "./RedirectButton.jsx";
-import LoginInformation from "./LoginInformation.jsx";
-import APIRequest from "./APIRequest.js"
-import { useState } from 'react';
+    import RedirectButton from "./RedirectButton.jsx";
+    import LoginInformation from "./LoginInformation.jsx";
+    import APIRequest from "./APIRequest.js"
+    import { useState } from 'react';
+    import { useNavigate } from 'react-router-dom';
 
+    function Login() {
 
-function Login() {
+        const [username, setUsername] = useState("")
+        const [password, setPassword] = useState("")
+        const navigate = useNavigate();
+        
+        function handleSubmit(e) {
 
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("")
-    
-    function handleSubmit(e) {
-        e.preventDefault();
-        const data = {username, password};
-        APIRequest.userLoginInfo(data);
+            e.preventDefault();
+
+            const data = {username, password};
+            
+            //get the data from data from back end and if the passsword is correct redirect to homepage.
+
+            APIRequest.userLoginInfo(data)
+            .then(response => {
+
+                console.log(response);
+
+                if (response.status > 0) {
+                    
+                    navigate("/homepage");
+
+                } else {
+                    console.log("Incorrect");
+                }
+
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
     }
 
     return (

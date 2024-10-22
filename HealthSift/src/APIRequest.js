@@ -8,7 +8,7 @@ export default class APIRequest {
             body : JSON.stringify(body)
         })
         .then(response => response.json())
-        .then(data => console.log(data.status))
+        .then(data => {return data})
         .catch(error => console.log(error))
     }
 

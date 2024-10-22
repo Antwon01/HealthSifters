@@ -7,7 +7,7 @@ function Search() {
         <div className='searchBarContainer'>
 
           <SearchBar/>
-
+            
         </div>
 
     </div>
