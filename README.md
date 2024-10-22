@@ -24,3 +24,12 @@ FRONT END
   - Change directories into your new app. 
   - Run npm install to install dependencies. 
   - Run npm run dev to start your local development server. 
+
+MongoDB:
+- Mac: 
+  - download mongodb: `brew tap mongodb/brew`
+  - download mongodb community: `brew install mongodb-community@6.0`
+  - run mongodb: `brew services start mongodb/brew/mongodb-community`
+  - install pymongo for use with the db: `pip install pymongo`
+    - will be moved to requirements.txt soon 
+  

@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from pymongo import MongoClient
-import pandas as pd
+from pymongo import MongoClient # not in requirements.txt yet
+import pandas as pd # not sure if it's in requirements.txt yet
 
 app=Flask(__name__)
 cors = CORS(app, origins="*")
