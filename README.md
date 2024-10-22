@@ -32,4 +32,4 @@ MongoDB:
   - run mongodb: `brew services start mongodb/brew/mongodb-community`
   - install pymongo for use with the db: `pip install pymongo`
     - will be moved to requirements.txt soon 
-  
+- Windows: coming soon!!
