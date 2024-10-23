@@ -295,7 +295,7 @@ body {
   color: white;
   cursor: pointer; 
 }
-
+q
 .forgotPasswordReturnBtn {
   font-size: 15px;
   margin: 20px;
@@ -354,7 +354,7 @@ body {
 }
 
 .navbarItem:hover {
-  background-color: rgba(255, 255, 255, 0.5);;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbarImg {
