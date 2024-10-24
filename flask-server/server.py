@@ -147,7 +147,7 @@ def login():
     # Load users
     users_data = load_users()
     users = users_data['users']
-
+    
     # Find user
     user = next((user for user in users if user['email'] == email), None)
 
@@ -230,7 +230,7 @@ def protected():
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({'error': 'Not Found'}), 404
-
+  
 @app.errorhandler(500)
 def internal_error(error):
     return jsonify({'error': 'Internal Server Error'}), 500

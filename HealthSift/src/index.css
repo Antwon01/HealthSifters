@@ -40,7 +40,7 @@ body {
   font-style: normal;
   font-size: 90px;
   margin-top: 0px;
-  margin-bottom: 50px ;
+  margin-bottom: 30px ;
 }
 
 
@@ -83,6 +83,22 @@ body {
 
 /* -------------- Admin Login --------------------- */
 
+.admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 550px;
+  width: 350px;
+  border-radius: 70px;
+  padding: 30px;
+}
+
+.adminForm {
+  width: 100%;
+}
+
 .adminLoginPage {
   height: 100vh;
   width: 100vw;
@@ -93,11 +109,32 @@ body {
   align-items: center;
 }
 
+.adminTitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  margin-top: 0px;
+  margin-bottom: 30px ;
+}
+
 .adminLoginTitle {
   margin: 0px;
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.adminbtn {
+  height: 50px;
+  width: 100%;
+  margin: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin: 30px 0px 0px 0px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .adminLoginReturnBtn {
@@ -108,7 +145,97 @@ body {
   cursor: pointer;
 }
 
+.adminInformation {
+  height: 30px;
+  width: 95%;
+  border: none;
+  background-color: #F7BEC0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.adminLabel {
+  align-self: flex-start;
+}
+
+.adminLabel p {
+  margin-bottom: 0px;
+}
+
+
 /* -------------- Sign Up --------------------- */
+
+.signUpPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 25%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 30px;
+}
+
+.signUpTitle {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.signUpDescription {
+  text-align: center;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signUpSendBtn {
+  align-self: center;
+  width: 50%;
+  height: 45px;
+  margin: 40px 0px 20px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer; 
+}
+
+.signUpBtns {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.signUpInformation {
+  height: 30px;
+  width: 95%;
+  border: none;
+  background-color: #F7BEC0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.signUpLabel {
+  align-self: flex-start;
+}
+
+.signUpLabel p {
+  margin-bottom: 0px;
+}
 
 /* -------------- Forgot Password --------------------- */
 .fogotPasswordPage {
@@ -168,7 +295,7 @@ body {
   color: white;
   cursor: pointer; 
 }
-
+q
 .forgotPasswordReturnBtn {
   font-size: 15px;
   margin: 20px;
@@ -189,4 +316,176 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+/* -------------- Nav Bar --------------------- */
+
+.navbarContainer {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 150px;
+  background-color: #ff6961;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar > li {
+  list-style: none;
+}
+
+.navbarItem {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin: 0px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 0px 10px 0px;
+}
+
+.navbarItem:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbarImg {
+  width: 75px; 
+  height: 75px;
+  display: block;
+  border-radius: 50%;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
+
+.navbar > li:nth-child(4) {
+  margin-top: auto;
+}
+
+/* -------------- Search Bar --------------------- */
+.searchContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensures it spans the available space */
+  height: 100%;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 300px;
+  margin: 0px auto 0px auto;
+  width: 55%;
+  height: 50px;
+
+}
+
+.searchBar {
+  background-color: transparent;
+  width: 75%;
+  height: 75%;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: text;
+  border: solid 2px #D3D3D3;
+  padding: 10px;
+}
+
+.searchBarBtn {
+  margin: auto;
+  width: 110px;
+  height: 50px;
+  border: none;
+  background-color: #ff6961;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px;
+  color: white;
+}
+
+.searchBarBtn:hover {
+  background-color: #F7BEC0;
+}
+
+.searchBarFilter {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+
+.searchBarFilter > img {
+  border-radius: 10px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+
+.searchBarFilter > img:hover {
+  background-color:#D3D3D3 ;
+}
+
+.searchBarOptions {
+  position: absolute;
+  height: 210px;
+  width: 195px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  left: -75px;
+  right: -75px;
+  z-index: 1;
+}
+
+.searchBarOptions > li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.searchBarOptions > li:hover {
+  background-color: #D3D3D3;
+}
+
+.searchBarFilter > img {
+  height: 100%;
+  width: 100%;
+}
+
+.unvisible {
+  display: none;
+}
+
+/* -------------- Home Page --------------------- */
+
+.homePage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: relative;
 }

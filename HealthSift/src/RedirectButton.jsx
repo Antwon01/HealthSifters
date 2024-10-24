@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 RedirectButton.defaultProps = {
   location: "",
   style: "",
-  title: "Tittle"
+  title: "Title"
 };
 
 export default RedirectButton
