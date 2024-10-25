@@ -17,12 +17,13 @@ BACKEND
     - python server.py
 
   MongoDB:
-    Installation Instructions:
-      Mac:
+  - Installation Instructions:
+    - Mac:
       - download mongodb: brew tap mongodb/brew
       - download mongodb community: brew install mongodb-community@6.0
       - run mongodb: brew services start mongodb/brew/mongodb-community
-      Windows: TODO
+    - Windows:
+      - Tutorial: https://www.youtube.com/watch?v=Ow94d1bP0qI&t=26s
       
     The MongoDB runs locally. Running server.py will setup and populate the MongoDB locally if a MongoDB client is properly running.
 
