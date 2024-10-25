@@ -1,0 +1,39 @@
+{
+    "users": [
+        {
+            "email": "example@gmail.com",
+            "password": "scrypt:32768:8:1$me4VbYFlJ3MkkD9L$2440fe6bf16aa71fccbda8591019a52571aefa2ebf2829c97b4d95b91d85c1fa01e9617a185292d33eeb7aea6e86add27ea7e9e533aae8c6f2c1b9d7316be139",
+            "is_admin": false
+        },
+        {
+            "email": "example2@gmail.com",
+            "password": "scrypt:32768:8:1$ubJCUPHUdQDufRyN$bd9a9ca7047725f1fe787354ca74a8827196536ce875083c6da94044f35bbc739e338c8271754ebf8a062ccf4362e4ac93251bc8b3992e18cda4607a7be51e0e",
+            "is_admin": false
+        },
+        {
+            "email": "example3@gmail.com",
+            "password": "scrypt:32768:8:1$RqrNmsaeYhdRx2PQ$87aa32bda8fdc5b8c483922bc4872367f3c938e0d9c5babeb2a20238a7a780bbeed68bf8ec969a0f8736ec77fa1a40f1cf6ae58aecff5a84d6926b7650ca54f9",
+            "is_admin": false
+        },
+        {
+            "email": "example4@gmail.com",
+            "password": "scrypt:32768:8:1$wTAfPjOgcvYmom2A$e8672e6a93deed29b228fabb23bb982a5df00ba814769a023ea3dd8f3d795513897147003ebd8b3f539e48577b77e0e224c15afed6cd0e6089d54f34028c66e7",
+            "is_admin": false
+        },
+        {
+            "email": "example5@gmail.com",
+            "password": "scrypt:32768:8:1$NrkxAwPryo4LvsPI$b99742df6514c499f5977ba3493225c2fc2f4de8f4bda9542048dc24046c8ff2f1c7d72676d78a180df47a49f205964ea72153e33a4257b86c840ad27c1adbf3",
+            "is_admin": false
+        },
+        {
+            "email": "admin@gmail.com",
+            "password": "scrypt:32768:8:1$ACTL1JYFl1PWEO4h$84655a9aca553cbbde378c902be453ec8e1b0a7100928505e38b0b1722c07e2666bdd76750a7d3394c3432e26faa5471ae1ef5fdf660970f3af246d835e28198",
+            "is_admin": true
+        },
+        {
+            "email": "hello@gmail.com",
+            "password": "scrypt:32768:8:1$jp83HoflAVfk73Xz$71c61c1fae5037bd25b1604d4f26a262c8f816c07d34ff9838c0b5b7ce4bdfa58304715a72d08ee2333f7f99436759f046e7b674ddf137eac7fcefbcaa7b73d7",
+            "is_admin": false
+        }
+    ]
+}

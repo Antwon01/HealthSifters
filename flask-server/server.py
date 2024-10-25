@@ -112,7 +112,9 @@ def sign_up():
 
     # Check if user already exists
     if any(user['email'] == email for user in users):
-        return jsonify({'error': 'User already exists.'}), 409
+        
+        # user already exists.
+        return jsonify({'error': -1}), 409
 
     # Hash the password
     hashed_password = generate_password_hash(password)
@@ -127,7 +129,9 @@ def sign_up():
     save_users(users_data)
 
     logger.info(f"New user registered: {email}")
-    return jsonify({'status': 'Sign up successful.'}), 201
+
+    # sign up successfully
+    return jsonify({'status': 1}), 201
 
 @app.route("/loginInformation", methods=['POST'])
 @limiter.limit("5 per minute")  # Limit to 5 login attempts per minute per IP
@@ -153,10 +157,10 @@ def login():
 
     if user and check_password_hash(user['password'], password):
         logger.info(f"User {email} logged in successfully.")
-        return jsonify({'status': "Login successful."}), 200
+        return jsonify({'status': 1}), 200
     else:
         logger.warning(f"Failed login attempt for user {email}.")
-        return jsonify({'error': "Invalid credentials."}), 401
+        return jsonify({'error': -1}), 401
 
 @app.route("/adminInformation", methods=['POST'])
 @limiter.limit("5 per minute")  # Limit to 5 admin login attempts per minute per IP
@@ -182,10 +186,10 @@ def admin_login():
 
     if admin_user and check_password_hash(admin_user['password'], password):
         logger.info(f"Admin {email} logged in successfully.")
-        return jsonify({'status': "Admin login successful."}), 200
+        return jsonify({'status': 1}), 200
     else:
         logger.warning(f"Failed admin login attempt for user {email}.")
-        return jsonify({'error': "Invalid admin credentials."}), 401
+        return jsonify({'error': -1}), 401
 
 @app.route("/forgotPassword", methods=['POST'])
 @limiter.limit("10 per hour")  # Limit to 10 password reset requests per hour per IP
@@ -238,4 +242,3 @@ def internal_error(error):
 # Run the Flask app
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
-    app.run(debug=True, port="8080")
