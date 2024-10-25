@@ -8,6 +8,8 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from marshmallow import Schema, fields, ValidationError
 import logging
+import pandas as pd
+from pymongo import MongoClient # TODO: add to requirements.txt
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -87,6 +89,41 @@ class ForgotPasswordSchema(Schema):
     email = fields.Email(required=True)
 
 forgot_password_schema = ForgotPasswordSchema()
+
+# method to set up the MongoDB database 
+def setup_db(data_path):
+    print("setup_db is running") # testing purposes 
+
+    # set up MongoDB
+    client = MongoClient('mongodb://localhost:27017/')
+    db = client['healthsiftDB'] # database name
+
+    # set up collection 
+    medicine = db['medicine']
+    medicine.delete_many({}) # clears db for now so that i can verify how many records are being added in 
+
+    add_orig_data(data_path, db, medicine)
+
+# method to add data to the database 
+def add_orig_data(csv_path, db, medicine):
+
+    print("add_orig_data() is running") # testing purposes 
+
+    # add data to medicine collection if it is empty 
+    if medicine.count_documents({}) == 0:
+        print("num docs in medicine was == 0. Records about to be added to db") # testing purposes 
+
+        df = pd.read_csv(csv_path) # read data from medicine data csv 
+        default_medicines = df.to_dict(orient='records')
+
+        # insert the read data to the db 
+        medicine.insert_many(default_medicines)
+        print("healthsiftDB message: Default medicines added to the database.") # testing purposes 
+        print(len(default_medicines), "added to healthsiftDB") # testing purposes 
+    else:
+        print("num docs was not 0")
+
+setup_db("data/medicines.csv")
 
 # Routes
 
