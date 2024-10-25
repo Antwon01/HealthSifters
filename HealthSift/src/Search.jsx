@@ -6,7 +6,8 @@ function Search() {
 
         <div className='searchBarContainer'>
 
-          <SearchBar/>
+          {/* display search bar on container */}
+          <SearchBar/> 
             
         </div>
 

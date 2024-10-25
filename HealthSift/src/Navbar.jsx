@@ -11,6 +11,7 @@ function Navbar() {
           
           <li>
 
+            {/* redirect user to a home (not permanent) */}
             <Link to={"/"}>
 
               <img className="navbarImg" src={profilePic} alt="Profile Picture"/>
@@ -21,17 +22,21 @@ function Navbar() {
 
           <li>
 
+            {/* redirect user to a specific location (location not specified yet) */}
             <RedirectButton title="Home" style="navbarItem"/>
 
           </li>
 
           <li>
 
+            {/* redirect user to a specific location (location not specified yet) */}
             <RedirectButton title="Library" style="navbarItem"/>
 
           </li>
 
           <li>
+
+            {/* redirect user to a specific location (location not specified yet) */}
             <RedirectButton title="Logout" style="navbarItem"/>
 
           </li>

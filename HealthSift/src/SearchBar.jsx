@@ -18,7 +18,6 @@ function SearchBar() {
     let handler = (e) => {
       if(!filterRef.current.contains(e.target) && !iconRef.current.contains(e.target)) {
         setFilter(false);
-        console.log(filterRef.current);
       }
     }
     document.addEventListener("mousedown", handler);
