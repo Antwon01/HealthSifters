@@ -2,12 +2,12 @@ BACKEND
 
   You will have to create a virstual environment under the flask-server folder. 
   - Mac: 
-    - python3 -m venv <name>
-    - source <name>/bin/activate
+    - python3 -m venv name
+    - source name/bin/activate
   
   - Windows: 
-    - python -m venv <name>
-    - source <name>/Scripts/activate
+    - python -m venv name
+    - source name/Scripts/activate
   
   After wards you will have to run the server.py.
   - Mac: 
@@ -17,12 +17,13 @@ BACKEND
     - python server.py
 
   MongoDB:
-    Installation Instructions:
-      Mac:
+  - Installation Instructions:
+    - Mac:
       - download mongodb: brew tap mongodb/brew
       - download mongodb community: brew install mongodb-community@6.0
       - run mongodb: brew services start mongodb/brew/mongodb-community
-      Windows: TODO
+    - Windows:
+      - Tutorial: https://www.youtube.com/watch?v=Ow94d1bP0qI&t=26s
       
     The MongoDB runs locally. Running server.py will setup and populate the MongoDB locally if a MongoDB client is properly running.
 
