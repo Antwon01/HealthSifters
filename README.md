@@ -16,6 +16,16 @@ BACKEND
   - Windows:
     - python server.py
 
+  MongoDB:
+    Installation Instructions:
+      Mac:
+      - download mongodb: brew tap mongodb/brew
+      - download mongodb community: brew install mongodb-community@6.0
+      - run mongodb: brew services start mongodb/brew/mongodb-community
+      Windows: TODO
+      
+    The MongoDB runs locally. Running server.py will setup and populate the MongoDB locally if a MongoDB client is properly running.
+
 FRONT END
   - To download React with Vite and Node, you can follow these steps: 
   - Ensure you have Node.js installed on your system. If not, you can download it from the official Node.js website. 
