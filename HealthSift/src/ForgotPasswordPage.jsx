@@ -39,12 +39,13 @@ function ForgotPassword() {
 
             <div> 
                 
-               {/* This buttons will redirect you to the specified location when clicked. */}
+               {/* This buttons will redirect you to the specified location when clicked. (login) */}
                 <RedirectButton style="forgotPasswordReturnBtn" title="Return to Login"/>
 
                 <span className='divider'></span>
 
-                <RedirectButton style="forgotPasswordSignBtn" title="Go to Sign In"/>
+               {/* This buttons will redirect you to the specified location when clicked. (sign in) */}
+               <RedirectButton style="forgotPasswordSignBtn" title="Go to Sign In"/>
             
             </div>
 

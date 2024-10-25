@@ -34,6 +34,16 @@
             "email": "hello@gmail.com",
             "password": "scrypt:32768:8:1$jp83HoflAVfk73Xz$71c61c1fae5037bd25b1604d4f26a262c8f816c07d34ff9838c0b5b7ce4bdfa58304715a72d08ee2333f7f99436759f046e7b674ddf137eac7fcefbcaa7b73d7",
             "is_admin": false
+        },
+        {
+            "email": "Jose@gmail.com",
+            "password": "scrypt:32768:8:1$EzWvROKpw84ppPgJ$bea6bc9c06cdfdbc035e9f9a4eeaf88c2983781a90857325367c0152a03f20f6a57c5a220d434794fd124fc20f5ea056966e5a6e472be294b3f4efba8b83f681",
+            "is_admin": false
+        },
+        {
+            "email": "11@gmail.com",
+            "password": "scrypt:32768:8:1$17V8gFEXyAR93LSC$ec558804e96389dbd85f14a812b8de37714d10c8f6fd2aa518843933f369f409a8d9bf9d6ee5f5ddcc00d3389bd9e21903d9550f9b9c38ad8765908a9f77723b",
+            "is_admin": false
         }
     ]
 }
