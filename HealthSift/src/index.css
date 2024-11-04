@@ -431,14 +431,23 @@ body {
 
 /* style the cotainer in which the serach bar, search btn, and filter btn will show */
 .searchBarContainer {
-  display: flex;
-  align-items: center;
+  position: relative;
   position: absolute;
   top: 300px;
   margin: 0px auto 0px auto;
   width: 55%;
   height: 50px;
+}
 
+.searchForm {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* style the actual searchBar */
@@ -451,6 +460,34 @@ body {
   cursor: text;
   border: solid 2px #D3D3D3;
   padding: 10px;
+}
+
+/* filters that are activated */
+.activatedFiltersContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0px;
+  bottom: -45px;
+  height: 35px;
+  width: 78%;
+  /* border: black solid 1px; */
+}
+
+.activatedFilter {
+  height: 20px;
+  width: fit-content;
+  block-size: fit-content;
+  border-radius: 16px;
+  margin: 3px 10px 0px 0px;
+  padding: 7px;
+  border: 2px solid #D3D3D3;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.activatedFilter:hover {
+  text-decoration: line-through grey 2px;
 }
 
 /* style the search btn */
@@ -513,7 +550,7 @@ body {
   z-index: 1;
 }
 
-/* syle each of the otpions found in the filter options container */
+/* style each of the otpions found in the filter options container */
 .searchBarOptions > li {
   display: flex;
   align-items: center;
@@ -532,6 +569,106 @@ body {
 /* class makes anything unvisible. Used to hide the filter options container */
 .unvisible {
   display: none;
+}
+
+/* -------------- Medicines --------------------- */
+
+/* conatiner that holds the medicines */
+.medicineContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 55%;
+  height: 50%;
+  top: 380px;
+  padding: 40px;
+}
+
+/* medicine cards  */
+.medicineCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #D3D3D3;
+  border-radius: 15px;
+}
+
+/* style the image of the medicine */
+.medicinePicture {
+  height: 150px;
+  width: 150px;
+  margin: 0px 15px 0px 0px;
+}
+
+/* conatiner that holds the information of the medicine */
+.medicineInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  margin: 0px 10px 0px 10px;
+}
+
+/* targets all of the paragraphs in the medicineInformation */
+.medicineInformation p {
+  margin: 0px;
+  color: black;
+}
+
+/* style the name of the medicine */
+.medicineTittle {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.medicineBrand {
+  font-size: 13px;
+}
+
+.medicineLink {
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+}
+
+.medicineLink:hover {
+  font-size: 13px;
+  color: #ff6961;
+}
+
+
+/* style the add btn */
+.addMedicineBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #ff6961;
+}
+
+.vertical {
+  height: 20px;
+  width: 4px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.horizontal {
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  border-radius: 15px;
+  background-color: white;
+  transform: rotate(90deg);
 }
 
 /* -------------- Home Page --------------------- */

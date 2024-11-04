@@ -258,6 +258,17 @@ def forgot_password():
         logger.warning(f"No user found with email {email}.")
         return jsonify({'error': "Email not found."}), 404
 
+@app.route("/searchQuery", methods=['POST'])
+def searchQuery():
+    data = request.get_json()
+
+    # holds what the user whats to search for
+    search_query = data['search']
+    # holds the filters the user wants to use. (btw its a list)
+    filter_list = data['filters']
+
+    return jsonify({'status' : 'got search query'})
+
 # Example Protected Route (Requires Proper Implementation)
 @app.route("/protected", methods=['GET'])
 def protected():
