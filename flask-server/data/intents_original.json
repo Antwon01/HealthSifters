@@ -274,19 +274,6 @@
           "Of course! Let me know how I can help."
         ],
         "context_set": ""
-      },
-      {
-        "tag": "tylenol-overview",
-        "patterns": [
-          "What is tylenol",
-          "What is tylenol used for",
-          "what can i use tylenol for",
-          "tylenol"
-        ],
-        "responses": [
-          "Tylenol is used to help with fevers"
-        ],
-        "context_set": ""
       }
     ]
   }  
