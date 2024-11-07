@@ -5,12 +5,12 @@ function HomePage() {
   return (
     <div className='homePage'>
 
+        {/* display navbar */}
         <Navbar/>
 
-        {/* search bar */}
-        
+        {/* diplay search bar */}
         <Search/>
-        {/* ai button */}
+
 
     </div>
   )

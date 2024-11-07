@@ -1,4 +1,5 @@
 import SearchBar from "./SearchBar.jsx"
+import Medicine from "./Medicine.jsx";
 
 function Search() {
   return (
@@ -6,8 +7,15 @@ function Search() {
 
         <div className='searchBarContainer'>
 
-          <SearchBar/>
+          {/* display search bar on container */}
+          <SearchBar/> 
             
+        </div>
+
+        <div className="medicineContainer">
+
+          <Medicine/>
+          
         </div>
 
     </div>
