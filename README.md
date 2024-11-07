@@ -21,7 +21,7 @@ BACKEND
     - Mac:
       - download mongodb: brew tap mongodb/brew
       - download mongodb community: brew install mongodb-community@6.0
-      - run mongodb: brew services start mongodb/brew/mongodb-community
+      - run mongodb: brew services start mongodb/brew/mongodb-community@6.0
     - Windows:
       - Tutorial: https://www.youtube.com/watch?v=Ow94d1bP0qI&t=26s
       
