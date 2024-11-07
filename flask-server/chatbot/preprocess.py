@@ -180,6 +180,55 @@ def add_uses_to_intents(medicine_collection, intents_path):
     
         print("")
 
+# add reviews of each medicine to intents.json
+def add_review_to_intents(medicine_collection, intents_path):
+    # iterate over medicines
+    for medicine_entry in medicine_collection.find():
+        # get medicine name
+        name_medicine = medicine_entry['Medicine Name']
+
+        # get medicine review
+        review_medicine = medicine_entry['Medicine Customer Reviews']
+
+        # generate response(s)
+        response1 = f"{name_medicine} has {review_medicine.lower()} from customers"
+        responses = [response1]
+
+        # generate patterns
+        pattern1 = f"{name_medicine} reviews"
+        pattern2 = f"Reviews of {name_medicine}"
+        pattern3 = f"{name_medicine} feedback"
+        pattern4 = f"What is customer feedback on {name_medicine}"
+        pattern5 = f"What are customer reviews on {name_medicine}"
+        pattern6 = f"What do people think of {name_medicine}"
+        pattern7 = f"Thoughts on {name_medicine}"
+        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7]
+
+        # make json entry 
+        new_uses_intent = {
+            "tag": f"Reviews of {name_medicine}",
+            "patterns":  patterns,
+            "responses": responses,
+            "context_set": ""
+        }
+
+        # save to intents.json
+        with open(intents_path, 'r+') as file:
+            # load data in intents.json
+            data = json.load(file)
+
+            # add new_uses_intent into data from intents.json
+            data["intents"].append(new_uses_intent)
+
+            # move to beginning of intents.json file 
+            file.seek(0)
+    
+            # write data back to intents.json
+            json.dump(data, file, indent=2)
+    
+        print("")
+
+
 # add all intents to intents.json
 def insert_intents(medicine_collection, intents_path):
     # insert uses to intents 
@@ -193,6 +242,10 @@ def insert_intents(medicine_collection, intents_path):
     # insert ingredients to intents
     add_ingredients_to_intents(medicine_collection, intents_path)
     print("added ingredients to intents")
+
+    # insert reviews to intents 
+    add_review_to_intents(medicine_collection, intents_path)
+    print("added reviews to intents")
 
 # main 
 

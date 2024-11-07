@@ -2234,6 +2234,646 @@
         "An ingredient that Nicoderm CQ Nicotine Patches contains is Nicotine Transdermal System 21mg"
       ],
       "context_set": ""
+    },
+    {
+      "tag": "Reviews of Tylenol Extra Strength",
+      "patterns": [
+        "Tylenol Extra Strength reviews",
+        "Reviews of Tylenol Extra Strength",
+        "Tylenol Extra Strength feedback",
+        "What is customer feedback on Tylenol Extra Strength",
+        "What are customer reviews on Tylenol Extra Strength",
+        "What do people think of Tylenol Extra Strength",
+        "Thoughts on Tylenol Extra Strength"
+      ],
+      "responses": [
+        "Tylenol Extra Strength has 90% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Advil Ibuprofen Tablets",
+      "patterns": [
+        "Advil Ibuprofen Tablets reviews",
+        "Reviews of Advil Ibuprofen Tablets",
+        "Advil Ibuprofen Tablets feedback",
+        "What is customer feedback on Advil Ibuprofen Tablets",
+        "What are customer reviews on Advil Ibuprofen Tablets",
+        "What do people think of Advil Ibuprofen Tablets",
+        "Thoughts on Advil Ibuprofen Tablets"
+      ],
+      "responses": [
+        "Advil Ibuprofen Tablets has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Benadryl Allergy Relief",
+      "patterns": [
+        "Benadryl Allergy Relief reviews",
+        "Reviews of Benadryl Allergy Relief",
+        "Benadryl Allergy Relief feedback",
+        "What is customer feedback on Benadryl Allergy Relief",
+        "What are customer reviews on Benadryl Allergy Relief",
+        "What do people think of Benadryl Allergy Relief",
+        "Thoughts on Benadryl Allergy Relief"
+      ],
+      "responses": [
+        "Benadryl Allergy Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Claritin Non-Drowsy Tablets",
+      "patterns": [
+        "Claritin Non-Drowsy Tablets reviews",
+        "Reviews of Claritin Non-Drowsy Tablets",
+        "Claritin Non-Drowsy Tablets feedback",
+        "What is customer feedback on Claritin Non-Drowsy Tablets",
+        "What are customer reviews on Claritin Non-Drowsy Tablets",
+        "What do people think of Claritin Non-Drowsy Tablets",
+        "Thoughts on Claritin Non-Drowsy Tablets"
+      ],
+      "responses": [
+        "Claritin Non-Drowsy Tablets has 88% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Pepto-Bismol Liquid",
+      "patterns": [
+        "Pepto-Bismol Liquid reviews",
+        "Reviews of Pepto-Bismol Liquid",
+        "Pepto-Bismol Liquid feedback",
+        "What is customer feedback on Pepto-Bismol Liquid",
+        "What are customer reviews on Pepto-Bismol Liquid",
+        "What do people think of Pepto-Bismol Liquid",
+        "Thoughts on Pepto-Bismol Liquid"
+      ],
+      "responses": [
+        "Pepto-Bismol Liquid has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Robitussin Cough Syrup",
+      "patterns": [
+        "Robitussin Cough Syrup reviews",
+        "Reviews of Robitussin Cough Syrup",
+        "Robitussin Cough Syrup feedback",
+        "What is customer feedback on Robitussin Cough Syrup",
+        "What are customer reviews on Robitussin Cough Syrup",
+        "What do people think of Robitussin Cough Syrup",
+        "Thoughts on Robitussin Cough Syrup"
+      ],
+      "responses": [
+        "Robitussin Cough Syrup has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Imodium A-D Anti-Diarrheal",
+      "patterns": [
+        "Imodium A-D Anti-Diarrheal reviews",
+        "Reviews of Imodium A-D Anti-Diarrheal",
+        "Imodium A-D Anti-Diarrheal feedback",
+        "What is customer feedback on Imodium A-D Anti-Diarrheal",
+        "What are customer reviews on Imodium A-D Anti-Diarrheal",
+        "What do people think of Imodium A-D Anti-Diarrheal",
+        "Thoughts on Imodium A-D Anti-Diarrheal"
+      ],
+      "responses": [
+        "Imodium A-D Anti-Diarrheal has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Aleve Pain Reliever",
+      "patterns": [
+        "Aleve Pain Reliever reviews",
+        "Reviews of Aleve Pain Reliever",
+        "Aleve Pain Reliever feedback",
+        "What is customer feedback on Aleve Pain Reliever",
+        "What are customer reviews on Aleve Pain Reliever",
+        "What do people think of Aleve Pain Reliever",
+        "Thoughts on Aleve Pain Reliever"
+      ],
+      "responses": [
+        "Aleve Pain Reliever has 83% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Flonase Nasal Spray",
+      "patterns": [
+        "Flonase Nasal Spray reviews",
+        "Reviews of Flonase Nasal Spray",
+        "Flonase Nasal Spray feedback",
+        "What is customer feedback on Flonase Nasal Spray",
+        "What are customer reviews on Flonase Nasal Spray",
+        "What do people think of Flonase Nasal Spray",
+        "Thoughts on Flonase Nasal Spray"
+      ],
+      "responses": [
+        "Flonase Nasal Spray has 87% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Afrin Nasal Spray",
+      "patterns": [
+        "Afrin Nasal Spray reviews",
+        "Reviews of Afrin Nasal Spray",
+        "Afrin Nasal Spray feedback",
+        "What is customer feedback on Afrin Nasal Spray",
+        "What are customer reviews on Afrin Nasal Spray",
+        "What do people think of Afrin Nasal Spray",
+        "Thoughts on Afrin Nasal Spray"
+      ],
+      "responses": [
+        "Afrin Nasal Spray has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Miralax Laxative Powder",
+      "patterns": [
+        "Miralax Laxative Powder reviews",
+        "Reviews of Miralax Laxative Powder",
+        "Miralax Laxative Powder feedback",
+        "What is customer feedback on Miralax Laxative Powder",
+        "What are customer reviews on Miralax Laxative Powder",
+        "What do people think of Miralax Laxative Powder",
+        "Thoughts on Miralax Laxative Powder"
+      ],
+      "responses": [
+        "Miralax Laxative Powder has 82% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Tums Antacid Tablets",
+      "patterns": [
+        "Tums Antacid Tablets reviews",
+        "Reviews of Tums Antacid Tablets",
+        "Tums Antacid Tablets feedback",
+        "What is customer feedback on Tums Antacid Tablets",
+        "What are customer reviews on Tums Antacid Tablets",
+        "What do people think of Tums Antacid Tablets",
+        "Thoughts on Tums Antacid Tablets"
+      ],
+      "responses": [
+        "Tums Antacid Tablets has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Preparation H Hemorrhoidal Ointment",
+      "patterns": [
+        "Preparation H Hemorrhoidal Ointment reviews",
+        "Reviews of Preparation H Hemorrhoidal Ointment",
+        "Preparation H Hemorrhoidal Ointment feedback",
+        "What is customer feedback on Preparation H Hemorrhoidal Ointment",
+        "What are customer reviews on Preparation H Hemorrhoidal Ointment",
+        "What do people think of Preparation H Hemorrhoidal Ointment",
+        "Thoughts on Preparation H Hemorrhoidal Ointment"
+      ],
+      "responses": [
+        "Preparation H Hemorrhoidal Ointment has 77% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Neosporin Antibiotic Ointment",
+      "patterns": [
+        "Neosporin Antibiotic Ointment reviews",
+        "Reviews of Neosporin Antibiotic Ointment",
+        "Neosporin Antibiotic Ointment feedback",
+        "What is customer feedback on Neosporin Antibiotic Ointment",
+        "What are customer reviews on Neosporin Antibiotic Ointment",
+        "What do people think of Neosporin Antibiotic Ointment",
+        "Thoughts on Neosporin Antibiotic Ointment"
+      ],
+      "responses": [
+        "Neosporin Antibiotic Ointment has 90% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Cortizone-10 Anti-Itch Cream",
+      "patterns": [
+        "Cortizone-10 Anti-Itch Cream reviews",
+        "Reviews of Cortizone-10 Anti-Itch Cream",
+        "Cortizone-10 Anti-Itch Cream feedback",
+        "What is customer feedback on Cortizone-10 Anti-Itch Cream",
+        "What are customer reviews on Cortizone-10 Anti-Itch Cream",
+        "What do people think of Cortizone-10 Anti-Itch Cream",
+        "Thoughts on Cortizone-10 Anti-Itch Cream"
+      ],
+      "responses": [
+        "Cortizone-10 Anti-Itch Cream has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Lotrimin AF Antifungal Cream",
+      "patterns": [
+        "Lotrimin AF Antifungal Cream reviews",
+        "Reviews of Lotrimin AF Antifungal Cream",
+        "Lotrimin AF Antifungal Cream feedback",
+        "What is customer feedback on Lotrimin AF Antifungal Cream",
+        "What are customer reviews on Lotrimin AF Antifungal Cream",
+        "What do people think of Lotrimin AF Antifungal Cream",
+        "Thoughts on Lotrimin AF Antifungal Cream"
+      ],
+      "responses": [
+        "Lotrimin AF Antifungal Cream has 82% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Monistat 1-Day Treatment",
+      "patterns": [
+        "Monistat 1-Day Treatment reviews",
+        "Reviews of Monistat 1-Day Treatment",
+        "Monistat 1-Day Treatment feedback",
+        "What is customer feedback on Monistat 1-Day Treatment",
+        "What are customer reviews on Monistat 1-Day Treatment",
+        "What do people think of Monistat 1-Day Treatment",
+        "Thoughts on Monistat 1-Day Treatment"
+      ],
+      "responses": [
+        "Monistat 1-Day Treatment has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Abreva Cold Sore Treatment",
+      "patterns": [
+        "Abreva Cold Sore Treatment reviews",
+        "Reviews of Abreva Cold Sore Treatment",
+        "Abreva Cold Sore Treatment feedback",
+        "What is customer feedback on Abreva Cold Sore Treatment",
+        "What are customer reviews on Abreva Cold Sore Treatment",
+        "What do people think of Abreva Cold Sore Treatment",
+        "Thoughts on Abreva Cold Sore Treatment"
+      ],
+      "responses": [
+        "Abreva Cold Sore Treatment has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Nicorette Nicotine Gum",
+      "patterns": [
+        "Nicorette Nicotine Gum reviews",
+        "Reviews of Nicorette Nicotine Gum",
+        "Nicorette Nicotine Gum feedback",
+        "What is customer feedback on Nicorette Nicotine Gum",
+        "What are customer reviews on Nicorette Nicotine Gum",
+        "What do people think of Nicorette Nicotine Gum",
+        "Thoughts on Nicorette Nicotine Gum"
+      ],
+      "responses": [
+        "Nicorette Nicotine Gum has 70% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Bayer Low Dose Aspirin",
+      "patterns": [
+        "Bayer Low Dose Aspirin reviews",
+        "Reviews of Bayer Low Dose Aspirin",
+        "Bayer Low Dose Aspirin feedback",
+        "What is customer feedback on Bayer Low Dose Aspirin",
+        "What are customer reviews on Bayer Low Dose Aspirin",
+        "What do people think of Bayer Low Dose Aspirin",
+        "Thoughts on Bayer Low Dose Aspirin"
+      ],
+      "responses": [
+        "Bayer Low Dose Aspirin has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Excedrin Migraine Relief",
+      "patterns": [
+        "Excedrin Migraine Relief reviews",
+        "Reviews of Excedrin Migraine Relief",
+        "Excedrin Migraine Relief feedback",
+        "What is customer feedback on Excedrin Migraine Relief",
+        "What are customer reviews on Excedrin Migraine Relief",
+        "What do people think of Excedrin Migraine Relief",
+        "Thoughts on Excedrin Migraine Relief"
+      ],
+      "responses": [
+        "Excedrin Migraine Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Delsym Cough Suppressant",
+      "patterns": [
+        "Delsym Cough Suppressant reviews",
+        "Reviews of Delsym Cough Suppressant",
+        "Delsym Cough Suppressant feedback",
+        "What is customer feedback on Delsym Cough Suppressant",
+        "What are customer reviews on Delsym Cough Suppressant",
+        "What do people think of Delsym Cough Suppressant",
+        "Thoughts on Delsym Cough Suppressant"
+      ],
+      "responses": [
+        "Delsym Cough Suppressant has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Dramamine Motion Sickness Relief",
+      "patterns": [
+        "Dramamine Motion Sickness Relief reviews",
+        "Reviews of Dramamine Motion Sickness Relief",
+        "Dramamine Motion Sickness Relief feedback",
+        "What is customer feedback on Dramamine Motion Sickness Relief",
+        "What are customer reviews on Dramamine Motion Sickness Relief",
+        "What do people think of Dramamine Motion Sickness Relief",
+        "Thoughts on Dramamine Motion Sickness Relief"
+      ],
+      "responses": [
+        "Dramamine Motion Sickness Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Zyrtec Allergy Relief",
+      "patterns": [
+        "Zyrtec Allergy Relief reviews",
+        "Reviews of Zyrtec Allergy Relief",
+        "Zyrtec Allergy Relief feedback",
+        "What is customer feedback on Zyrtec Allergy Relief",
+        "What are customer reviews on Zyrtec Allergy Relief",
+        "What do people think of Zyrtec Allergy Relief",
+        "Thoughts on Zyrtec Allergy Relief"
+      ],
+      "responses": [
+        "Zyrtec Allergy Relief has 88% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Cepacol Sore Throat Lozenges",
+      "patterns": [
+        "Cepacol Sore Throat Lozenges reviews",
+        "Reviews of Cepacol Sore Throat Lozenges",
+        "Cepacol Sore Throat Lozenges feedback",
+        "What is customer feedback on Cepacol Sore Throat Lozenges",
+        "What are customer reviews on Cepacol Sore Throat Lozenges",
+        "What do people think of Cepacol Sore Throat Lozenges",
+        "Thoughts on Cepacol Sore Throat Lozenges"
+      ],
+      "responses": [
+        "Cepacol Sore Throat Lozenges has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Orajel Toothache Gel",
+      "patterns": [
+        "Orajel Toothache Gel reviews",
+        "Reviews of Orajel Toothache Gel",
+        "Orajel Toothache Gel feedback",
+        "What is customer feedback on Orajel Toothache Gel",
+        "What are customer reviews on Orajel Toothache Gel",
+        "What do people think of Orajel Toothache Gel",
+        "Thoughts on Orajel Toothache Gel"
+      ],
+      "responses": [
+        "Orajel Toothache Gel has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Visine Red Eye Comfort",
+      "patterns": [
+        "Visine Red Eye Comfort reviews",
+        "Reviews of Visine Red Eye Comfort",
+        "Visine Red Eye Comfort feedback",
+        "What is customer feedback on Visine Red Eye Comfort",
+        "What are customer reviews on Visine Red Eye Comfort",
+        "What do people think of Visine Red Eye Comfort",
+        "Thoughts on Visine Red Eye Comfort"
+      ],
+      "responses": [
+        "Visine Red Eye Comfort has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Refresh Tears Lubricant Eye Drops",
+      "patterns": [
+        "Refresh Tears Lubricant Eye Drops reviews",
+        "Reviews of Refresh Tears Lubricant Eye Drops",
+        "Refresh Tears Lubricant Eye Drops feedback",
+        "What is customer feedback on Refresh Tears Lubricant Eye Drops",
+        "What are customer reviews on Refresh Tears Lubricant Eye Drops",
+        "What do people think of Refresh Tears Lubricant Eye Drops",
+        "Thoughts on Refresh Tears Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Refresh Tears Lubricant Eye Drops has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Emergen-C Vitamin C Supplement",
+      "patterns": [
+        "Emergen-C Vitamin C Supplement reviews",
+        "Reviews of Emergen-C Vitamin C Supplement",
+        "Emergen-C Vitamin C Supplement feedback",
+        "What is customer feedback on Emergen-C Vitamin C Supplement",
+        "What are customer reviews on Emergen-C Vitamin C Supplement",
+        "What do people think of Emergen-C Vitamin C Supplement",
+        "Thoughts on Emergen-C Vitamin C Supplement"
+      ],
+      "responses": [
+        "Emergen-C Vitamin C Supplement has 82% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Airborne Immune Support Supplement",
+      "patterns": [
+        "Airborne Immune Support Supplement reviews",
+        "Reviews of Airborne Immune Support Supplement",
+        "Airborne Immune Support Supplement feedback",
+        "What is customer feedback on Airborne Immune Support Supplement",
+        "What are customer reviews on Airborne Immune Support Supplement",
+        "What do people think of Airborne Immune Support Supplement",
+        "Thoughts on Airborne Immune Support Supplement"
+      ],
+      "responses": [
+        "Airborne Immune Support Supplement has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Melatonin Sleep Aid",
+      "patterns": [
+        "Melatonin Sleep Aid reviews",
+        "Reviews of Melatonin Sleep Aid",
+        "Melatonin Sleep Aid feedback",
+        "What is customer feedback on Melatonin Sleep Aid",
+        "What are customer reviews on Melatonin Sleep Aid",
+        "What do people think of Melatonin Sleep Aid",
+        "Thoughts on Melatonin Sleep Aid"
+      ],
+      "responses": [
+        "Melatonin Sleep Aid has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of ZzzQuil Nighttime Sleep Aid",
+      "patterns": [
+        "ZzzQuil Nighttime Sleep Aid reviews",
+        "Reviews of ZzzQuil Nighttime Sleep Aid",
+        "ZzzQuil Nighttime Sleep Aid feedback",
+        "What is customer feedback on ZzzQuil Nighttime Sleep Aid",
+        "What are customer reviews on ZzzQuil Nighttime Sleep Aid",
+        "What do people think of ZzzQuil Nighttime Sleep Aid",
+        "Thoughts on ZzzQuil Nighttime Sleep Aid"
+      ],
+      "responses": [
+        "ZzzQuil Nighttime Sleep Aid has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Advil PM Pain Reliever and Sleep Aid",
+      "patterns": [
+        "Advil PM Pain Reliever and Sleep Aid reviews",
+        "Reviews of Advil PM Pain Reliever and Sleep Aid",
+        "Advil PM Pain Reliever and Sleep Aid feedback",
+        "What is customer feedback on Advil PM Pain Reliever and Sleep Aid",
+        "What are customer reviews on Advil PM Pain Reliever and Sleep Aid",
+        "What do people think of Advil PM Pain Reliever and Sleep Aid",
+        "Thoughts on Advil PM Pain Reliever and Sleep Aid"
+      ],
+      "responses": [
+        "Advil PM Pain Reliever and Sleep Aid has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Theraflu Multi-Symptom Severe Cold Relief",
+      "patterns": [
+        "Theraflu Multi-Symptom Severe Cold Relief reviews",
+        "Reviews of Theraflu Multi-Symptom Severe Cold Relief",
+        "Theraflu Multi-Symptom Severe Cold Relief feedback",
+        "What is customer feedback on Theraflu Multi-Symptom Severe Cold Relief",
+        "What are customer reviews on Theraflu Multi-Symptom Severe Cold Relief",
+        "What do people think of Theraflu Multi-Symptom Severe Cold Relief",
+        "Thoughts on Theraflu Multi-Symptom Severe Cold Relief"
+      ],
+      "responses": [
+        "Theraflu Multi-Symptom Severe Cold Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Sudafed PE Sinus Pressure + Pain",
+      "patterns": [
+        "Sudafed PE Sinus Pressure + Pain reviews",
+        "Reviews of Sudafed PE Sinus Pressure + Pain",
+        "Sudafed PE Sinus Pressure + Pain feedback",
+        "What is customer feedback on Sudafed PE Sinus Pressure + Pain",
+        "What are customer reviews on Sudafed PE Sinus Pressure + Pain",
+        "What do people think of Sudafed PE Sinus Pressure + Pain",
+        "Thoughts on Sudafed PE Sinus Pressure + Pain"
+      ],
+      "responses": [
+        "Sudafed PE Sinus Pressure + Pain has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Alka-Seltzer Original Effervescent Tablets",
+      "patterns": [
+        "Alka-Seltzer Original Effervescent Tablets reviews",
+        "Reviews of Alka-Seltzer Original Effervescent Tablets",
+        "Alka-Seltzer Original Effervescent Tablets feedback",
+        "What is customer feedback on Alka-Seltzer Original Effervescent Tablets",
+        "What are customer reviews on Alka-Seltzer Original Effervescent Tablets",
+        "What do people think of Alka-Seltzer Original Effervescent Tablets",
+        "Thoughts on Alka-Seltzer Original Effervescent Tablets"
+      ],
+      "responses": [
+        "Alka-Seltzer Original Effervescent Tablets has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Prilosec OTC",
+      "patterns": [
+        "Prilosec OTC reviews",
+        "Reviews of Prilosec OTC",
+        "Prilosec OTC feedback",
+        "What is customer feedback on Prilosec OTC",
+        "What are customer reviews on Prilosec OTC",
+        "What do people think of Prilosec OTC",
+        "Thoughts on Prilosec OTC"
+      ],
+      "responses": [
+        "Prilosec OTC has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Polysporin First Aid Antibiotic Ointment",
+      "patterns": [
+        "Polysporin First Aid Antibiotic Ointment reviews",
+        "Reviews of Polysporin First Aid Antibiotic Ointment",
+        "Polysporin First Aid Antibiotic Ointment feedback",
+        "What is customer feedback on Polysporin First Aid Antibiotic Ointment",
+        "What are customer reviews on Polysporin First Aid Antibiotic Ointment",
+        "What do people think of Polysporin First Aid Antibiotic Ointment",
+        "Thoughts on Polysporin First Aid Antibiotic Ointment"
+      ],
+      "responses": [
+        "Polysporin First Aid Antibiotic Ointment has 88% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Systane Lubricant Eye Drops",
+      "patterns": [
+        "Systane Lubricant Eye Drops reviews",
+        "Reviews of Systane Lubricant Eye Drops",
+        "Systane Lubricant Eye Drops feedback",
+        "What is customer feedback on Systane Lubricant Eye Drops",
+        "What are customer reviews on Systane Lubricant Eye Drops",
+        "What do people think of Systane Lubricant Eye Drops",
+        "Thoughts on Systane Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Systane Lubricant Eye Drops has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Nicoderm CQ Nicotine Patches",
+      "patterns": [
+        "Nicoderm CQ Nicotine Patches reviews",
+        "Reviews of Nicoderm CQ Nicotine Patches",
+        "Nicoderm CQ Nicotine Patches feedback",
+        "What is customer feedback on Nicoderm CQ Nicotine Patches",
+        "What are customer reviews on Nicoderm CQ Nicotine Patches",
+        "What do people think of Nicoderm CQ Nicotine Patches",
+        "Thoughts on Nicoderm CQ Nicotine Patches"
+      ],
+      "responses": [
+        "Nicoderm CQ Nicotine Patches has 78% positive reviews from customers"
+      ],
+      "context_set": ""
     }
   ]
 }
