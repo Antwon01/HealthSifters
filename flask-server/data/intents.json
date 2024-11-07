@@ -2874,6 +2874,846 @@
         "Nicoderm CQ Nicotine Patches has 78% positive reviews from customers"
       ],
       "context_set": ""
+    },
+    {
+      "tag": "Link to Tylenol Extra Strength",
+      "patterns": [
+        "Tylenol Extra Strength purchase",
+        "Where can I buy Tylenol Extra Strength",
+        "Where can I purchase Tylenol Extra Strength",
+        "Buy Tylenol Extra Strength",
+        "Get Tylenol Extra Strength",
+        "Purchase Tylenol Extra Strength",
+        "Where can I get Tylenol Extra Strength",
+        "How can I get Tylenol Extra Strength",
+        "How can I buy Tylenol Extra Strength",
+        "How can I purchase Tylenol Extra Strength",
+        "Where can I buy Tylenol Extra Strength",
+        "Where can I purchase Tylenol Extra Strength"
+      ],
+      "responses": [
+        "Tylenol Extra Strength is available at https://www.cvs.com/shop/tylenol-extra-strength-acetaminophen-500-mg-caplets-prodid-1080178"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Advil Ibuprofen Tablets",
+      "patterns": [
+        "Advil Ibuprofen Tablets purchase",
+        "Where can I buy Advil Ibuprofen Tablets",
+        "Where can I purchase Advil Ibuprofen Tablets",
+        "Buy Advil Ibuprofen Tablets",
+        "Get Advil Ibuprofen Tablets",
+        "Purchase Advil Ibuprofen Tablets",
+        "Where can I get Advil Ibuprofen Tablets",
+        "How can I get Advil Ibuprofen Tablets",
+        "How can I buy Advil Ibuprofen Tablets",
+        "How can I purchase Advil Ibuprofen Tablets",
+        "Where can I buy Advil Ibuprofen Tablets",
+        "Where can I purchase Advil Ibuprofen Tablets"
+      ],
+      "responses": [
+        "Advil Ibuprofen Tablets is available at https://www.cvs.com/shop/advil-pain-reliever-fever-reducer-200-mg-ibuprofen-tablets-prodid-1040240"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Benadryl Allergy Relief",
+      "patterns": [
+        "Benadryl Allergy Relief purchase",
+        "Where can I buy Benadryl Allergy Relief",
+        "Where can I purchase Benadryl Allergy Relief",
+        "Buy Benadryl Allergy Relief",
+        "Get Benadryl Allergy Relief",
+        "Purchase Benadryl Allergy Relief",
+        "Where can I get Benadryl Allergy Relief",
+        "How can I get Benadryl Allergy Relief",
+        "How can I buy Benadryl Allergy Relief",
+        "How can I purchase Benadryl Allergy Relief",
+        "Where can I buy Benadryl Allergy Relief",
+        "Where can I purchase Benadryl Allergy Relief"
+      ],
+      "responses": [
+        "Benadryl Allergy Relief is available at https://www.cvs.com/shop/cvs-health-allergy-relief-prodid-377696"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Claritin Non-Drowsy Tablets",
+      "patterns": [
+        "Claritin Non-Drowsy Tablets purchase",
+        "Where can I buy Claritin Non-Drowsy Tablets",
+        "Where can I purchase Claritin Non-Drowsy Tablets",
+        "Buy Claritin Non-Drowsy Tablets",
+        "Get Claritin Non-Drowsy Tablets",
+        "Purchase Claritin Non-Drowsy Tablets",
+        "Where can I get Claritin Non-Drowsy Tablets",
+        "How can I get Claritin Non-Drowsy Tablets",
+        "How can I buy Claritin Non-Drowsy Tablets",
+        "How can I purchase Claritin Non-Drowsy Tablets",
+        "Where can I buy Claritin Non-Drowsy Tablets",
+        "Where can I purchase Claritin Non-Drowsy Tablets"
+      ],
+      "responses": [
+        "Claritin Non-Drowsy Tablets is available at https://www.cvs.com/shop/claritin-d-24-hour-non-drowsy-indoor-outdoor-allergies-allergy-congestion-extended-release-tablets-prodid-277940"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Pepto-Bismol Liquid",
+      "patterns": [
+        "Pepto-Bismol Liquid purchase",
+        "Where can I buy Pepto-Bismol Liquid",
+        "Where can I purchase Pepto-Bismol Liquid",
+        "Buy Pepto-Bismol Liquid",
+        "Get Pepto-Bismol Liquid",
+        "Purchase Pepto-Bismol Liquid",
+        "Where can I get Pepto-Bismol Liquid",
+        "How can I get Pepto-Bismol Liquid",
+        "How can I buy Pepto-Bismol Liquid",
+        "How can I purchase Pepto-Bismol Liquid",
+        "Where can I buy Pepto-Bismol Liquid",
+        "Where can I purchase Pepto-Bismol Liquid"
+      ],
+      "responses": [
+        "Pepto-Bismol Liquid is available at https://www.cvs.com/shop/pepto-bismol-ultra-5-symptom-relief-liquid-original-12-oz-prodid-557215"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Robitussin Cough Syrup",
+      "patterns": [
+        "Robitussin Cough Syrup purchase",
+        "Where can I buy Robitussin Cough Syrup",
+        "Where can I purchase Robitussin Cough Syrup",
+        "Buy Robitussin Cough Syrup",
+        "Get Robitussin Cough Syrup",
+        "Purchase Robitussin Cough Syrup",
+        "Where can I get Robitussin Cough Syrup",
+        "How can I get Robitussin Cough Syrup",
+        "How can I buy Robitussin Cough Syrup",
+        "How can I purchase Robitussin Cough Syrup",
+        "Where can I buy Robitussin Cough Syrup",
+        "Where can I purchase Robitussin Cough Syrup"
+      ],
+      "responses": [
+        "Robitussin Cough Syrup is available at https://www.cvs.com/shop/robitussin-honey-cough-chest-congestion-dm-adult-max-strength-day-liquid-syrup-8-fl-oz-prodid-2220588"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Imodium A-D Anti-Diarrheal",
+      "patterns": [
+        "Imodium A-D Anti-Diarrheal purchase",
+        "Where can I buy Imodium A-D Anti-Diarrheal",
+        "Where can I purchase Imodium A-D Anti-Diarrheal",
+        "Buy Imodium A-D Anti-Diarrheal",
+        "Get Imodium A-D Anti-Diarrheal",
+        "Purchase Imodium A-D Anti-Diarrheal",
+        "Where can I get Imodium A-D Anti-Diarrheal",
+        "How can I get Imodium A-D Anti-Diarrheal",
+        "How can I buy Imodium A-D Anti-Diarrheal",
+        "How can I purchase Imodium A-D Anti-Diarrheal",
+        "Where can I buy Imodium A-D Anti-Diarrheal",
+        "Where can I purchase Imodium A-D Anti-Diarrheal"
+      ],
+      "responses": [
+        "Imodium A-D Anti-Diarrheal is available at https://www.cvs.com/shop/imodium-a-d-anti-diarrheal-caplets-prodid-441063"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Aleve Pain Reliever",
+      "patterns": [
+        "Aleve Pain Reliever purchase",
+        "Where can I buy Aleve Pain Reliever",
+        "Where can I purchase Aleve Pain Reliever",
+        "Buy Aleve Pain Reliever",
+        "Get Aleve Pain Reliever",
+        "Purchase Aleve Pain Reliever",
+        "Where can I get Aleve Pain Reliever",
+        "How can I get Aleve Pain Reliever",
+        "How can I buy Aleve Pain Reliever",
+        "How can I purchase Aleve Pain Reliever",
+        "Where can I buy Aleve Pain Reliever",
+        "Where can I purchase Aleve Pain Reliever"
+      ],
+      "responses": [
+        "Aleve Pain Reliever is available at https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Flonase Nasal Spray",
+      "patterns": [
+        "Flonase Nasal Spray purchase",
+        "Where can I buy Flonase Nasal Spray",
+        "Where can I purchase Flonase Nasal Spray",
+        "Buy Flonase Nasal Spray",
+        "Get Flonase Nasal Spray",
+        "Purchase Flonase Nasal Spray",
+        "Where can I get Flonase Nasal Spray",
+        "How can I get Flonase Nasal Spray",
+        "How can I buy Flonase Nasal Spray",
+        "How can I purchase Flonase Nasal Spray",
+        "Where can I buy Flonase Nasal Spray",
+        "Where can I purchase Flonase Nasal Spray"
+      ],
+      "responses": [
+        "Flonase Nasal Spray is available at https://www.cvs.com/shop/flonase-non-drowsy-24hr-allergy-relief-spray-50mcg-flucticasone-propionate-prodid-302860"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Afrin Nasal Spray",
+      "patterns": [
+        "Afrin Nasal Spray purchase",
+        "Where can I buy Afrin Nasal Spray",
+        "Where can I purchase Afrin Nasal Spray",
+        "Buy Afrin Nasal Spray",
+        "Get Afrin Nasal Spray",
+        "Purchase Afrin Nasal Spray",
+        "Where can I get Afrin Nasal Spray",
+        "How can I get Afrin Nasal Spray",
+        "How can I buy Afrin Nasal Spray",
+        "How can I purchase Afrin Nasal Spray",
+        "Where can I buy Afrin Nasal Spray",
+        "Where can I purchase Afrin Nasal Spray"
+      ],
+      "responses": [
+        "Afrin Nasal Spray is available at https://www.cvs.com/shop/afrin-nasal-spray-severe-congestion-prodid-294504"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Miralax Laxative Powder",
+      "patterns": [
+        "Miralax Laxative Powder purchase",
+        "Where can I buy Miralax Laxative Powder",
+        "Where can I purchase Miralax Laxative Powder",
+        "Buy Miralax Laxative Powder",
+        "Get Miralax Laxative Powder",
+        "Purchase Miralax Laxative Powder",
+        "Where can I get Miralax Laxative Powder",
+        "How can I get Miralax Laxative Powder",
+        "How can I buy Miralax Laxative Powder",
+        "How can I purchase Miralax Laxative Powder",
+        "Where can I buy Miralax Laxative Powder",
+        "Where can I purchase Miralax Laxative Powder"
+      ],
+      "responses": [
+        "Miralax Laxative Powder is available at https://www.cvs.com/shop/miralax-laxative-powder-prodid-1011834"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Tums Antacid Tablets",
+      "patterns": [
+        "Tums Antacid Tablets purchase",
+        "Where can I buy Tums Antacid Tablets",
+        "Where can I purchase Tums Antacid Tablets",
+        "Buy Tums Antacid Tablets",
+        "Get Tums Antacid Tablets",
+        "Purchase Tums Antacid Tablets",
+        "Where can I get Tums Antacid Tablets",
+        "How can I get Tums Antacid Tablets",
+        "How can I buy Tums Antacid Tablets",
+        "How can I purchase Tums Antacid Tablets",
+        "Where can I buy Tums Antacid Tablets",
+        "Where can I purchase Tums Antacid Tablets"
+      ],
+      "responses": [
+        "Tums Antacid Tablets is available at https://www.cvs.com/shop/tums-chewable-antacid-tablets-for-heartburn-relief-tropical-fruit-32-ct-prodid-443030"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Preparation H Hemorrhoidal Ointment",
+      "patterns": [
+        "Preparation H Hemorrhoidal Ointment purchase",
+        "Where can I buy Preparation H Hemorrhoidal Ointment",
+        "Where can I purchase Preparation H Hemorrhoidal Ointment",
+        "Buy Preparation H Hemorrhoidal Ointment",
+        "Get Preparation H Hemorrhoidal Ointment",
+        "Purchase Preparation H Hemorrhoidal Ointment",
+        "Where can I get Preparation H Hemorrhoidal Ointment",
+        "How can I get Preparation H Hemorrhoidal Ointment",
+        "How can I buy Preparation H Hemorrhoidal Ointment",
+        "How can I purchase Preparation H Hemorrhoidal Ointment",
+        "Where can I buy Preparation H Hemorrhoidal Ointment",
+        "Where can I purchase Preparation H Hemorrhoidal Ointment"
+      ],
+      "responses": [
+        "Preparation H Hemorrhoidal Ointment is available at https://www.cvs.com/shop/preparation-h-hemorrhoid-ointment-prodid-1040179"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Neosporin Antibiotic Ointment",
+      "patterns": [
+        "Neosporin Antibiotic Ointment purchase",
+        "Where can I buy Neosporin Antibiotic Ointment",
+        "Where can I purchase Neosporin Antibiotic Ointment",
+        "Buy Neosporin Antibiotic Ointment",
+        "Get Neosporin Antibiotic Ointment",
+        "Purchase Neosporin Antibiotic Ointment",
+        "Where can I get Neosporin Antibiotic Ointment",
+        "How can I get Neosporin Antibiotic Ointment",
+        "How can I buy Neosporin Antibiotic Ointment",
+        "How can I purchase Neosporin Antibiotic Ointment",
+        "Where can I buy Neosporin Antibiotic Ointment",
+        "Where can I purchase Neosporin Antibiotic Ointment"
+      ],
+      "responses": [
+        "Neosporin Antibiotic Ointment is available at https://www.cvs.com/shop/neosporin-lidocaine-pain-relieving-antibiotic-ointment-0-5-oz-prodid-521606"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Cortizone-10 Anti-Itch Cream",
+      "patterns": [
+        "Cortizone-10 Anti-Itch Cream purchase",
+        "Where can I buy Cortizone-10 Anti-Itch Cream",
+        "Where can I purchase Cortizone-10 Anti-Itch Cream",
+        "Buy Cortizone-10 Anti-Itch Cream",
+        "Get Cortizone-10 Anti-Itch Cream",
+        "Purchase Cortizone-10 Anti-Itch Cream",
+        "Where can I get Cortizone-10 Anti-Itch Cream",
+        "How can I get Cortizone-10 Anti-Itch Cream",
+        "How can I buy Cortizone-10 Anti-Itch Cream",
+        "How can I purchase Cortizone-10 Anti-Itch Cream",
+        "Where can I buy Cortizone-10 Anti-Itch Cream",
+        "Where can I purchase Cortizone-10 Anti-Itch Cream"
+      ],
+      "responses": [
+        "Cortizone-10 Anti-Itch Cream is available at https://www.cvs.com/shop/cortizone-10-maximum-strength-overnight-anti-itch-cream-1-oz-prodid-400748"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Lotrimin AF Antifungal Cream",
+      "patterns": [
+        "Lotrimin AF Antifungal Cream purchase",
+        "Where can I buy Lotrimin AF Antifungal Cream",
+        "Where can I purchase Lotrimin AF Antifungal Cream",
+        "Buy Lotrimin AF Antifungal Cream",
+        "Get Lotrimin AF Antifungal Cream",
+        "Purchase Lotrimin AF Antifungal Cream",
+        "Where can I get Lotrimin AF Antifungal Cream",
+        "How can I get Lotrimin AF Antifungal Cream",
+        "How can I buy Lotrimin AF Antifungal Cream",
+        "How can I purchase Lotrimin AF Antifungal Cream",
+        "Where can I buy Lotrimin AF Antifungal Cream",
+        "Where can I purchase Lotrimin AF Antifungal Cream"
+      ],
+      "responses": [
+        "Lotrimin AF Antifungal Cream is available at https://www.cvs.com/shop/lotrimin-af-athlete-s-foot-antifungal-cream-1-1-oz-prodid-873372"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Monistat 1-Day Treatment",
+      "patterns": [
+        "Monistat 1-Day Treatment purchase",
+        "Where can I buy Monistat 1-Day Treatment",
+        "Where can I purchase Monistat 1-Day Treatment",
+        "Buy Monistat 1-Day Treatment",
+        "Get Monistat 1-Day Treatment",
+        "Purchase Monistat 1-Day Treatment",
+        "Where can I get Monistat 1-Day Treatment",
+        "How can I get Monistat 1-Day Treatment",
+        "How can I buy Monistat 1-Day Treatment",
+        "How can I purchase Monistat 1-Day Treatment",
+        "Where can I buy Monistat 1-Day Treatment",
+        "Where can I purchase Monistat 1-Day Treatment"
+      ],
+      "responses": [
+        "Monistat 1-Day Treatment is available at https://www.cvs.com/shop/monistat-1-day-yeast-infection-ovule-insert-treatment-prodid-314730"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Abreva Cold Sore Treatment",
+      "patterns": [
+        "Abreva Cold Sore Treatment purchase",
+        "Where can I buy Abreva Cold Sore Treatment",
+        "Where can I purchase Abreva Cold Sore Treatment",
+        "Buy Abreva Cold Sore Treatment",
+        "Get Abreva Cold Sore Treatment",
+        "Purchase Abreva Cold Sore Treatment",
+        "Where can I get Abreva Cold Sore Treatment",
+        "How can I get Abreva Cold Sore Treatment",
+        "How can I buy Abreva Cold Sore Treatment",
+        "How can I purchase Abreva Cold Sore Treatment",
+        "Where can I buy Abreva Cold Sore Treatment",
+        "Where can I purchase Abreva Cold Sore Treatment"
+      ],
+      "responses": [
+        "Abreva Cold Sore Treatment is available at https://www.cvs.com/shop/abreva-cold-sore-treatment-prodid-1170192"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Nicorette Nicotine Gum",
+      "patterns": [
+        "Nicorette Nicotine Gum purchase",
+        "Where can I buy Nicorette Nicotine Gum",
+        "Where can I purchase Nicorette Nicotine Gum",
+        "Buy Nicorette Nicotine Gum",
+        "Get Nicorette Nicotine Gum",
+        "Purchase Nicorette Nicotine Gum",
+        "Where can I get Nicorette Nicotine Gum",
+        "How can I get Nicorette Nicotine Gum",
+        "How can I buy Nicorette Nicotine Gum",
+        "How can I purchase Nicorette Nicotine Gum",
+        "Where can I buy Nicorette Nicotine Gum",
+        "Where can I purchase Nicorette Nicotine Gum"
+      ],
+      "responses": [
+        "Nicorette Nicotine Gum is available at https://www.cvs.com/shop/nicorette-nicotine-gum-prodid-1170210"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Bayer Low Dose Aspirin",
+      "patterns": [
+        "Bayer Low Dose Aspirin purchase",
+        "Where can I buy Bayer Low Dose Aspirin",
+        "Where can I purchase Bayer Low Dose Aspirin",
+        "Buy Bayer Low Dose Aspirin",
+        "Get Bayer Low Dose Aspirin",
+        "Purchase Bayer Low Dose Aspirin",
+        "Where can I get Bayer Low Dose Aspirin",
+        "How can I get Bayer Low Dose Aspirin",
+        "How can I buy Bayer Low Dose Aspirin",
+        "How can I purchase Bayer Low Dose Aspirin",
+        "Where can I buy Bayer Low Dose Aspirin",
+        "Where can I purchase Bayer Low Dose Aspirin"
+      ],
+      "responses": [
+        "Bayer Low Dose Aspirin is available at https://www.cvs.com/shop/bayer-low-dose-aspirin-81-mg-enteric-coated-talblets-prodid-1012177"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Excedrin Migraine Relief",
+      "patterns": [
+        "Excedrin Migraine Relief purchase",
+        "Where can I buy Excedrin Migraine Relief",
+        "Where can I purchase Excedrin Migraine Relief",
+        "Buy Excedrin Migraine Relief",
+        "Get Excedrin Migraine Relief",
+        "Purchase Excedrin Migraine Relief",
+        "Where can I get Excedrin Migraine Relief",
+        "How can I get Excedrin Migraine Relief",
+        "How can I buy Excedrin Migraine Relief",
+        "How can I purchase Excedrin Migraine Relief",
+        "Where can I buy Excedrin Migraine Relief",
+        "Where can I purchase Excedrin Migraine Relief"
+      ],
+      "responses": [
+        "Excedrin Migraine Relief is available at https://www.cvs.com/shop/excedrin-migraine-pain-relief-caplets-prodid-1012028"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Delsym Cough Suppressant",
+      "patterns": [
+        "Delsym Cough Suppressant purchase",
+        "Where can I buy Delsym Cough Suppressant",
+        "Where can I purchase Delsym Cough Suppressant",
+        "Buy Delsym Cough Suppressant",
+        "Get Delsym Cough Suppressant",
+        "Purchase Delsym Cough Suppressant",
+        "Where can I get Delsym Cough Suppressant",
+        "How can I get Delsym Cough Suppressant",
+        "How can I buy Delsym Cough Suppressant",
+        "How can I purchase Delsym Cough Suppressant",
+        "Where can I buy Delsym Cough Suppressant",
+        "Where can I purchase Delsym Cough Suppressant"
+      ],
+      "responses": [
+        "Delsym Cough Suppressant is available at https://www.cvs.com/shop/delsym-cough-suppressant-liquid-prodid-1011707"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Dramamine Motion Sickness Relief",
+      "patterns": [
+        "Dramamine Motion Sickness Relief purchase",
+        "Where can I buy Dramamine Motion Sickness Relief",
+        "Where can I purchase Dramamine Motion Sickness Relief",
+        "Buy Dramamine Motion Sickness Relief",
+        "Get Dramamine Motion Sickness Relief",
+        "Purchase Dramamine Motion Sickness Relief",
+        "Where can I get Dramamine Motion Sickness Relief",
+        "How can I get Dramamine Motion Sickness Relief",
+        "How can I buy Dramamine Motion Sickness Relief",
+        "How can I purchase Dramamine Motion Sickness Relief",
+        "Where can I buy Dramamine Motion Sickness Relief",
+        "Where can I purchase Dramamine Motion Sickness Relief"
+      ],
+      "responses": [
+        "Dramamine Motion Sickness Relief is available at https://www.cvs.com/shop/dramamine-all-day-motion-sickness-relief-chewable-tablets-raspberry-cream-12-ct-prodid-153004"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Zyrtec Allergy Relief",
+      "patterns": [
+        "Zyrtec Allergy Relief purchase",
+        "Where can I buy Zyrtec Allergy Relief",
+        "Where can I purchase Zyrtec Allergy Relief",
+        "Buy Zyrtec Allergy Relief",
+        "Get Zyrtec Allergy Relief",
+        "Purchase Zyrtec Allergy Relief",
+        "Where can I get Zyrtec Allergy Relief",
+        "How can I get Zyrtec Allergy Relief",
+        "How can I buy Zyrtec Allergy Relief",
+        "How can I purchase Zyrtec Allergy Relief",
+        "Where can I buy Zyrtec Allergy Relief",
+        "Where can I purchase Zyrtec Allergy Relief"
+      ],
+      "responses": [
+        "Zyrtec Allergy Relief is available at https://www.cvs.com/shop/zyrtec-24hr-allergy-relief-tablets-10mg-cetirizine-hcl-prodid-1070930"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Cepacol Sore Throat Lozenges",
+      "patterns": [
+        "Cepacol Sore Throat Lozenges purchase",
+        "Where can I buy Cepacol Sore Throat Lozenges",
+        "Where can I purchase Cepacol Sore Throat Lozenges",
+        "Buy Cepacol Sore Throat Lozenges",
+        "Get Cepacol Sore Throat Lozenges",
+        "Purchase Cepacol Sore Throat Lozenges",
+        "Where can I get Cepacol Sore Throat Lozenges",
+        "How can I get Cepacol Sore Throat Lozenges",
+        "How can I buy Cepacol Sore Throat Lozenges",
+        "How can I purchase Cepacol Sore Throat Lozenges",
+        "Where can I buy Cepacol Sore Throat Lozenges",
+        "Where can I purchase Cepacol Sore Throat Lozenges"
+      ],
+      "responses": [
+        "Cepacol Sore Throat Lozenges is available at https://www.cvs.com/shop/cvs-health-fast-acting-sore-throat-lozenges-prodid-707032"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Orajel Toothache Gel",
+      "patterns": [
+        "Orajel Toothache Gel purchase",
+        "Where can I buy Orajel Toothache Gel",
+        "Where can I purchase Orajel Toothache Gel",
+        "Buy Orajel Toothache Gel",
+        "Get Orajel Toothache Gel",
+        "Purchase Orajel Toothache Gel",
+        "Where can I get Orajel Toothache Gel",
+        "How can I get Orajel Toothache Gel",
+        "How can I buy Orajel Toothache Gel",
+        "How can I purchase Orajel Toothache Gel",
+        "Where can I buy Orajel Toothache Gel",
+        "Where can I purchase Orajel Toothache Gel"
+      ],
+      "responses": [
+        "Orajel Toothache Gel is available at https://www.cvs.com/shop/orajel-3x-medicated-for-toothache-gum-gel-25-oz-prodid-3140016"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Visine Red Eye Comfort",
+      "patterns": [
+        "Visine Red Eye Comfort purchase",
+        "Where can I buy Visine Red Eye Comfort",
+        "Where can I purchase Visine Red Eye Comfort",
+        "Buy Visine Red Eye Comfort",
+        "Get Visine Red Eye Comfort",
+        "Purchase Visine Red Eye Comfort",
+        "Where can I get Visine Red Eye Comfort",
+        "How can I get Visine Red Eye Comfort",
+        "How can I buy Visine Red Eye Comfort",
+        "How can I purchase Visine Red Eye Comfort",
+        "Where can I buy Visine Red Eye Comfort",
+        "Where can I purchase Visine Red Eye Comfort"
+      ],
+      "responses": [
+        "Visine Red Eye Comfort is available at https://www.cvs.com/shop/visine-red-eye-hydrating-comfort-lubricating-eye-drops-0-28-fl-oz-prodid-845819"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Refresh Tears Lubricant Eye Drops",
+      "patterns": [
+        "Refresh Tears Lubricant Eye Drops purchase",
+        "Where can I buy Refresh Tears Lubricant Eye Drops",
+        "Where can I purchase Refresh Tears Lubricant Eye Drops",
+        "Buy Refresh Tears Lubricant Eye Drops",
+        "Get Refresh Tears Lubricant Eye Drops",
+        "Purchase Refresh Tears Lubricant Eye Drops",
+        "Where can I get Refresh Tears Lubricant Eye Drops",
+        "How can I get Refresh Tears Lubricant Eye Drops",
+        "How can I buy Refresh Tears Lubricant Eye Drops",
+        "How can I purchase Refresh Tears Lubricant Eye Drops",
+        "Where can I buy Refresh Tears Lubricant Eye Drops",
+        "Where can I purchase Refresh Tears Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Refresh Tears Lubricant Eye Drops is available at https://www.cvs.com/shop/refresh-tears-lubricant-eye-drops-prodid-1010858"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Emergen-C Vitamin C Supplement",
+      "patterns": [
+        "Emergen-C Vitamin C Supplement purchase",
+        "Where can I buy Emergen-C Vitamin C Supplement",
+        "Where can I purchase Emergen-C Vitamin C Supplement",
+        "Buy Emergen-C Vitamin C Supplement",
+        "Get Emergen-C Vitamin C Supplement",
+        "Purchase Emergen-C Vitamin C Supplement",
+        "Where can I get Emergen-C Vitamin C Supplement",
+        "How can I get Emergen-C Vitamin C Supplement",
+        "How can I buy Emergen-C Vitamin C Supplement",
+        "How can I purchase Emergen-C Vitamin C Supplement",
+        "Where can I buy Emergen-C Vitamin C Supplement",
+        "Where can I purchase Emergen-C Vitamin C Supplement"
+      ],
+      "responses": [
+        "Emergen-C Vitamin C Supplement is available at https://www.cvs.com/shop/emergen-c-1-000mg-vitamin-c-supplement-super-orange-10-ct-prodid-896727"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Airborne Immune Support Supplement",
+      "patterns": [
+        "Airborne Immune Support Supplement purchase",
+        "Where can I buy Airborne Immune Support Supplement",
+        "Where can I purchase Airborne Immune Support Supplement",
+        "Buy Airborne Immune Support Supplement",
+        "Get Airborne Immune Support Supplement",
+        "Purchase Airborne Immune Support Supplement",
+        "Where can I get Airborne Immune Support Supplement",
+        "How can I get Airborne Immune Support Supplement",
+        "How can I buy Airborne Immune Support Supplement",
+        "How can I purchase Airborne Immune Support Supplement",
+        "Where can I buy Airborne Immune Support Supplement",
+        "Where can I purchase Airborne Immune Support Supplement"
+      ],
+      "responses": [
+        "Airborne Immune Support Supplement is available at https://www.cvs.com/shop/airborne-immune-support-supplement-vitamins-c-d-zinc-elderberry-gummies-36-ct-prodid-611654"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Melatonin Sleep Aid",
+      "patterns": [
+        "Melatonin Sleep Aid purchase",
+        "Where can I buy Melatonin Sleep Aid",
+        "Where can I purchase Melatonin Sleep Aid",
+        "Buy Melatonin Sleep Aid",
+        "Get Melatonin Sleep Aid",
+        "Purchase Melatonin Sleep Aid",
+        "Where can I get Melatonin Sleep Aid",
+        "How can I get Melatonin Sleep Aid",
+        "How can I buy Melatonin Sleep Aid",
+        "How can I purchase Melatonin Sleep Aid",
+        "Where can I buy Melatonin Sleep Aid",
+        "Where can I purchase Melatonin Sleep Aid"
+      ],
+      "responses": [
+        "Melatonin Sleep Aid is available at https://www.cvs.com/shop/cvs-health-melatonin-sleep-aid-12-mg-fast-dissolve-tablets-berry-90ct-prodid-1090330"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to ZzzQuil Nighttime Sleep Aid",
+      "patterns": [
+        "ZzzQuil Nighttime Sleep Aid purchase",
+        "Where can I buy ZzzQuil Nighttime Sleep Aid",
+        "Where can I purchase ZzzQuil Nighttime Sleep Aid",
+        "Buy ZzzQuil Nighttime Sleep Aid",
+        "Get ZzzQuil Nighttime Sleep Aid",
+        "Purchase ZzzQuil Nighttime Sleep Aid",
+        "Where can I get ZzzQuil Nighttime Sleep Aid",
+        "How can I get ZzzQuil Nighttime Sleep Aid",
+        "How can I buy ZzzQuil Nighttime Sleep Aid",
+        "How can I purchase ZzzQuil Nighttime Sleep Aid",
+        "Where can I buy ZzzQuil Nighttime Sleep Aid",
+        "Where can I purchase ZzzQuil Nighttime Sleep Aid"
+      ],
+      "responses": [
+        "ZzzQuil Nighttime Sleep Aid is available at https://www.cvs.com/shop/zzzquil-nighttime-sleep-aid-liquid-warming-berry-prodid-1012015"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Advil PM Pain Reliever and Sleep Aid",
+      "patterns": [
+        "Advil PM Pain Reliever and Sleep Aid purchase",
+        "Where can I buy Advil PM Pain Reliever and Sleep Aid",
+        "Where can I purchase Advil PM Pain Reliever and Sleep Aid",
+        "Buy Advil PM Pain Reliever and Sleep Aid",
+        "Get Advil PM Pain Reliever and Sleep Aid",
+        "Purchase Advil PM Pain Reliever and Sleep Aid",
+        "Where can I get Advil PM Pain Reliever and Sleep Aid",
+        "How can I get Advil PM Pain Reliever and Sleep Aid",
+        "How can I buy Advil PM Pain Reliever and Sleep Aid",
+        "How can I purchase Advil PM Pain Reliever and Sleep Aid",
+        "Where can I buy Advil PM Pain Reliever and Sleep Aid",
+        "Where can I purchase Advil PM Pain Reliever and Sleep Aid"
+      ],
+      "responses": [
+        "Advil PM Pain Reliever and Sleep Aid is available at https://www.cvs.com/shop/advil-pm-pain-reliever-nighttime-sleep-aid-coated-caplets-prodid-1040211"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Theraflu Multi-Symptom Severe Cold Relief",
+      "patterns": [
+        "Theraflu Multi-Symptom Severe Cold Relief purchase",
+        "Where can I buy Theraflu Multi-Symptom Severe Cold Relief",
+        "Where can I purchase Theraflu Multi-Symptom Severe Cold Relief",
+        "Buy Theraflu Multi-Symptom Severe Cold Relief",
+        "Get Theraflu Multi-Symptom Severe Cold Relief",
+        "Purchase Theraflu Multi-Symptom Severe Cold Relief",
+        "Where can I get Theraflu Multi-Symptom Severe Cold Relief",
+        "How can I get Theraflu Multi-Symptom Severe Cold Relief",
+        "How can I buy Theraflu Multi-Symptom Severe Cold Relief",
+        "How can I purchase Theraflu Multi-Symptom Severe Cold Relief",
+        "Where can I buy Theraflu Multi-Symptom Severe Cold Relief",
+        "Where can I purchase Theraflu Multi-Symptom Severe Cold Relief"
+      ],
+      "responses": [
+        "Theraflu Multi-Symptom Severe Cold Relief is available at https://www.cvs.com/shop/theraflu-daytime-nighttime-severe-multi-symptom-cold-cough-relief-liquid-berry-2-x-8-3-oz-prodid-557435"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Sudafed PE Sinus Pressure + Pain",
+      "patterns": [
+        "Sudafed PE Sinus Pressure + Pain purchase",
+        "Where can I buy Sudafed PE Sinus Pressure + Pain",
+        "Where can I purchase Sudafed PE Sinus Pressure + Pain",
+        "Buy Sudafed PE Sinus Pressure + Pain",
+        "Get Sudafed PE Sinus Pressure + Pain",
+        "Purchase Sudafed PE Sinus Pressure + Pain",
+        "Where can I get Sudafed PE Sinus Pressure + Pain",
+        "How can I get Sudafed PE Sinus Pressure + Pain",
+        "How can I buy Sudafed PE Sinus Pressure + Pain",
+        "How can I purchase Sudafed PE Sinus Pressure + Pain",
+        "Where can I buy Sudafed PE Sinus Pressure + Pain",
+        "Where can I purchase Sudafed PE Sinus Pressure + Pain"
+      ],
+      "responses": [
+        "Sudafed PE Sinus Pressure + Pain is available at https://www.cvs.com/shop/sudafed-pe-max-strength-non-drowsy-sinus-pressure-pain-caplets-24-ct-prodid-1011686"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Alka-Seltzer Original Effervescent Tablets",
+      "patterns": [
+        "Alka-Seltzer Original Effervescent Tablets purchase",
+        "Where can I buy Alka-Seltzer Original Effervescent Tablets",
+        "Where can I purchase Alka-Seltzer Original Effervescent Tablets",
+        "Buy Alka-Seltzer Original Effervescent Tablets",
+        "Get Alka-Seltzer Original Effervescent Tablets",
+        "Purchase Alka-Seltzer Original Effervescent Tablets",
+        "Where can I get Alka-Seltzer Original Effervescent Tablets",
+        "How can I get Alka-Seltzer Original Effervescent Tablets",
+        "How can I buy Alka-Seltzer Original Effervescent Tablets",
+        "How can I purchase Alka-Seltzer Original Effervescent Tablets",
+        "Where can I buy Alka-Seltzer Original Effervescent Tablets",
+        "Where can I purchase Alka-Seltzer Original Effervescent Tablets"
+      ],
+      "responses": [
+        "Alka-Seltzer Original Effervescent Tablets is available at https://www.cvs.com/shop/alka-seltzer-original-effervescent-tablets-prodid-1011826"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Prilosec OTC",
+      "patterns": [
+        "Prilosec OTC purchase",
+        "Where can I buy Prilosec OTC",
+        "Where can I purchase Prilosec OTC",
+        "Buy Prilosec OTC",
+        "Get Prilosec OTC",
+        "Purchase Prilosec OTC",
+        "Where can I get Prilosec OTC",
+        "How can I get Prilosec OTC",
+        "How can I buy Prilosec OTC",
+        "How can I purchase Prilosec OTC",
+        "Where can I buy Prilosec OTC",
+        "Where can I purchase Prilosec OTC"
+      ],
+      "responses": [
+        "Prilosec OTC is available at https://www.cvs.com/shop/prilosec-otc-omeprazole-20mg-delayed-release-acid-reducer-for-frequent-heartburn-tablets-prodid-1011851"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Polysporin First Aid Antibiotic Ointment",
+      "patterns": [
+        "Polysporin First Aid Antibiotic Ointment purchase",
+        "Where can I buy Polysporin First Aid Antibiotic Ointment",
+        "Where can I purchase Polysporin First Aid Antibiotic Ointment",
+        "Buy Polysporin First Aid Antibiotic Ointment",
+        "Get Polysporin First Aid Antibiotic Ointment",
+        "Purchase Polysporin First Aid Antibiotic Ointment",
+        "Where can I get Polysporin First Aid Antibiotic Ointment",
+        "How can I get Polysporin First Aid Antibiotic Ointment",
+        "How can I buy Polysporin First Aid Antibiotic Ointment",
+        "How can I purchase Polysporin First Aid Antibiotic Ointment",
+        "Where can I buy Polysporin First Aid Antibiotic Ointment",
+        "Where can I purchase Polysporin First Aid Antibiotic Ointment"
+      ],
+      "responses": [
+        "Polysporin First Aid Antibiotic Ointment is available at https://www.cvs.com/shop/polysporin-first-aid-topical-antibiotic-ointment-travel-size-1-oz-prodid-927251"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Systane Lubricant Eye Drops",
+      "patterns": [
+        "Systane Lubricant Eye Drops purchase",
+        "Where can I buy Systane Lubricant Eye Drops",
+        "Where can I purchase Systane Lubricant Eye Drops",
+        "Buy Systane Lubricant Eye Drops",
+        "Get Systane Lubricant Eye Drops",
+        "Purchase Systane Lubricant Eye Drops",
+        "Where can I get Systane Lubricant Eye Drops",
+        "How can I get Systane Lubricant Eye Drops",
+        "How can I buy Systane Lubricant Eye Drops",
+        "How can I purchase Systane Lubricant Eye Drops",
+        "Where can I buy Systane Lubricant Eye Drops",
+        "Where can I purchase Systane Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Systane Lubricant Eye Drops is available at https://www.cvs.com/shop/systane-lubricant-eye-drops-30ct-prodid-1060124"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Link to Nicoderm CQ Nicotine Patches",
+      "patterns": [
+        "Nicoderm CQ Nicotine Patches purchase",
+        "Where can I buy Nicoderm CQ Nicotine Patches",
+        "Where can I purchase Nicoderm CQ Nicotine Patches",
+        "Buy Nicoderm CQ Nicotine Patches",
+        "Get Nicoderm CQ Nicotine Patches",
+        "Purchase Nicoderm CQ Nicotine Patches",
+        "Where can I get Nicoderm CQ Nicotine Patches",
+        "How can I get Nicoderm CQ Nicotine Patches",
+        "How can I buy Nicoderm CQ Nicotine Patches",
+        "How can I purchase Nicoderm CQ Nicotine Patches",
+        "Where can I buy Nicoderm CQ Nicotine Patches",
+        "Where can I purchase Nicoderm CQ Nicotine Patches"
+      ],
+      "responses": [
+        "Nicoderm CQ Nicotine Patches is available at https://www.cvs.com/shop/nicoderm-cq-nicotine-patches-to-stop-smoking-step-1-14-count-prodid-1170305"
+      ],
+      "context_set": ""
     }
   ]
 }

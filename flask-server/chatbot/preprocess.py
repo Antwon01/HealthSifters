@@ -228,6 +228,59 @@ def add_review_to_intents(medicine_collection, intents_path):
     
         print("")
 
+# add links of each medicine to intents.json
+def add_link_to_intents(medicine_collection, intents_path):
+    # iterate over medicines
+    for medicine_entry in medicine_collection.find():
+        # get medicine name
+        name_medicine = medicine_entry['Medicine Name']
+
+        # get medicine pharmacy link
+        link_medicine = medicine_entry['Pharmacy Purchase Link']
+
+        # generate response(s)
+        response1 = f"{name_medicine} is available at {link_medicine}"
+        responses = [response1]
+
+        # generate patterns
+        pattern1 = f"{name_medicine} purchase"
+        pattern2 = f"Where can I buy {name_medicine}"
+        pattern3 = f"Where can I purchase {name_medicine}"
+        pattern4 = f"Buy {name_medicine}"
+        pattern5 = f"Get {name_medicine}"
+        pattern6 = f"Purchase {name_medicine}"
+        pattern7 = f"Where can I get {name_medicine}"
+        pattern8 = f"How can I get {name_medicine}"
+        pattern9 = f"How can I buy {name_medicine}"
+        pattern10 = f"How can I purchase {name_medicine}"
+        pattern11 = f"Where can I buy {name_medicine}"
+        pattern12 = f"Where can I purchase {name_medicine}"
+        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8, pattern9, pattern10, pattern11, pattern12]
+
+        # make json entry 
+        new_uses_intent = {
+            "tag": f"Link to {name_medicine}",
+            "patterns":  patterns,
+            "responses": responses,
+            "context_set": ""
+        }
+
+        # save to intents.json
+        with open(intents_path, 'r+') as file:
+            # load data in intents.json
+            data = json.load(file)
+
+            # add new_uses_intent into data from intents.json
+            data["intents"].append(new_uses_intent)
+
+            # move to beginning of intents.json file 
+            file.seek(0)
+    
+            # write data back to intents.json
+            json.dump(data, file, indent=2)
+    
+        print("")
+
 
 # add all intents to intents.json
 def insert_intents(medicine_collection, intents_path):
@@ -246,6 +299,10 @@ def insert_intents(medicine_collection, intents_path):
     # insert reviews to intents 
     add_review_to_intents(medicine_collection, intents_path)
     print("added reviews to intents")
+
+    # insert pharmacy links to intents
+    add_link_to_intents(medicine_collection, intents_path)
+    print("added pharmacy links to intents")
 
 # main 
 
