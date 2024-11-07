@@ -1,292 +1,2879 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day",
-          "Hey",
-          "Hey there"
-        ],
-        "responses": [
-          "Hello!",
-          "Good to see you again!",
-          "Hi there, how can I help?",
-          "Hey! What can I do for you today?"
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "Bye",
-          "See you later",
-          "Goodbye",
-          "See ya",
-          "Farewell"
-        ],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Goodbye!",
-          "Have a great day!",
-          "Bye! Come back again soon."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "thanks",
-        "patterns": [
-          "Thanks",
-          "Thank you",
-          "That's helpful",
-          "Thanks for the help",
-          "Thank you so much"
-        ],
-        "responses": [
-          "You're welcome!",
-          "Anytime!",
-          "My pleasure",
-          "Glad I could help."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "noanswer",
-        "patterns": [],
-        "responses": [
-          "Sorry, can't understand you",
-          "Please give me more info",
-          "Not sure I understand",
-          "Could you rephrase that?"
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "name",
-        "patterns": [
-          "What is your name?",
-          "What should I call you?",
-          "Who are you?",
-          "Tell me your name"
-        ],
-        "responses": [
-          "You can call me Neural.",
-          "I'm Neural!",
-          "Just call me Neural.",
-          "Neural at your service."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "weather",
-        "patterns": [
-          "What's the weather like today?",
-          "Tell me the weather",
-          "Is it going to rain today?",
-          "How's the weather?",
-          "Weather forecast"
-        ],
-        "responses": [
-          "I'm not connected to the internet, so I can't provide real-time weather updates.",
-          "I can't check the weather, but I hope it's nice where you are!",
-          "Sorry, I don't have access to current weather data."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "how_are_you",
-        "patterns": [
-          "How are you?",
-          "How's it going?",
-          "How are you doing?",
-          "How have you been?"
-        ],
-        "responses": [
-          "I'm just a bunch of code, but I'm here to help you!",
-          "I'm functioning as expected. How can I assist you?",
-          "Doing great! How about you?"
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "daytime",
-        "patterns": [
-          "What day is it today?",
-          "What's today?",
-          "Tell me the date",
-          "What's the day today?"
-        ],
-        "responses": [
-          "I'm sorry, I don't have access to the current date.",
-          "I can't check the date, but I hope you're having a good day!",
-          "I don't have the ability to tell the date right now."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "favorite_sport",
-        "patterns": [
-          "What's your favorite sport?",
-          "Do you like sports?",
-          "Which sport do you prefer?",
-          "Favorite sport?"
-        ],
-        "responses": [
-          "I don't have preferences, but I can talk about any sport you're interested in!",
-          "I enjoy discussing all kinds of sports. What's your favorite?",
-          "I don't play sports, but I can provide information about them."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "sports_news",
-        "patterns": [
-          "What's the latest sports news?",
-          "Any sports updates?",
-          "Tell me about recent sports events",
-          "Latest sports news"
-        ],
-        "responses": [
-          "I don't have access to live data, so I can't provide current sports news.",
-          "Sorry, I can't fetch the latest sports updates.",
-          "I don't have real-time information, but I can talk about sports in general."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "football",
-        "patterns": [
-          "Tell me about football",
-          "What's happening in football?",
-          "Football news",
-          "Tell me about the latest football game"
-        ],
-        "responses": [
-          "Football is a popular sport worldwide. What would you like to know specifically?",
-          "I can discuss football rules, teams, and history. What interests you?",
-          "I don't have the latest updates, but I can provide general football information."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "basketball",
-        "patterns": [
-          "Tell me about basketball",
-          "What's happening in basketball?",
-          "Basketball news",
-          "Tell me about the latest basketball game"
-        ],
-        "responses": [
-          "Basketball is a fast-paced sport. What would you like to know about it?",
-          "I can talk about basketball rules, teams, and history. What interests you?",
-          "I don't have the latest updates, but I can provide general basketball information."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "player_info",
-        "patterns": [
-          "Tell me about LeBron James",
-          "Who is Lionel Messi?",
-          "Info on Tom Brady",
-          "Tell me about Serena Williams"
-        ],
-        "responses": [
-          "I can provide general information about famous athletes. What would you like to know?",
-          "I'm not connected to the internet, so I can't fetch real-time data, but I can share what I know.",
-          "I can tell you about their achievements and careers up to my knowledge cutoff."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "joke",
-        "patterns": [
-          "Tell me a joke",
-          "Make me laugh",
-          "I need a joke",
-          "Got any jokes?"
-        ],
-        "responses": [
-          "Why did the computer go to the doctor? Because it had a virus!",
-          "Why don't scientists trust atoms? Because they make up everything!",
-          "I'm reading a book about anti-gravity. It's impossible to put down!"
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "compliment",
-        "patterns": [
-          "You are smart",
-          "You're helpful",
-          "I like you",
-          "You're awesome"
-        ],
-        "responses": [
-          "Thank you! I'm here to help.",
-          "I appreciate that!",
-          "Thanks! Let me know if you need anything else."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "insult",
-        "patterns": [
-          "You're stupid",
-          "You are useless",
-          "I hate you",
-          "You're bad"
-        ],
-        "responses": [
-          "I'm sorry you feel that way.",
-          "I'm here to help if you need anything.",
-          "Let's keep things positive! How can I assist you?"
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "hours",
-        "patterns": [
-          "What are your hours?",
-          "When are you open?",
-          "What time do you close?"
-        ],
-        "responses": [
-          "I'm available 24/7 to assist you!",
-          "I'm always here to help, anytime you need.",
-          "I don't have working hours. Feel free to reach out anytime."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "help",
-        "patterns": [
-          "Help me",
-          "I need assistance",
-          "Can you help me?",
-          "I need help"
-        ],
-        "responses": [
-          "Sure, I'm here to help! What do you need assistance with?",
-          "Absolutely, how can I assist you today?",
-          "Of course! Let me know how I can help."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "tylenol-overview",
-        "patterns": [
-          "What is tylenol",
-          "What is tylenol used for",
-          "what can i use tylenol for",
-          "tylenol"
-        ],
-        "responses": [
-          "Tylenol is used to help with fevers"
-        ],
-        "context_set": ""
-      }
-    ]
-  }  
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hey",
+        "Hey there"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?",
+        "Hey! What can I do for you today?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "See ya",
+        "Farewell"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Goodbye!",
+        "Have a great day!",
+        "Bye! Come back again soon."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks for the help",
+        "Thank you so much"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Anytime!",
+        "My pleasure",
+        "Glad I could help."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand",
+        "Could you rephrase that?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?",
+        "What should I call you?",
+        "Who are you?",
+        "Tell me your name"
+      ],
+      "responses": [
+        "You can call me Neural.",
+        "I'm Neural!",
+        "Just call me Neural.",
+        "Neural at your service."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like today?",
+        "Tell me the weather",
+        "Is it going to rain today?",
+        "How's the weather?",
+        "Weather forecast"
+      ],
+      "responses": [
+        "I'm not connected to the internet, so I can't provide real-time weather updates.",
+        "I can't check the weather, but I hope it's nice where you are!",
+        "Sorry, I don't have access to current weather data."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you?",
+        "How's it going?",
+        "How are you doing?",
+        "How have you been?"
+      ],
+      "responses": [
+        "I'm just a bunch of code, but I'm here to help you!",
+        "I'm functioning as expected. How can I assist you?",
+        "Doing great! How about you?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "daytime",
+      "patterns": [
+        "What day is it today?",
+        "What's today?",
+        "Tell me the date",
+        "What's the day today?"
+      ],
+      "responses": [
+        "I'm sorry, I don't have access to the current date.",
+        "I can't check the date, but I hope you're having a good day!",
+        "I don't have the ability to tell the date right now."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "favorite_sport",
+      "patterns": [
+        "What's your favorite sport?",
+        "Do you like sports?",
+        "Which sport do you prefer?",
+        "Favorite sport?"
+      ],
+      "responses": [
+        "I don't have preferences, but I can talk about any sport you're interested in!",
+        "I enjoy discussing all kinds of sports. What's your favorite?",
+        "I don't play sports, but I can provide information about them."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sports_news",
+      "patterns": [
+        "What's the latest sports news?",
+        "Any sports updates?",
+        "Tell me about recent sports events",
+        "Latest sports news"
+      ],
+      "responses": [
+        "I don't have access to live data, so I can't provide current sports news.",
+        "Sorry, I can't fetch the latest sports updates.",
+        "I don't have real-time information, but I can talk about sports in general."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "football",
+      "patterns": [
+        "Tell me about football",
+        "What's happening in football?",
+        "Football news",
+        "Tell me about the latest football game"
+      ],
+      "responses": [
+        "Football is a popular sport worldwide. What would you like to know specifically?",
+        "I can discuss football rules, teams, and history. What interests you?",
+        "I don't have the latest updates, but I can provide general football information."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "basketball",
+      "patterns": [
+        "Tell me about basketball",
+        "What's happening in basketball?",
+        "Basketball news",
+        "Tell me about the latest basketball game"
+      ],
+      "responses": [
+        "Basketball is a fast-paced sport. What would you like to know about it?",
+        "I can talk about basketball rules, teams, and history. What interests you?",
+        "I don't have the latest updates, but I can provide general basketball information."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "player_info",
+      "patterns": [
+        "Tell me about LeBron James",
+        "Who is Lionel Messi?",
+        "Info on Tom Brady",
+        "Tell me about Serena Williams"
+      ],
+      "responses": [
+        "I can provide general information about famous athletes. What would you like to know?",
+        "I'm not connected to the internet, so I can't fetch real-time data, but I can share what I know.",
+        "I can tell you about their achievements and careers up to my knowledge cutoff."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Make me laugh",
+        "I need a joke",
+        "Got any jokes?"
+      ],
+      "responses": [
+        "Why did the computer go to the doctor? Because it had a virus!",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I'm reading a book about anti-gravity. It's impossible to put down!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "You are smart",
+        "You're helpful",
+        "I like you",
+        "You're awesome"
+      ],
+      "responses": [
+        "Thank you! I'm here to help.",
+        "I appreciate that!",
+        "Thanks! Let me know if you need anything else."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+        "You're stupid",
+        "You are useless",
+        "I hate you",
+        "You're bad"
+      ],
+      "responses": [
+        "I'm sorry you feel that way.",
+        "I'm here to help if you need anything.",
+        "Let's keep things positive! How can I assist you?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your hours?",
+        "When are you open?",
+        "What time do you close?"
+      ],
+      "responses": [
+        "I'm available 24/7 to assist you!",
+        "I'm always here to help, anytime you need.",
+        "I don't have working hours. Feel free to reach out anytime."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help me",
+        "I need assistance",
+        "Can you help me?",
+        "I need help"
+      ],
+      "responses": [
+        "Sure, I'm here to help! What do you need assistance with?",
+        "Absolutely, how can I assist you today?",
+        "Of course! Let me know how I can help."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Tylenol Extra Strength",
+      "patterns": [
+        "What is Tylenol Extra Strength used for",
+        "What are uses of Tylenol Extra Strength",
+        "What can  I use Tylenol Extra Strength for",
+        "What is Tylenol Extra Strength",
+        "Tylenol Extra Strength",
+        "What conditions does Tylenol Extra Strength treat"
+      ],
+      "responses": [
+        "Tylenol Extra Strength relieves pain and reduces fever"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Advil Ibuprofen Tablets",
+      "patterns": [
+        "What is Advil Ibuprofen Tablets used for",
+        "What are uses of Advil Ibuprofen Tablets",
+        "What can  I use Advil Ibuprofen Tablets for",
+        "What is Advil Ibuprofen Tablets",
+        "Advil Ibuprofen Tablets",
+        "What conditions does Advil Ibuprofen Tablets treat"
+      ],
+      "responses": [
+        "Advil Ibuprofen Tablets relieves pain and reduces inflammation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Benadryl Allergy Relief",
+      "patterns": [
+        "What is Benadryl Allergy Relief used for",
+        "What are uses of Benadryl Allergy Relief",
+        "What can  I use Benadryl Allergy Relief for",
+        "What is Benadryl Allergy Relief",
+        "Benadryl Allergy Relief",
+        "What conditions does Benadryl Allergy Relief treat"
+      ],
+      "responses": [
+        "Benadryl Allergy Relief relieves allergy symptoms"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Claritin Non-Drowsy Tablets",
+      "patterns": [
+        "What is Claritin Non-Drowsy Tablets used for",
+        "What are uses of Claritin Non-Drowsy Tablets",
+        "What can  I use Claritin Non-Drowsy Tablets for",
+        "What is Claritin Non-Drowsy Tablets",
+        "Claritin Non-Drowsy Tablets",
+        "What conditions does Claritin Non-Drowsy Tablets treat"
+      ],
+      "responses": [
+        "Claritin Non-Drowsy Tablets relieves allergy symptoms"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Pepto-Bismol Liquid",
+      "patterns": [
+        "What is Pepto-Bismol Liquid used for",
+        "What are uses of Pepto-Bismol Liquid",
+        "What can  I use Pepto-Bismol Liquid for",
+        "What is Pepto-Bismol Liquid",
+        "Pepto-Bismol Liquid",
+        "What conditions does Pepto-Bismol Liquid treat"
+      ],
+      "responses": [
+        "Pepto-Bismol Liquid relieves upset stomach and diarrhea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Robitussin Cough Syrup",
+      "patterns": [
+        "What is Robitussin Cough Syrup used for",
+        "What are uses of Robitussin Cough Syrup",
+        "What can  I use Robitussin Cough Syrup for",
+        "What is Robitussin Cough Syrup",
+        "Robitussin Cough Syrup",
+        "What conditions does Robitussin Cough Syrup treat"
+      ],
+      "responses": [
+        "Robitussin Cough Syrup relieves cough"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Imodium A-D Anti-Diarrheal",
+      "patterns": [
+        "What is Imodium A-D Anti-Diarrheal used for",
+        "What are uses of Imodium A-D Anti-Diarrheal",
+        "What can  I use Imodium A-D Anti-Diarrheal for",
+        "What is Imodium A-D Anti-Diarrheal",
+        "Imodium A-D Anti-Diarrheal",
+        "What conditions does Imodium A-D Anti-Diarrheal treat"
+      ],
+      "responses": [
+        "Imodium A-D Anti-Diarrheal relieves diarrhea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Aleve Pain Reliever",
+      "patterns": [
+        "What is Aleve Pain Reliever used for",
+        "What are uses of Aleve Pain Reliever",
+        "What can  I use Aleve Pain Reliever for",
+        "What is Aleve Pain Reliever",
+        "Aleve Pain Reliever",
+        "What conditions does Aleve Pain Reliever treat"
+      ],
+      "responses": [
+        "Aleve Pain Reliever relieves pain and reduces inflammation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Flonase Nasal Spray",
+      "patterns": [
+        "What is Flonase Nasal Spray used for",
+        "What are uses of Flonase Nasal Spray",
+        "What can  I use Flonase Nasal Spray for",
+        "What is Flonase Nasal Spray",
+        "Flonase Nasal Spray",
+        "What conditions does Flonase Nasal Spray treat"
+      ],
+      "responses": [
+        "Flonase Nasal Spray relieves nasal congestion"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Afrin Nasal Spray",
+      "patterns": [
+        "What is Afrin Nasal Spray used for",
+        "What are uses of Afrin Nasal Spray",
+        "What can  I use Afrin Nasal Spray for",
+        "What is Afrin Nasal Spray",
+        "Afrin Nasal Spray",
+        "What conditions does Afrin Nasal Spray treat"
+      ],
+      "responses": [
+        "Afrin Nasal Spray relieves nasal congestion"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Miralax Laxative Powder",
+      "patterns": [
+        "What is Miralax Laxative Powder used for",
+        "What are uses of Miralax Laxative Powder",
+        "What can  I use Miralax Laxative Powder for",
+        "What is Miralax Laxative Powder",
+        "Miralax Laxative Powder",
+        "What conditions does Miralax Laxative Powder treat"
+      ],
+      "responses": [
+        "Miralax Laxative Powder relieves constipation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Tums Antacid Tablets",
+      "patterns": [
+        "What is Tums Antacid Tablets used for",
+        "What are uses of Tums Antacid Tablets",
+        "What can  I use Tums Antacid Tablets for",
+        "What is Tums Antacid Tablets",
+        "Tums Antacid Tablets",
+        "What conditions does Tums Antacid Tablets treat"
+      ],
+      "responses": [
+        "Tums Antacid Tablets relieves heartburn and acid indigestion"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Preparation H Hemorrhoidal Ointment",
+      "patterns": [
+        "What is Preparation H Hemorrhoidal Ointment used for",
+        "What are uses of Preparation H Hemorrhoidal Ointment",
+        "What can  I use Preparation H Hemorrhoidal Ointment for",
+        "What is Preparation H Hemorrhoidal Ointment",
+        "Preparation H Hemorrhoidal Ointment",
+        "What conditions does Preparation H Hemorrhoidal Ointment treat"
+      ],
+      "responses": [
+        "Preparation H Hemorrhoidal Ointment relieves hemorrhoid symptoms"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Neosporin Antibiotic Ointment",
+      "patterns": [
+        "What is Neosporin Antibiotic Ointment used for",
+        "What are uses of Neosporin Antibiotic Ointment",
+        "What can  I use Neosporin Antibiotic Ointment for",
+        "What is Neosporin Antibiotic Ointment",
+        "Neosporin Antibiotic Ointment",
+        "What conditions does Neosporin Antibiotic Ointment treat"
+      ],
+      "responses": [
+        "Neosporin Antibiotic Ointment prevents infection in minor cuts and burns"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Cortizone-10 Anti-Itch Cream",
+      "patterns": [
+        "What is Cortizone-10 Anti-Itch Cream used for",
+        "What are uses of Cortizone-10 Anti-Itch Cream",
+        "What can  I use Cortizone-10 Anti-Itch Cream for",
+        "What is Cortizone-10 Anti-Itch Cream",
+        "Cortizone-10 Anti-Itch Cream",
+        "What conditions does Cortizone-10 Anti-Itch Cream treat"
+      ],
+      "responses": [
+        "Cortizone-10 Anti-Itch Cream relieves itching and skin irritation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Lotrimin AF Antifungal Cream",
+      "patterns": [
+        "What is Lotrimin AF Antifungal Cream used for",
+        "What are uses of Lotrimin AF Antifungal Cream",
+        "What can  I use Lotrimin AF Antifungal Cream for",
+        "What is Lotrimin AF Antifungal Cream",
+        "Lotrimin AF Antifungal Cream",
+        "What conditions does Lotrimin AF Antifungal Cream treat"
+      ],
+      "responses": [
+        "Lotrimin AF Antifungal Cream treats athlete's foot and jock itch"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Monistat 1-Day Treatment",
+      "patterns": [
+        "What is Monistat 1-Day Treatment used for",
+        "What are uses of Monistat 1-Day Treatment",
+        "What can  I use Monistat 1-Day Treatment for",
+        "What is Monistat 1-Day Treatment",
+        "Monistat 1-Day Treatment",
+        "What conditions does Monistat 1-Day Treatment treat"
+      ],
+      "responses": [
+        "Monistat 1-Day Treatment treats vaginal yeast infections"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Abreva Cold Sore Treatment",
+      "patterns": [
+        "What is Abreva Cold Sore Treatment used for",
+        "What are uses of Abreva Cold Sore Treatment",
+        "What can  I use Abreva Cold Sore Treatment for",
+        "What is Abreva Cold Sore Treatment",
+        "Abreva Cold Sore Treatment",
+        "What conditions does Abreva Cold Sore Treatment treat"
+      ],
+      "responses": [
+        "Abreva Cold Sore Treatment treats cold sores"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Nicorette Nicotine Gum",
+      "patterns": [
+        "What is Nicorette Nicotine Gum used for",
+        "What are uses of Nicorette Nicotine Gum",
+        "What can  I use Nicorette Nicotine Gum for",
+        "What is Nicorette Nicotine Gum",
+        "Nicorette Nicotine Gum",
+        "What conditions does Nicorette Nicotine Gum treat"
+      ],
+      "responses": [
+        "Nicorette Nicotine Gum aids in smoking cessation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Bayer Low Dose Aspirin",
+      "patterns": [
+        "What is Bayer Low Dose Aspirin used for",
+        "What are uses of Bayer Low Dose Aspirin",
+        "What can  I use Bayer Low Dose Aspirin for",
+        "What is Bayer Low Dose Aspirin",
+        "Bayer Low Dose Aspirin",
+        "What conditions does Bayer Low Dose Aspirin treat"
+      ],
+      "responses": [
+        "Bayer Low Dose Aspirin reduces risk of heart attack and stroke"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Excedrin Migraine Relief",
+      "patterns": [
+        "What is Excedrin Migraine Relief used for",
+        "What are uses of Excedrin Migraine Relief",
+        "What can  I use Excedrin Migraine Relief for",
+        "What is Excedrin Migraine Relief",
+        "Excedrin Migraine Relief",
+        "What conditions does Excedrin Migraine Relief treat"
+      ],
+      "responses": [
+        "Excedrin Migraine Relief relieves migraine pain"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Delsym Cough Suppressant",
+      "patterns": [
+        "What is Delsym Cough Suppressant used for",
+        "What are uses of Delsym Cough Suppressant",
+        "What can  I use Delsym Cough Suppressant for",
+        "What is Delsym Cough Suppressant",
+        "Delsym Cough Suppressant",
+        "What conditions does Delsym Cough Suppressant treat"
+      ],
+      "responses": [
+        "Delsym Cough Suppressant relieves cough"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Dramamine Motion Sickness Relief",
+      "patterns": [
+        "What is Dramamine Motion Sickness Relief used for",
+        "What are uses of Dramamine Motion Sickness Relief",
+        "What can  I use Dramamine Motion Sickness Relief for",
+        "What is Dramamine Motion Sickness Relief",
+        "Dramamine Motion Sickness Relief",
+        "What conditions does Dramamine Motion Sickness Relief treat"
+      ],
+      "responses": [
+        "Dramamine Motion Sickness Relief prevents motion sickness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Zyrtec Allergy Relief",
+      "patterns": [
+        "What is Zyrtec Allergy Relief used for",
+        "What are uses of Zyrtec Allergy Relief",
+        "What can  I use Zyrtec Allergy Relief for",
+        "What is Zyrtec Allergy Relief",
+        "Zyrtec Allergy Relief",
+        "What conditions does Zyrtec Allergy Relief treat"
+      ],
+      "responses": [
+        "Zyrtec Allergy Relief relieves allergy symptoms"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Cepacol Sore Throat Lozenges",
+      "patterns": [
+        "What is Cepacol Sore Throat Lozenges used for",
+        "What are uses of Cepacol Sore Throat Lozenges",
+        "What can  I use Cepacol Sore Throat Lozenges for",
+        "What is Cepacol Sore Throat Lozenges",
+        "Cepacol Sore Throat Lozenges",
+        "What conditions does Cepacol Sore Throat Lozenges treat"
+      ],
+      "responses": [
+        "Cepacol Sore Throat Lozenges relieves sore throat"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Orajel Toothache Gel",
+      "patterns": [
+        "What is Orajel Toothache Gel used for",
+        "What are uses of Orajel Toothache Gel",
+        "What can  I use Orajel Toothache Gel for",
+        "What is Orajel Toothache Gel",
+        "Orajel Toothache Gel",
+        "What conditions does Orajel Toothache Gel treat"
+      ],
+      "responses": [
+        "Orajel Toothache Gel relieves toothache pain"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Visine Red Eye Comfort",
+      "patterns": [
+        "What is Visine Red Eye Comfort used for",
+        "What are uses of Visine Red Eye Comfort",
+        "What can  I use Visine Red Eye Comfort for",
+        "What is Visine Red Eye Comfort",
+        "Visine Red Eye Comfort",
+        "What conditions does Visine Red Eye Comfort treat"
+      ],
+      "responses": [
+        "Visine Red Eye Comfort relieves red eye"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Refresh Tears Lubricant Eye Drops",
+      "patterns": [
+        "What is Refresh Tears Lubricant Eye Drops used for",
+        "What are uses of Refresh Tears Lubricant Eye Drops",
+        "What can  I use Refresh Tears Lubricant Eye Drops for",
+        "What is Refresh Tears Lubricant Eye Drops",
+        "Refresh Tears Lubricant Eye Drops",
+        "What conditions does Refresh Tears Lubricant Eye Drops treat"
+      ],
+      "responses": [
+        "Refresh Tears Lubricant Eye Drops relieves dry eyes"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Emergen-C Vitamin C Supplement",
+      "patterns": [
+        "What is Emergen-C Vitamin C Supplement used for",
+        "What are uses of Emergen-C Vitamin C Supplement",
+        "What can  I use Emergen-C Vitamin C Supplement for",
+        "What is Emergen-C Vitamin C Supplement",
+        "Emergen-C Vitamin C Supplement",
+        "What conditions does Emergen-C Vitamin C Supplement treat"
+      ],
+      "responses": [
+        "Emergen-C Vitamin C Supplement boosts immune system"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Airborne Immune Support Supplement",
+      "patterns": [
+        "What is Airborne Immune Support Supplement used for",
+        "What are uses of Airborne Immune Support Supplement",
+        "What can  I use Airborne Immune Support Supplement for",
+        "What is Airborne Immune Support Supplement",
+        "Airborne Immune Support Supplement",
+        "What conditions does Airborne Immune Support Supplement treat"
+      ],
+      "responses": [
+        "Airborne Immune Support Supplement boosts immune system"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Melatonin Sleep Aid",
+      "patterns": [
+        "What is Melatonin Sleep Aid used for",
+        "What are uses of Melatonin Sleep Aid",
+        "What can  I use Melatonin Sleep Aid for",
+        "What is Melatonin Sleep Aid",
+        "Melatonin Sleep Aid",
+        "What conditions does Melatonin Sleep Aid treat"
+      ],
+      "responses": [
+        "Melatonin Sleep Aid aids in sleep"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of ZzzQuil Nighttime Sleep Aid",
+      "patterns": [
+        "What is ZzzQuil Nighttime Sleep Aid used for",
+        "What are uses of ZzzQuil Nighttime Sleep Aid",
+        "What can  I use ZzzQuil Nighttime Sleep Aid for",
+        "What is ZzzQuil Nighttime Sleep Aid",
+        "ZzzQuil Nighttime Sleep Aid",
+        "What conditions does ZzzQuil Nighttime Sleep Aid treat"
+      ],
+      "responses": [
+        "ZzzQuil Nighttime Sleep Aid aids in sleep"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Advil PM Pain Reliever and Sleep Aid",
+      "patterns": [
+        "What is Advil PM Pain Reliever and Sleep Aid used for",
+        "What are uses of Advil PM Pain Reliever and Sleep Aid",
+        "What can  I use Advil PM Pain Reliever and Sleep Aid for",
+        "What is Advil PM Pain Reliever and Sleep Aid",
+        "Advil PM Pain Reliever and Sleep Aid",
+        "What conditions does Advil PM Pain Reliever and Sleep Aid treat"
+      ],
+      "responses": [
+        "Advil PM Pain Reliever and Sleep Aid relieves pain and aids sleep"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Theraflu Multi-Symptom Severe Cold Relief",
+      "patterns": [
+        "What is Theraflu Multi-Symptom Severe Cold Relief used for",
+        "What are uses of Theraflu Multi-Symptom Severe Cold Relief",
+        "What can  I use Theraflu Multi-Symptom Severe Cold Relief for",
+        "What is Theraflu Multi-Symptom Severe Cold Relief",
+        "Theraflu Multi-Symptom Severe Cold Relief",
+        "What conditions does Theraflu Multi-Symptom Severe Cold Relief treat"
+      ],
+      "responses": [
+        "Theraflu Multi-Symptom Severe Cold Relief relieves cold and flu symptoms"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Sudafed PE Sinus Pressure + Pain",
+      "patterns": [
+        "What is Sudafed PE Sinus Pressure + Pain used for",
+        "What are uses of Sudafed PE Sinus Pressure + Pain",
+        "What can  I use Sudafed PE Sinus Pressure + Pain for",
+        "What is Sudafed PE Sinus Pressure + Pain",
+        "Sudafed PE Sinus Pressure + Pain",
+        "What conditions does Sudafed PE Sinus Pressure + Pain treat"
+      ],
+      "responses": [
+        "Sudafed PE Sinus Pressure + Pain relieves sinus congestion and pain"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Alka-Seltzer Original Effervescent Tablets",
+      "patterns": [
+        "What is Alka-Seltzer Original Effervescent Tablets used for",
+        "What are uses of Alka-Seltzer Original Effervescent Tablets",
+        "What can  I use Alka-Seltzer Original Effervescent Tablets for",
+        "What is Alka-Seltzer Original Effervescent Tablets",
+        "Alka-Seltzer Original Effervescent Tablets",
+        "What conditions does Alka-Seltzer Original Effervescent Tablets treat"
+      ],
+      "responses": [
+        "Alka-Seltzer Original Effervescent Tablets relieves heartburn and indigestion"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Prilosec OTC",
+      "patterns": [
+        "What is Prilosec OTC used for",
+        "What are uses of Prilosec OTC",
+        "What can  I use Prilosec OTC for",
+        "What is Prilosec OTC",
+        "Prilosec OTC",
+        "What conditions does Prilosec OTC treat"
+      ],
+      "responses": [
+        "Prilosec OTC treats frequent heartburn"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Polysporin First Aid Antibiotic Ointment",
+      "patterns": [
+        "What is Polysporin First Aid Antibiotic Ointment used for",
+        "What are uses of Polysporin First Aid Antibiotic Ointment",
+        "What can  I use Polysporin First Aid Antibiotic Ointment for",
+        "What is Polysporin First Aid Antibiotic Ointment",
+        "Polysporin First Aid Antibiotic Ointment",
+        "What conditions does Polysporin First Aid Antibiotic Ointment treat"
+      ],
+      "responses": [
+        "Polysporin First Aid Antibiotic Ointment prevents infection in minor cuts and burns"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Systane Lubricant Eye Drops",
+      "patterns": [
+        "What is Systane Lubricant Eye Drops used for",
+        "What are uses of Systane Lubricant Eye Drops",
+        "What can  I use Systane Lubricant Eye Drops for",
+        "What is Systane Lubricant Eye Drops",
+        "Systane Lubricant Eye Drops",
+        "What conditions does Systane Lubricant Eye Drops treat"
+      ],
+      "responses": [
+        "Systane Lubricant Eye Drops relieves dry eye symptoms"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Uses of Nicoderm CQ Nicotine Patches",
+      "patterns": [
+        "What is Nicoderm CQ Nicotine Patches used for",
+        "What are uses of Nicoderm CQ Nicotine Patches",
+        "What can  I use Nicoderm CQ Nicotine Patches for",
+        "What is Nicoderm CQ Nicotine Patches",
+        "Nicoderm CQ Nicotine Patches",
+        "What conditions does Nicoderm CQ Nicotine Patches treat"
+      ],
+      "responses": [
+        "Nicoderm CQ Nicotine Patches aids in smoking cessation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Tylenol Extra Strength",
+      "patterns": [
+        "What side effects does Tylenol Extra Strength have",
+        "What side effects does Tylenol Extra Strength cause",
+        "what are the side effects of Tylenol Extra Strength",
+        "side effects Tylenol Extra Strength",
+        "Tylenol Extra Strength side effects",
+        "Tylenol Extra Strength effects",
+        "effects of Tylenol Extra Strength",
+        "side effects of Tylenol Extra Strength"
+      ],
+      "responses": [
+        "Tylenol Extra Strength can have side effects including liver damage if overdosed, nausea, rash, and headache"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Advil Ibuprofen Tablets",
+      "patterns": [
+        "What side effects does Advil Ibuprofen Tablets have",
+        "What side effects does Advil Ibuprofen Tablets cause",
+        "what are the side effects of Advil Ibuprofen Tablets",
+        "side effects Advil Ibuprofen Tablets",
+        "Advil Ibuprofen Tablets side effects",
+        "Advil Ibuprofen Tablets effects",
+        "effects of Advil Ibuprofen Tablets",
+        "side effects of Advil Ibuprofen Tablets"
+      ],
+      "responses": [
+        "Advil Ibuprofen Tablets can have side effects including stomach upset, dizziness, and nausea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Benadryl Allergy Relief",
+      "patterns": [
+        "What side effects does Benadryl Allergy Relief have",
+        "What side effects does Benadryl Allergy Relief cause",
+        "what are the side effects of Benadryl Allergy Relief",
+        "side effects Benadryl Allergy Relief",
+        "Benadryl Allergy Relief side effects",
+        "Benadryl Allergy Relief effects",
+        "effects of Benadryl Allergy Relief",
+        "side effects of Benadryl Allergy Relief"
+      ],
+      "responses": [
+        "Benadryl Allergy Relief can have side effects including drowsiness, dry mouth, and dizziness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Claritin Non-Drowsy Tablets",
+      "patterns": [
+        "What side effects does Claritin Non-Drowsy Tablets have",
+        "What side effects does Claritin Non-Drowsy Tablets cause",
+        "what are the side effects of Claritin Non-Drowsy Tablets",
+        "side effects Claritin Non-Drowsy Tablets",
+        "Claritin Non-Drowsy Tablets side effects",
+        "Claritin Non-Drowsy Tablets effects",
+        "effects of Claritin Non-Drowsy Tablets",
+        "side effects of Claritin Non-Drowsy Tablets"
+      ],
+      "responses": [
+        "Claritin Non-Drowsy Tablets can have side effects including headache, fatigue, and dry mouth"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Pepto-Bismol Liquid",
+      "patterns": [
+        "What side effects does Pepto-Bismol Liquid have",
+        "What side effects does Pepto-Bismol Liquid cause",
+        "what are the side effects of Pepto-Bismol Liquid",
+        "side effects Pepto-Bismol Liquid",
+        "Pepto-Bismol Liquid side effects",
+        "Pepto-Bismol Liquid effects",
+        "effects of Pepto-Bismol Liquid",
+        "side effects of Pepto-Bismol Liquid"
+      ],
+      "responses": [
+        "Pepto-Bismol Liquid can have side effects including darkened stool/tongue, and constipation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Robitussin Cough Syrup",
+      "patterns": [
+        "What side effects does Robitussin Cough Syrup have",
+        "What side effects does Robitussin Cough Syrup cause",
+        "what are the side effects of Robitussin Cough Syrup",
+        "side effects Robitussin Cough Syrup",
+        "Robitussin Cough Syrup side effects",
+        "Robitussin Cough Syrup effects",
+        "effects of Robitussin Cough Syrup",
+        "side effects of Robitussin Cough Syrup"
+      ],
+      "responses": [
+        "Robitussin Cough Syrup can have side effects including dizziness, nausea, and drowsiness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Imodium A-D Anti-Diarrheal",
+      "patterns": [
+        "What side effects does Imodium A-D Anti-Diarrheal have",
+        "What side effects does Imodium A-D Anti-Diarrheal cause",
+        "what are the side effects of Imodium A-D Anti-Diarrheal",
+        "side effects Imodium A-D Anti-Diarrheal",
+        "Imodium A-D Anti-Diarrheal side effects",
+        "Imodium A-D Anti-Diarrheal effects",
+        "effects of Imodium A-D Anti-Diarrheal",
+        "side effects of Imodium A-D Anti-Diarrheal"
+      ],
+      "responses": [
+        "Imodium A-D Anti-Diarrheal can have side effects including dizziness, constipation, and nausea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Aleve Pain Reliever",
+      "patterns": [
+        "What side effects does Aleve Pain Reliever have",
+        "What side effects does Aleve Pain Reliever cause",
+        "what are the side effects of Aleve Pain Reliever",
+        "side effects Aleve Pain Reliever",
+        "Aleve Pain Reliever side effects",
+        "Aleve Pain Reliever effects",
+        "effects of Aleve Pain Reliever",
+        "side effects of Aleve Pain Reliever"
+      ],
+      "responses": [
+        "Aleve Pain Reliever can have side effects including stomach pain, dizziness, and nausea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Flonase Nasal Spray",
+      "patterns": [
+        "What side effects does Flonase Nasal Spray have",
+        "What side effects does Flonase Nasal Spray cause",
+        "what are the side effects of Flonase Nasal Spray",
+        "side effects Flonase Nasal Spray",
+        "Flonase Nasal Spray side effects",
+        "Flonase Nasal Spray effects",
+        "effects of Flonase Nasal Spray",
+        "side effects of Flonase Nasal Spray"
+      ],
+      "responses": [
+        "Flonase Nasal Spray can have side effects including nasal irritation, headache, and nosebleed"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Afrin Nasal Spray",
+      "patterns": [
+        "What side effects does Afrin Nasal Spray have",
+        "What side effects does Afrin Nasal Spray cause",
+        "what are the side effects of Afrin Nasal Spray",
+        "side effects Afrin Nasal Spray",
+        "Afrin Nasal Spray side effects",
+        "Afrin Nasal Spray effects",
+        "effects of Afrin Nasal Spray",
+        "side effects of Afrin Nasal Spray"
+      ],
+      "responses": [
+        "Afrin Nasal Spray can have side effects including nasal irritation, dryness, and sneezing"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Miralax Laxative Powder",
+      "patterns": [
+        "What side effects does Miralax Laxative Powder have",
+        "What side effects does Miralax Laxative Powder cause",
+        "what are the side effects of Miralax Laxative Powder",
+        "side effects Miralax Laxative Powder",
+        "Miralax Laxative Powder side effects",
+        "Miralax Laxative Powder effects",
+        "effects of Miralax Laxative Powder",
+        "side effects of Miralax Laxative Powder"
+      ],
+      "responses": [
+        "Miralax Laxative Powder can have side effects including bloating, nausea, and gas"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Tums Antacid Tablets",
+      "patterns": [
+        "What side effects does Tums Antacid Tablets have",
+        "What side effects does Tums Antacid Tablets cause",
+        "what are the side effects of Tums Antacid Tablets",
+        "side effects Tums Antacid Tablets",
+        "Tums Antacid Tablets side effects",
+        "Tums Antacid Tablets effects",
+        "effects of Tums Antacid Tablets",
+        "side effects of Tums Antacid Tablets"
+      ],
+      "responses": [
+        "Tums Antacid Tablets can have side effects including constipation, gas, and burping"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Preparation H Hemorrhoidal Ointment",
+      "patterns": [
+        "What side effects does Preparation H Hemorrhoidal Ointment have",
+        "What side effects does Preparation H Hemorrhoidal Ointment cause",
+        "what are the side effects of Preparation H Hemorrhoidal Ointment",
+        "side effects Preparation H Hemorrhoidal Ointment",
+        "Preparation H Hemorrhoidal Ointment side effects",
+        "Preparation H Hemorrhoidal Ointment effects",
+        "effects of Preparation H Hemorrhoidal Ointment",
+        "side effects of Preparation H Hemorrhoidal Ointment"
+      ],
+      "responses": [
+        "Preparation H Hemorrhoidal Ointment can have side effects including mild irritation, and allergic reactions"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Neosporin Antibiotic Ointment",
+      "patterns": [
+        "What side effects does Neosporin Antibiotic Ointment have",
+        "What side effects does Neosporin Antibiotic Ointment cause",
+        "what are the side effects of Neosporin Antibiotic Ointment",
+        "side effects Neosporin Antibiotic Ointment",
+        "Neosporin Antibiotic Ointment side effects",
+        "Neosporin Antibiotic Ointment effects",
+        "effects of Neosporin Antibiotic Ointment",
+        "side effects of Neosporin Antibiotic Ointment"
+      ],
+      "responses": [
+        "Neosporin Antibiotic Ointment can have side effects including mild irritation, and allergic reactions"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Cortizone-10 Anti-Itch Cream",
+      "patterns": [
+        "What side effects does Cortizone-10 Anti-Itch Cream have",
+        "What side effects does Cortizone-10 Anti-Itch Cream cause",
+        "what are the side effects of Cortizone-10 Anti-Itch Cream",
+        "side effects Cortizone-10 Anti-Itch Cream",
+        "Cortizone-10 Anti-Itch Cream side effects",
+        "Cortizone-10 Anti-Itch Cream effects",
+        "effects of Cortizone-10 Anti-Itch Cream",
+        "side effects of Cortizone-10 Anti-Itch Cream"
+      ],
+      "responses": [
+        "Cortizone-10 Anti-Itch Cream can have side effects including skin thinning, irritation, and dryness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Lotrimin AF Antifungal Cream",
+      "patterns": [
+        "What side effects does Lotrimin AF Antifungal Cream have",
+        "What side effects does Lotrimin AF Antifungal Cream cause",
+        "what are the side effects of Lotrimin AF Antifungal Cream",
+        "side effects Lotrimin AF Antifungal Cream",
+        "Lotrimin AF Antifungal Cream side effects",
+        "Lotrimin AF Antifungal Cream effects",
+        "effects of Lotrimin AF Antifungal Cream",
+        "side effects of Lotrimin AF Antifungal Cream"
+      ],
+      "responses": [
+        "Lotrimin AF Antifungal Cream can have side effects including burning, itching, and redness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Monistat 1-Day Treatment",
+      "patterns": [
+        "What side effects does Monistat 1-Day Treatment have",
+        "What side effects does Monistat 1-Day Treatment cause",
+        "what are the side effects of Monistat 1-Day Treatment",
+        "side effects Monistat 1-Day Treatment",
+        "Monistat 1-Day Treatment side effects",
+        "Monistat 1-Day Treatment effects",
+        "effects of Monistat 1-Day Treatment",
+        "side effects of Monistat 1-Day Treatment"
+      ],
+      "responses": [
+        "Monistat 1-Day Treatment can have side effects including burning, itching, and irritation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Abreva Cold Sore Treatment",
+      "patterns": [
+        "What side effects does Abreva Cold Sore Treatment have",
+        "What side effects does Abreva Cold Sore Treatment cause",
+        "what are the side effects of Abreva Cold Sore Treatment",
+        "side effects Abreva Cold Sore Treatment",
+        "Abreva Cold Sore Treatment side effects",
+        "Abreva Cold Sore Treatment effects",
+        "effects of Abreva Cold Sore Treatment",
+        "side effects of Abreva Cold Sore Treatment"
+      ],
+      "responses": [
+        "Abreva Cold Sore Treatment can have side effects including skin irritation, redness, and itching"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Nicorette Nicotine Gum",
+      "patterns": [
+        "What side effects does Nicorette Nicotine Gum have",
+        "What side effects does Nicorette Nicotine Gum cause",
+        "what are the side effects of Nicorette Nicotine Gum",
+        "side effects Nicorette Nicotine Gum",
+        "Nicorette Nicotine Gum side effects",
+        "Nicorette Nicotine Gum effects",
+        "effects of Nicorette Nicotine Gum",
+        "side effects of Nicorette Nicotine Gum"
+      ],
+      "responses": [
+        "Nicorette Nicotine Gum can have side effects including mouth soreness, hiccups, and nausea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Bayer Low Dose Aspirin",
+      "patterns": [
+        "What side effects does Bayer Low Dose Aspirin have",
+        "What side effects does Bayer Low Dose Aspirin cause",
+        "what are the side effects of Bayer Low Dose Aspirin",
+        "side effects Bayer Low Dose Aspirin",
+        "Bayer Low Dose Aspirin side effects",
+        "Bayer Low Dose Aspirin effects",
+        "effects of Bayer Low Dose Aspirin",
+        "side effects of Bayer Low Dose Aspirin"
+      ],
+      "responses": [
+        "Bayer Low Dose Aspirin can have side effects including stomach bleeding, nausea, and heartburn"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Excedrin Migraine Relief",
+      "patterns": [
+        "What side effects does Excedrin Migraine Relief have",
+        "What side effects does Excedrin Migraine Relief cause",
+        "what are the side effects of Excedrin Migraine Relief",
+        "side effects Excedrin Migraine Relief",
+        "Excedrin Migraine Relief side effects",
+        "Excedrin Migraine Relief effects",
+        "effects of Excedrin Migraine Relief",
+        "side effects of Excedrin Migraine Relief"
+      ],
+      "responses": [
+        "Excedrin Migraine Relief can have side effects including stomach upset, dizziness, and nervousness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Delsym Cough Suppressant",
+      "patterns": [
+        "What side effects does Delsym Cough Suppressant have",
+        "What side effects does Delsym Cough Suppressant cause",
+        "what are the side effects of Delsym Cough Suppressant",
+        "side effects Delsym Cough Suppressant",
+        "Delsym Cough Suppressant side effects",
+        "Delsym Cough Suppressant effects",
+        "effects of Delsym Cough Suppressant",
+        "side effects of Delsym Cough Suppressant"
+      ],
+      "responses": [
+        "Delsym Cough Suppressant can have side effects including nausea, dizziness, and drowsiness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Dramamine Motion Sickness Relief",
+      "patterns": [
+        "What side effects does Dramamine Motion Sickness Relief have",
+        "What side effects does Dramamine Motion Sickness Relief cause",
+        "what are the side effects of Dramamine Motion Sickness Relief",
+        "side effects Dramamine Motion Sickness Relief",
+        "Dramamine Motion Sickness Relief side effects",
+        "Dramamine Motion Sickness Relief effects",
+        "effects of Dramamine Motion Sickness Relief",
+        "side effects of Dramamine Motion Sickness Relief"
+      ],
+      "responses": [
+        "Dramamine Motion Sickness Relief can have side effects including drowsiness, dry mouth, and dizziness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Zyrtec Allergy Relief",
+      "patterns": [
+        "What side effects does Zyrtec Allergy Relief have",
+        "What side effects does Zyrtec Allergy Relief cause",
+        "what are the side effects of Zyrtec Allergy Relief",
+        "side effects Zyrtec Allergy Relief",
+        "Zyrtec Allergy Relief side effects",
+        "Zyrtec Allergy Relief effects",
+        "effects of Zyrtec Allergy Relief",
+        "side effects of Zyrtec Allergy Relief"
+      ],
+      "responses": [
+        "Zyrtec Allergy Relief can have side effects including drowsiness, dry mouth, and fatigue"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Cepacol Sore Throat Lozenges",
+      "patterns": [
+        "What side effects does Cepacol Sore Throat Lozenges have",
+        "What side effects does Cepacol Sore Throat Lozenges cause",
+        "what are the side effects of Cepacol Sore Throat Lozenges",
+        "side effects Cepacol Sore Throat Lozenges",
+        "Cepacol Sore Throat Lozenges side effects",
+        "Cepacol Sore Throat Lozenges effects",
+        "effects of Cepacol Sore Throat Lozenges",
+        "side effects of Cepacol Sore Throat Lozenges"
+      ],
+      "responses": [
+        "Cepacol Sore Throat Lozenges can have side effects including numbness in mouth, and allergic reactions"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Orajel Toothache Gel",
+      "patterns": [
+        "What side effects does Orajel Toothache Gel have",
+        "What side effects does Orajel Toothache Gel cause",
+        "what are the side effects of Orajel Toothache Gel",
+        "side effects Orajel Toothache Gel",
+        "Orajel Toothache Gel side effects",
+        "Orajel Toothache Gel effects",
+        "effects of Orajel Toothache Gel",
+        "side effects of Orajel Toothache Gel"
+      ],
+      "responses": [
+        "Orajel Toothache Gel can have side effects including temporary numbness, and allergic reactions"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Visine Red Eye Comfort",
+      "patterns": [
+        "What side effects does Visine Red Eye Comfort have",
+        "What side effects does Visine Red Eye Comfort cause",
+        "what are the side effects of Visine Red Eye Comfort",
+        "side effects Visine Red Eye Comfort",
+        "Visine Red Eye Comfort side effects",
+        "Visine Red Eye Comfort effects",
+        "effects of Visine Red Eye Comfort",
+        "side effects of Visine Red Eye Comfort"
+      ],
+      "responses": [
+        "Visine Red Eye Comfort can have side effects including mild burning, blurred vision, and dryness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Refresh Tears Lubricant Eye Drops",
+      "patterns": [
+        "What side effects does Refresh Tears Lubricant Eye Drops have",
+        "What side effects does Refresh Tears Lubricant Eye Drops cause",
+        "what are the side effects of Refresh Tears Lubricant Eye Drops",
+        "side effects Refresh Tears Lubricant Eye Drops",
+        "Refresh Tears Lubricant Eye Drops side effects",
+        "Refresh Tears Lubricant Eye Drops effects",
+        "effects of Refresh Tears Lubricant Eye Drops",
+        "side effects of Refresh Tears Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Refresh Tears Lubricant Eye Drops can have side effects including temporary blurred vision, and mild irritation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Emergen-C Vitamin C Supplement",
+      "patterns": [
+        "What side effects does Emergen-C Vitamin C Supplement have",
+        "What side effects does Emergen-C Vitamin C Supplement cause",
+        "what are the side effects of Emergen-C Vitamin C Supplement",
+        "side effects Emergen-C Vitamin C Supplement",
+        "Emergen-C Vitamin C Supplement side effects",
+        "Emergen-C Vitamin C Supplement effects",
+        "effects of Emergen-C Vitamin C Supplement",
+        "side effects of Emergen-C Vitamin C Supplement"
+      ],
+      "responses": [
+        "Emergen-C Vitamin C Supplement can have side effects including stomach upset, diarrhea, and nausea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Airborne Immune Support Supplement",
+      "patterns": [
+        "What side effects does Airborne Immune Support Supplement have",
+        "What side effects does Airborne Immune Support Supplement cause",
+        "what are the side effects of Airborne Immune Support Supplement",
+        "side effects Airborne Immune Support Supplement",
+        "Airborne Immune Support Supplement side effects",
+        "Airborne Immune Support Supplement effects",
+        "effects of Airborne Immune Support Supplement",
+        "side effects of Airborne Immune Support Supplement"
+      ],
+      "responses": [
+        "Airborne Immune Support Supplement can have side effects including stomach upset, headache, and dizziness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Melatonin Sleep Aid",
+      "patterns": [
+        "What side effects does Melatonin Sleep Aid have",
+        "What side effects does Melatonin Sleep Aid cause",
+        "what are the side effects of Melatonin Sleep Aid",
+        "side effects Melatonin Sleep Aid",
+        "Melatonin Sleep Aid side effects",
+        "Melatonin Sleep Aid effects",
+        "effects of Melatonin Sleep Aid",
+        "side effects of Melatonin Sleep Aid"
+      ],
+      "responses": [
+        "Melatonin Sleep Aid can have side effects including drowsiness, headache, and dizziness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of ZzzQuil Nighttime Sleep Aid",
+      "patterns": [
+        "What side effects does ZzzQuil Nighttime Sleep Aid have",
+        "What side effects does ZzzQuil Nighttime Sleep Aid cause",
+        "what are the side effects of ZzzQuil Nighttime Sleep Aid",
+        "side effects ZzzQuil Nighttime Sleep Aid",
+        "ZzzQuil Nighttime Sleep Aid side effects",
+        "ZzzQuil Nighttime Sleep Aid effects",
+        "effects of ZzzQuil Nighttime Sleep Aid",
+        "side effects of ZzzQuil Nighttime Sleep Aid"
+      ],
+      "responses": [
+        "ZzzQuil Nighttime Sleep Aid can have side effects including drowsiness, dry mouth, and dizziness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Advil PM Pain Reliever and Sleep Aid",
+      "patterns": [
+        "What side effects does Advil PM Pain Reliever and Sleep Aid have",
+        "What side effects does Advil PM Pain Reliever and Sleep Aid cause",
+        "what are the side effects of Advil PM Pain Reliever and Sleep Aid",
+        "side effects Advil PM Pain Reliever and Sleep Aid",
+        "Advil PM Pain Reliever and Sleep Aid side effects",
+        "Advil PM Pain Reliever and Sleep Aid effects",
+        "effects of Advil PM Pain Reliever and Sleep Aid",
+        "side effects of Advil PM Pain Reliever and Sleep Aid"
+      ],
+      "responses": [
+        "Advil PM Pain Reliever and Sleep Aid can have side effects including drowsiness, stomach upset, and dizziness"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Theraflu Multi-Symptom Severe Cold Relief",
+      "patterns": [
+        "What side effects does Theraflu Multi-Symptom Severe Cold Relief have",
+        "What side effects does Theraflu Multi-Symptom Severe Cold Relief cause",
+        "what are the side effects of Theraflu Multi-Symptom Severe Cold Relief",
+        "side effects Theraflu Multi-Symptom Severe Cold Relief",
+        "Theraflu Multi-Symptom Severe Cold Relief side effects",
+        "Theraflu Multi-Symptom Severe Cold Relief effects",
+        "effects of Theraflu Multi-Symptom Severe Cold Relief",
+        "side effects of Theraflu Multi-Symptom Severe Cold Relief"
+      ],
+      "responses": [
+        "Theraflu Multi-Symptom Severe Cold Relief can have side effects including drowsiness, dizziness, and nausea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Sudafed PE Sinus Pressure + Pain",
+      "patterns": [
+        "What side effects does Sudafed PE Sinus Pressure + Pain have",
+        "What side effects does Sudafed PE Sinus Pressure + Pain cause",
+        "what are the side effects of Sudafed PE Sinus Pressure + Pain",
+        "side effects Sudafed PE Sinus Pressure + Pain",
+        "Sudafed PE Sinus Pressure + Pain side effects",
+        "Sudafed PE Sinus Pressure + Pain effects",
+        "effects of Sudafed PE Sinus Pressure + Pain",
+        "side effects of Sudafed PE Sinus Pressure + Pain"
+      ],
+      "responses": [
+        "Sudafed PE Sinus Pressure + Pain can have side effects including dizziness, nausea, insomnia, and increased blood pressure"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Alka-Seltzer Original Effervescent Tablets",
+      "patterns": [
+        "What side effects does Alka-Seltzer Original Effervescent Tablets have",
+        "What side effects does Alka-Seltzer Original Effervescent Tablets cause",
+        "what are the side effects of Alka-Seltzer Original Effervescent Tablets",
+        "side effects Alka-Seltzer Original Effervescent Tablets",
+        "Alka-Seltzer Original Effervescent Tablets side effects",
+        "Alka-Seltzer Original Effervescent Tablets effects",
+        "effects of Alka-Seltzer Original Effervescent Tablets",
+        "side effects of Alka-Seltzer Original Effervescent Tablets"
+      ],
+      "responses": [
+        "Alka-Seltzer Original Effervescent Tablets can have side effects including stomach bleeding, nausea, and heartburn"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Prilosec OTC",
+      "patterns": [
+        "What side effects does Prilosec OTC have",
+        "What side effects does Prilosec OTC cause",
+        "what are the side effects of Prilosec OTC",
+        "side effects Prilosec OTC",
+        "Prilosec OTC side effects",
+        "Prilosec OTC effects",
+        "effects of Prilosec OTC",
+        "side effects of Prilosec OTC"
+      ],
+      "responses": [
+        "Prilosec OTC can have side effects including headache, abdominal pain, and diarrhea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Polysporin First Aid Antibiotic Ointment",
+      "patterns": [
+        "What side effects does Polysporin First Aid Antibiotic Ointment have",
+        "What side effects does Polysporin First Aid Antibiotic Ointment cause",
+        "what are the side effects of Polysporin First Aid Antibiotic Ointment",
+        "side effects Polysporin First Aid Antibiotic Ointment",
+        "Polysporin First Aid Antibiotic Ointment side effects",
+        "Polysporin First Aid Antibiotic Ointment effects",
+        "effects of Polysporin First Aid Antibiotic Ointment",
+        "side effects of Polysporin First Aid Antibiotic Ointment"
+      ],
+      "responses": [
+        "Polysporin First Aid Antibiotic Ointment can have side effects including mild irritation, and allergic reactions"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Systane Lubricant Eye Drops",
+      "patterns": [
+        "What side effects does Systane Lubricant Eye Drops have",
+        "What side effects does Systane Lubricant Eye Drops cause",
+        "what are the side effects of Systane Lubricant Eye Drops",
+        "side effects Systane Lubricant Eye Drops",
+        "Systane Lubricant Eye Drops side effects",
+        "Systane Lubricant Eye Drops effects",
+        "effects of Systane Lubricant Eye Drops",
+        "side effects of Systane Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Systane Lubricant Eye Drops can have side effects including temporary blurred vision, and mild irritation"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Side effects of Nicoderm CQ Nicotine Patches",
+      "patterns": [
+        "What side effects does Nicoderm CQ Nicotine Patches have",
+        "What side effects does Nicoderm CQ Nicotine Patches cause",
+        "what are the side effects of Nicoderm CQ Nicotine Patches",
+        "side effects Nicoderm CQ Nicotine Patches",
+        "Nicoderm CQ Nicotine Patches side effects",
+        "Nicoderm CQ Nicotine Patches effects",
+        "effects of Nicoderm CQ Nicotine Patches",
+        "side effects of Nicoderm CQ Nicotine Patches"
+      ],
+      "responses": [
+        "Nicoderm CQ Nicotine Patches can have side effects including skin irritation, vivid dreams, and headache"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Tylenol Extra Strength",
+      "patterns": [
+        "What ingredients does Tylenol Extra Strength have",
+        "Ingredients of Tylenol Extra Strength",
+        "what are the ingredients in Tylenol Extra Strength",
+        "ingredients Tylenol Extra Strength",
+        "Tylenol Extra Strength ingredients",
+        "Tylenol Extra Strength composition",
+        "composition of Tylenol Extra Strength",
+        "what is Tylenol Extra Strength composed of"
+      ],
+      "responses": [
+        "An ingredient that Tylenol Extra Strength contains is Acetaminophen 500mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Advil Ibuprofen Tablets",
+      "patterns": [
+        "What ingredients does Advil Ibuprofen Tablets have",
+        "Ingredients of Advil Ibuprofen Tablets",
+        "what are the ingredients in Advil Ibuprofen Tablets",
+        "ingredients Advil Ibuprofen Tablets",
+        "Advil Ibuprofen Tablets ingredients",
+        "Advil Ibuprofen Tablets composition",
+        "composition of Advil Ibuprofen Tablets",
+        "what is Advil Ibuprofen Tablets composed of"
+      ],
+      "responses": [
+        "An ingredient that Advil Ibuprofen Tablets contains is Ibuprofen 200mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Benadryl Allergy Relief",
+      "patterns": [
+        "What ingredients does Benadryl Allergy Relief have",
+        "Ingredients of Benadryl Allergy Relief",
+        "what are the ingredients in Benadryl Allergy Relief",
+        "ingredients Benadryl Allergy Relief",
+        "Benadryl Allergy Relief ingredients",
+        "Benadryl Allergy Relief composition",
+        "composition of Benadryl Allergy Relief",
+        "what is Benadryl Allergy Relief composed of"
+      ],
+      "responses": [
+        "An ingredient that Benadryl Allergy Relief contains is Diphenhydramine HCl 25mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Claritin Non-Drowsy Tablets",
+      "patterns": [
+        "What ingredients does Claritin Non-Drowsy Tablets have",
+        "Ingredients of Claritin Non-Drowsy Tablets",
+        "what are the ingredients in Claritin Non-Drowsy Tablets",
+        "ingredients Claritin Non-Drowsy Tablets",
+        "Claritin Non-Drowsy Tablets ingredients",
+        "Claritin Non-Drowsy Tablets composition",
+        "composition of Claritin Non-Drowsy Tablets",
+        "what is Claritin Non-Drowsy Tablets composed of"
+      ],
+      "responses": [
+        "An ingredient that Claritin Non-Drowsy Tablets contains is Loratadine 10mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Pepto-Bismol Liquid",
+      "patterns": [
+        "What ingredients does Pepto-Bismol Liquid have",
+        "Ingredients of Pepto-Bismol Liquid",
+        "what are the ingredients in Pepto-Bismol Liquid",
+        "ingredients Pepto-Bismol Liquid",
+        "Pepto-Bismol Liquid ingredients",
+        "Pepto-Bismol Liquid composition",
+        "composition of Pepto-Bismol Liquid",
+        "what is Pepto-Bismol Liquid composed of"
+      ],
+      "responses": [
+        "An ingredient that Pepto-Bismol Liquid contains is Bismuth Subsalicylate 262mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Robitussin Cough Syrup",
+      "patterns": [
+        "What ingredients does Robitussin Cough Syrup have",
+        "Ingredients of Robitussin Cough Syrup",
+        "what are the ingredients in Robitussin Cough Syrup",
+        "ingredients Robitussin Cough Syrup",
+        "Robitussin Cough Syrup ingredients",
+        "Robitussin Cough Syrup composition",
+        "composition of Robitussin Cough Syrup",
+        "what is Robitussin Cough Syrup composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Robitussin Cough Syrup contains are Dextromethorphan HBr 10mg, and Guaifenesin 100mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Imodium A-D Anti-Diarrheal",
+      "patterns": [
+        "What ingredients does Imodium A-D Anti-Diarrheal have",
+        "Ingredients of Imodium A-D Anti-Diarrheal",
+        "what are the ingredients in Imodium A-D Anti-Diarrheal",
+        "ingredients Imodium A-D Anti-Diarrheal",
+        "Imodium A-D Anti-Diarrheal ingredients",
+        "Imodium A-D Anti-Diarrheal composition",
+        "composition of Imodium A-D Anti-Diarrheal",
+        "what is Imodium A-D Anti-Diarrheal composed of"
+      ],
+      "responses": [
+        "An ingredient that Imodium A-D Anti-Diarrheal contains is Loperamide HCl 2mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Aleve Pain Reliever",
+      "patterns": [
+        "What ingredients does Aleve Pain Reliever have",
+        "Ingredients of Aleve Pain Reliever",
+        "what are the ingredients in Aleve Pain Reliever",
+        "ingredients Aleve Pain Reliever",
+        "Aleve Pain Reliever ingredients",
+        "Aleve Pain Reliever composition",
+        "composition of Aleve Pain Reliever",
+        "what is Aleve Pain Reliever composed of"
+      ],
+      "responses": [
+        "An ingredient that Aleve Pain Reliever contains is Naproxen Sodium 220mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Flonase Nasal Spray",
+      "patterns": [
+        "What ingredients does Flonase Nasal Spray have",
+        "Ingredients of Flonase Nasal Spray",
+        "what are the ingredients in Flonase Nasal Spray",
+        "ingredients Flonase Nasal Spray",
+        "Flonase Nasal Spray ingredients",
+        "Flonase Nasal Spray composition",
+        "composition of Flonase Nasal Spray",
+        "what is Flonase Nasal Spray composed of"
+      ],
+      "responses": [
+        "An ingredient that Flonase Nasal Spray contains is Fluticasone Propionate 50mcg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Afrin Nasal Spray",
+      "patterns": [
+        "What ingredients does Afrin Nasal Spray have",
+        "Ingredients of Afrin Nasal Spray",
+        "what are the ingredients in Afrin Nasal Spray",
+        "ingredients Afrin Nasal Spray",
+        "Afrin Nasal Spray ingredients",
+        "Afrin Nasal Spray composition",
+        "composition of Afrin Nasal Spray",
+        "what is Afrin Nasal Spray composed of"
+      ],
+      "responses": [
+        "An ingredient that Afrin Nasal Spray contains is Oxymetazoline HCl 0.05%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Miralax Laxative Powder",
+      "patterns": [
+        "What ingredients does Miralax Laxative Powder have",
+        "Ingredients of Miralax Laxative Powder",
+        "what are the ingredients in Miralax Laxative Powder",
+        "ingredients Miralax Laxative Powder",
+        "Miralax Laxative Powder ingredients",
+        "Miralax Laxative Powder composition",
+        "composition of Miralax Laxative Powder",
+        "what is Miralax Laxative Powder composed of"
+      ],
+      "responses": [
+        "An ingredient that Miralax Laxative Powder contains is Polyethylene Glycol 3350"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Tums Antacid Tablets",
+      "patterns": [
+        "What ingredients does Tums Antacid Tablets have",
+        "Ingredients of Tums Antacid Tablets",
+        "what are the ingredients in Tums Antacid Tablets",
+        "ingredients Tums Antacid Tablets",
+        "Tums Antacid Tablets ingredients",
+        "Tums Antacid Tablets composition",
+        "composition of Tums Antacid Tablets",
+        "what is Tums Antacid Tablets composed of"
+      ],
+      "responses": [
+        "An ingredient that Tums Antacid Tablets contains is Calcium Carbonate 500mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Preparation H Hemorrhoidal Ointment",
+      "patterns": [
+        "What ingredients does Preparation H Hemorrhoidal Ointment have",
+        "Ingredients of Preparation H Hemorrhoidal Ointment",
+        "what are the ingredients in Preparation H Hemorrhoidal Ointment",
+        "ingredients Preparation H Hemorrhoidal Ointment",
+        "Preparation H Hemorrhoidal Ointment ingredients",
+        "Preparation H Hemorrhoidal Ointment composition",
+        "composition of Preparation H Hemorrhoidal Ointment",
+        "what is Preparation H Hemorrhoidal Ointment composed of"
+      ],
+      "responses": [
+        "An ingredient that Preparation H Hemorrhoidal Ointment contains is Phenylephrine HCl 0.25%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Neosporin Antibiotic Ointment",
+      "patterns": [
+        "What ingredients does Neosporin Antibiotic Ointment have",
+        "Ingredients of Neosporin Antibiotic Ointment",
+        "what are the ingredients in Neosporin Antibiotic Ointment",
+        "ingredients Neosporin Antibiotic Ointment",
+        "Neosporin Antibiotic Ointment ingredients",
+        "Neosporin Antibiotic Ointment composition",
+        "composition of Neosporin Antibiotic Ointment",
+        "what is Neosporin Antibiotic Ointment composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Neosporin Antibiotic Ointment contains are Bacitracin Zinc, Neomycin Sulfate, and Polymyxin B Sulfate"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Cortizone-10 Anti-Itch Cream",
+      "patterns": [
+        "What ingredients does Cortizone-10 Anti-Itch Cream have",
+        "Ingredients of Cortizone-10 Anti-Itch Cream",
+        "what are the ingredients in Cortizone-10 Anti-Itch Cream",
+        "ingredients Cortizone-10 Anti-Itch Cream",
+        "Cortizone-10 Anti-Itch Cream ingredients",
+        "Cortizone-10 Anti-Itch Cream composition",
+        "composition of Cortizone-10 Anti-Itch Cream",
+        "what is Cortizone-10 Anti-Itch Cream composed of"
+      ],
+      "responses": [
+        "An ingredient that Cortizone-10 Anti-Itch Cream contains is Hydrocortisone 1%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Lotrimin AF Antifungal Cream",
+      "patterns": [
+        "What ingredients does Lotrimin AF Antifungal Cream have",
+        "Ingredients of Lotrimin AF Antifungal Cream",
+        "what are the ingredients in Lotrimin AF Antifungal Cream",
+        "ingredients Lotrimin AF Antifungal Cream",
+        "Lotrimin AF Antifungal Cream ingredients",
+        "Lotrimin AF Antifungal Cream composition",
+        "composition of Lotrimin AF Antifungal Cream",
+        "what is Lotrimin AF Antifungal Cream composed of"
+      ],
+      "responses": [
+        "An ingredient that Lotrimin AF Antifungal Cream contains is Clotrimazole 1%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Monistat 1-Day Treatment",
+      "patterns": [
+        "What ingredients does Monistat 1-Day Treatment have",
+        "Ingredients of Monistat 1-Day Treatment",
+        "what are the ingredients in Monistat 1-Day Treatment",
+        "ingredients Monistat 1-Day Treatment",
+        "Monistat 1-Day Treatment ingredients",
+        "Monistat 1-Day Treatment composition",
+        "composition of Monistat 1-Day Treatment",
+        "what is Monistat 1-Day Treatment composed of"
+      ],
+      "responses": [
+        "An ingredient that Monistat 1-Day Treatment contains is Tioconazole 6.5%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Abreva Cold Sore Treatment",
+      "patterns": [
+        "What ingredients does Abreva Cold Sore Treatment have",
+        "Ingredients of Abreva Cold Sore Treatment",
+        "what are the ingredients in Abreva Cold Sore Treatment",
+        "ingredients Abreva Cold Sore Treatment",
+        "Abreva Cold Sore Treatment ingredients",
+        "Abreva Cold Sore Treatment composition",
+        "composition of Abreva Cold Sore Treatment",
+        "what is Abreva Cold Sore Treatment composed of"
+      ],
+      "responses": [
+        "An ingredient that Abreva Cold Sore Treatment contains is Docosanol 10%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Nicorette Nicotine Gum",
+      "patterns": [
+        "What ingredients does Nicorette Nicotine Gum have",
+        "Ingredients of Nicorette Nicotine Gum",
+        "what are the ingredients in Nicorette Nicotine Gum",
+        "ingredients Nicorette Nicotine Gum",
+        "Nicorette Nicotine Gum ingredients",
+        "Nicorette Nicotine Gum composition",
+        "composition of Nicorette Nicotine Gum",
+        "what is Nicorette Nicotine Gum composed of"
+      ],
+      "responses": [
+        "An ingredient that Nicorette Nicotine Gum contains is Nicotine Polacrilex 2mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Bayer Low Dose Aspirin",
+      "patterns": [
+        "What ingredients does Bayer Low Dose Aspirin have",
+        "Ingredients of Bayer Low Dose Aspirin",
+        "what are the ingredients in Bayer Low Dose Aspirin",
+        "ingredients Bayer Low Dose Aspirin",
+        "Bayer Low Dose Aspirin ingredients",
+        "Bayer Low Dose Aspirin composition",
+        "composition of Bayer Low Dose Aspirin",
+        "what is Bayer Low Dose Aspirin composed of"
+      ],
+      "responses": [
+        "An ingredient that Bayer Low Dose Aspirin contains is Aspirin 81mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Excedrin Migraine Relief",
+      "patterns": [
+        "What ingredients does Excedrin Migraine Relief have",
+        "Ingredients of Excedrin Migraine Relief",
+        "what are the ingredients in Excedrin Migraine Relief",
+        "ingredients Excedrin Migraine Relief",
+        "Excedrin Migraine Relief ingredients",
+        "Excedrin Migraine Relief composition",
+        "composition of Excedrin Migraine Relief",
+        "what is Excedrin Migraine Relief composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Excedrin Migraine Relief contains are Acetaminophen 250mg, Aspirin 250mg, and Caffeine 65mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Delsym Cough Suppressant",
+      "patterns": [
+        "What ingredients does Delsym Cough Suppressant have",
+        "Ingredients of Delsym Cough Suppressant",
+        "what are the ingredients in Delsym Cough Suppressant",
+        "ingredients Delsym Cough Suppressant",
+        "Delsym Cough Suppressant ingredients",
+        "Delsym Cough Suppressant composition",
+        "composition of Delsym Cough Suppressant",
+        "what is Delsym Cough Suppressant composed of"
+      ],
+      "responses": [
+        "An ingredient that Delsym Cough Suppressant contains is Dextromethorphan Polistirex 30mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Dramamine Motion Sickness Relief",
+      "patterns": [
+        "What ingredients does Dramamine Motion Sickness Relief have",
+        "Ingredients of Dramamine Motion Sickness Relief",
+        "what are the ingredients in Dramamine Motion Sickness Relief",
+        "ingredients Dramamine Motion Sickness Relief",
+        "Dramamine Motion Sickness Relief ingredients",
+        "Dramamine Motion Sickness Relief composition",
+        "composition of Dramamine Motion Sickness Relief",
+        "what is Dramamine Motion Sickness Relief composed of"
+      ],
+      "responses": [
+        "An ingredient that Dramamine Motion Sickness Relief contains is Dimenhydrinate 50mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Zyrtec Allergy Relief",
+      "patterns": [
+        "What ingredients does Zyrtec Allergy Relief have",
+        "Ingredients of Zyrtec Allergy Relief",
+        "what are the ingredients in Zyrtec Allergy Relief",
+        "ingredients Zyrtec Allergy Relief",
+        "Zyrtec Allergy Relief ingredients",
+        "Zyrtec Allergy Relief composition",
+        "composition of Zyrtec Allergy Relief",
+        "what is Zyrtec Allergy Relief composed of"
+      ],
+      "responses": [
+        "An ingredient that Zyrtec Allergy Relief contains is Cetirizine HCl 10mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Cepacol Sore Throat Lozenges",
+      "patterns": [
+        "What ingredients does Cepacol Sore Throat Lozenges have",
+        "Ingredients of Cepacol Sore Throat Lozenges",
+        "what are the ingredients in Cepacol Sore Throat Lozenges",
+        "ingredients Cepacol Sore Throat Lozenges",
+        "Cepacol Sore Throat Lozenges ingredients",
+        "Cepacol Sore Throat Lozenges composition",
+        "composition of Cepacol Sore Throat Lozenges",
+        "what is Cepacol Sore Throat Lozenges composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Cepacol Sore Throat Lozenges contains are Benzocaine 15mg, and Menthol 3.6mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Orajel Toothache Gel",
+      "patterns": [
+        "What ingredients does Orajel Toothache Gel have",
+        "Ingredients of Orajel Toothache Gel",
+        "what are the ingredients in Orajel Toothache Gel",
+        "ingredients Orajel Toothache Gel",
+        "Orajel Toothache Gel ingredients",
+        "Orajel Toothache Gel composition",
+        "composition of Orajel Toothache Gel",
+        "what is Orajel Toothache Gel composed of"
+      ],
+      "responses": [
+        "An ingredient that Orajel Toothache Gel contains is Benzocaine 20%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Visine Red Eye Comfort",
+      "patterns": [
+        "What ingredients does Visine Red Eye Comfort have",
+        "Ingredients of Visine Red Eye Comfort",
+        "what are the ingredients in Visine Red Eye Comfort",
+        "ingredients Visine Red Eye Comfort",
+        "Visine Red Eye Comfort ingredients",
+        "Visine Red Eye Comfort composition",
+        "composition of Visine Red Eye Comfort",
+        "what is Visine Red Eye Comfort composed of"
+      ],
+      "responses": [
+        "An ingredient that Visine Red Eye Comfort contains is Tetrahydrozoline HCl 0.05%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Refresh Tears Lubricant Eye Drops",
+      "patterns": [
+        "What ingredients does Refresh Tears Lubricant Eye Drops have",
+        "Ingredients of Refresh Tears Lubricant Eye Drops",
+        "what are the ingredients in Refresh Tears Lubricant Eye Drops",
+        "ingredients Refresh Tears Lubricant Eye Drops",
+        "Refresh Tears Lubricant Eye Drops ingredients",
+        "Refresh Tears Lubricant Eye Drops composition",
+        "composition of Refresh Tears Lubricant Eye Drops",
+        "what is Refresh Tears Lubricant Eye Drops composed of"
+      ],
+      "responses": [
+        "An ingredient that Refresh Tears Lubricant Eye Drops contains is Carboxymethylcellulose Sodium 0.5%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Emergen-C Vitamin C Supplement",
+      "patterns": [
+        "What ingredients does Emergen-C Vitamin C Supplement have",
+        "Ingredients of Emergen-C Vitamin C Supplement",
+        "what are the ingredients in Emergen-C Vitamin C Supplement",
+        "ingredients Emergen-C Vitamin C Supplement",
+        "Emergen-C Vitamin C Supplement ingredients",
+        "Emergen-C Vitamin C Supplement composition",
+        "composition of Emergen-C Vitamin C Supplement",
+        "what is Emergen-C Vitamin C Supplement composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Emergen-C Vitamin C Supplement contains are Vitamin C 1000mg, B Vitamins, and Electrolytes"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Airborne Immune Support Supplement",
+      "patterns": [
+        "What ingredients does Airborne Immune Support Supplement have",
+        "Ingredients of Airborne Immune Support Supplement",
+        "what are the ingredients in Airborne Immune Support Supplement",
+        "ingredients Airborne Immune Support Supplement",
+        "Airborne Immune Support Supplement ingredients",
+        "Airborne Immune Support Supplement composition",
+        "composition of Airborne Immune Support Supplement",
+        "what is Airborne Immune Support Supplement composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Airborne Immune Support Supplement contains are Vitamin C 1000mg, Zinc, and Echinacea"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Melatonin Sleep Aid",
+      "patterns": [
+        "What ingredients does Melatonin Sleep Aid have",
+        "Ingredients of Melatonin Sleep Aid",
+        "what are the ingredients in Melatonin Sleep Aid",
+        "ingredients Melatonin Sleep Aid",
+        "Melatonin Sleep Aid ingredients",
+        "Melatonin Sleep Aid composition",
+        "composition of Melatonin Sleep Aid",
+        "what is Melatonin Sleep Aid composed of"
+      ],
+      "responses": [
+        "An ingredient that Melatonin Sleep Aid contains is Melatonin 5mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of ZzzQuil Nighttime Sleep Aid",
+      "patterns": [
+        "What ingredients does ZzzQuil Nighttime Sleep Aid have",
+        "Ingredients of ZzzQuil Nighttime Sleep Aid",
+        "what are the ingredients in ZzzQuil Nighttime Sleep Aid",
+        "ingredients ZzzQuil Nighttime Sleep Aid",
+        "ZzzQuil Nighttime Sleep Aid ingredients",
+        "ZzzQuil Nighttime Sleep Aid composition",
+        "composition of ZzzQuil Nighttime Sleep Aid",
+        "what is ZzzQuil Nighttime Sleep Aid composed of"
+      ],
+      "responses": [
+        "An ingredient that ZzzQuil Nighttime Sleep Aid contains is Diphenhydramine HCl 25mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Advil PM Pain Reliever and Sleep Aid",
+      "patterns": [
+        "What ingredients does Advil PM Pain Reliever and Sleep Aid have",
+        "Ingredients of Advil PM Pain Reliever and Sleep Aid",
+        "what are the ingredients in Advil PM Pain Reliever and Sleep Aid",
+        "ingredients Advil PM Pain Reliever and Sleep Aid",
+        "Advil PM Pain Reliever and Sleep Aid ingredients",
+        "Advil PM Pain Reliever and Sleep Aid composition",
+        "composition of Advil PM Pain Reliever and Sleep Aid",
+        "what is Advil PM Pain Reliever and Sleep Aid composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Advil PM Pain Reliever and Sleep Aid contains are Ibuprofen 200mg, and Diphenhydramine Citrate 38mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Theraflu Multi-Symptom Severe Cold Relief",
+      "patterns": [
+        "What ingredients does Theraflu Multi-Symptom Severe Cold Relief have",
+        "Ingredients of Theraflu Multi-Symptom Severe Cold Relief",
+        "what are the ingredients in Theraflu Multi-Symptom Severe Cold Relief",
+        "ingredients Theraflu Multi-Symptom Severe Cold Relief",
+        "Theraflu Multi-Symptom Severe Cold Relief ingredients",
+        "Theraflu Multi-Symptom Severe Cold Relief composition",
+        "composition of Theraflu Multi-Symptom Severe Cold Relief",
+        "what is Theraflu Multi-Symptom Severe Cold Relief composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Theraflu Multi-Symptom Severe Cold Relief contains are Acetaminophen 500mg, Dextromethorphan HBr 20mg, and Phenylephrine HCl 10mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Sudafed PE Sinus Pressure + Pain",
+      "patterns": [
+        "What ingredients does Sudafed PE Sinus Pressure + Pain have",
+        "Ingredients of Sudafed PE Sinus Pressure + Pain",
+        "what are the ingredients in Sudafed PE Sinus Pressure + Pain",
+        "ingredients Sudafed PE Sinus Pressure + Pain",
+        "Sudafed PE Sinus Pressure + Pain ingredients",
+        "Sudafed PE Sinus Pressure + Pain composition",
+        "composition of Sudafed PE Sinus Pressure + Pain",
+        "what is Sudafed PE Sinus Pressure + Pain composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Sudafed PE Sinus Pressure + Pain contains are Acetaminophen 325mg, and Phenylephrine HCl 5mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Alka-Seltzer Original Effervescent Tablets",
+      "patterns": [
+        "What ingredients does Alka-Seltzer Original Effervescent Tablets have",
+        "Ingredients of Alka-Seltzer Original Effervescent Tablets",
+        "what are the ingredients in Alka-Seltzer Original Effervescent Tablets",
+        "ingredients Alka-Seltzer Original Effervescent Tablets",
+        "Alka-Seltzer Original Effervescent Tablets ingredients",
+        "Alka-Seltzer Original Effervescent Tablets composition",
+        "composition of Alka-Seltzer Original Effervescent Tablets",
+        "what is Alka-Seltzer Original Effervescent Tablets composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Alka-Seltzer Original Effervescent Tablets contains are Aspirin 325mg, Citric Acid 1000mg, and Sodium Bicarbonate 1916mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Prilosec OTC",
+      "patterns": [
+        "What ingredients does Prilosec OTC have",
+        "Ingredients of Prilosec OTC",
+        "what are the ingredients in Prilosec OTC",
+        "ingredients Prilosec OTC",
+        "Prilosec OTC ingredients",
+        "Prilosec OTC composition",
+        "composition of Prilosec OTC",
+        "what is Prilosec OTC composed of"
+      ],
+      "responses": [
+        "An ingredient that Prilosec OTC contains is Omeprazole 20mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Polysporin First Aid Antibiotic Ointment",
+      "patterns": [
+        "What ingredients does Polysporin First Aid Antibiotic Ointment have",
+        "Ingredients of Polysporin First Aid Antibiotic Ointment",
+        "what are the ingredients in Polysporin First Aid Antibiotic Ointment",
+        "ingredients Polysporin First Aid Antibiotic Ointment",
+        "Polysporin First Aid Antibiotic Ointment ingredients",
+        "Polysporin First Aid Antibiotic Ointment composition",
+        "composition of Polysporin First Aid Antibiotic Ointment",
+        "what is Polysporin First Aid Antibiotic Ointment composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Polysporin First Aid Antibiotic Ointment contains are Bacitracin Zinc, and Polymyxin B Sulfate"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Systane Lubricant Eye Drops",
+      "patterns": [
+        "What ingredients does Systane Lubricant Eye Drops have",
+        "Ingredients of Systane Lubricant Eye Drops",
+        "what are the ingredients in Systane Lubricant Eye Drops",
+        "ingredients Systane Lubricant Eye Drops",
+        "Systane Lubricant Eye Drops ingredients",
+        "Systane Lubricant Eye Drops composition",
+        "composition of Systane Lubricant Eye Drops",
+        "what is Systane Lubricant Eye Drops composed of"
+      ],
+      "responses": [
+        "Some of the ingredients that Systane Lubricant Eye Drops contains are Polyethylene Glycol 400 0.4%, and Propylene Glycol 0.3%"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ingredients of Nicoderm CQ Nicotine Patches",
+      "patterns": [
+        "What ingredients does Nicoderm CQ Nicotine Patches have",
+        "Ingredients of Nicoderm CQ Nicotine Patches",
+        "what are the ingredients in Nicoderm CQ Nicotine Patches",
+        "ingredients Nicoderm CQ Nicotine Patches",
+        "Nicoderm CQ Nicotine Patches ingredients",
+        "Nicoderm CQ Nicotine Patches composition",
+        "composition of Nicoderm CQ Nicotine Patches",
+        "what is Nicoderm CQ Nicotine Patches composed of"
+      ],
+      "responses": [
+        "An ingredient that Nicoderm CQ Nicotine Patches contains is Nicotine Transdermal System 21mg"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Tylenol Extra Strength",
+      "patterns": [
+        "Tylenol Extra Strength reviews",
+        "Reviews of Tylenol Extra Strength",
+        "Tylenol Extra Strength feedback",
+        "What is customer feedback on Tylenol Extra Strength",
+        "What are customer reviews on Tylenol Extra Strength",
+        "What do people think of Tylenol Extra Strength",
+        "Thoughts on Tylenol Extra Strength"
+      ],
+      "responses": [
+        "Tylenol Extra Strength has 90% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Advil Ibuprofen Tablets",
+      "patterns": [
+        "Advil Ibuprofen Tablets reviews",
+        "Reviews of Advil Ibuprofen Tablets",
+        "Advil Ibuprofen Tablets feedback",
+        "What is customer feedback on Advil Ibuprofen Tablets",
+        "What are customer reviews on Advil Ibuprofen Tablets",
+        "What do people think of Advil Ibuprofen Tablets",
+        "Thoughts on Advil Ibuprofen Tablets"
+      ],
+      "responses": [
+        "Advil Ibuprofen Tablets has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Benadryl Allergy Relief",
+      "patterns": [
+        "Benadryl Allergy Relief reviews",
+        "Reviews of Benadryl Allergy Relief",
+        "Benadryl Allergy Relief feedback",
+        "What is customer feedback on Benadryl Allergy Relief",
+        "What are customer reviews on Benadryl Allergy Relief",
+        "What do people think of Benadryl Allergy Relief",
+        "Thoughts on Benadryl Allergy Relief"
+      ],
+      "responses": [
+        "Benadryl Allergy Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Claritin Non-Drowsy Tablets",
+      "patterns": [
+        "Claritin Non-Drowsy Tablets reviews",
+        "Reviews of Claritin Non-Drowsy Tablets",
+        "Claritin Non-Drowsy Tablets feedback",
+        "What is customer feedback on Claritin Non-Drowsy Tablets",
+        "What are customer reviews on Claritin Non-Drowsy Tablets",
+        "What do people think of Claritin Non-Drowsy Tablets",
+        "Thoughts on Claritin Non-Drowsy Tablets"
+      ],
+      "responses": [
+        "Claritin Non-Drowsy Tablets has 88% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Pepto-Bismol Liquid",
+      "patterns": [
+        "Pepto-Bismol Liquid reviews",
+        "Reviews of Pepto-Bismol Liquid",
+        "Pepto-Bismol Liquid feedback",
+        "What is customer feedback on Pepto-Bismol Liquid",
+        "What are customer reviews on Pepto-Bismol Liquid",
+        "What do people think of Pepto-Bismol Liquid",
+        "Thoughts on Pepto-Bismol Liquid"
+      ],
+      "responses": [
+        "Pepto-Bismol Liquid has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Robitussin Cough Syrup",
+      "patterns": [
+        "Robitussin Cough Syrup reviews",
+        "Reviews of Robitussin Cough Syrup",
+        "Robitussin Cough Syrup feedback",
+        "What is customer feedback on Robitussin Cough Syrup",
+        "What are customer reviews on Robitussin Cough Syrup",
+        "What do people think of Robitussin Cough Syrup",
+        "Thoughts on Robitussin Cough Syrup"
+      ],
+      "responses": [
+        "Robitussin Cough Syrup has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Imodium A-D Anti-Diarrheal",
+      "patterns": [
+        "Imodium A-D Anti-Diarrheal reviews",
+        "Reviews of Imodium A-D Anti-Diarrheal",
+        "Imodium A-D Anti-Diarrheal feedback",
+        "What is customer feedback on Imodium A-D Anti-Diarrheal",
+        "What are customer reviews on Imodium A-D Anti-Diarrheal",
+        "What do people think of Imodium A-D Anti-Diarrheal",
+        "Thoughts on Imodium A-D Anti-Diarrheal"
+      ],
+      "responses": [
+        "Imodium A-D Anti-Diarrheal has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Aleve Pain Reliever",
+      "patterns": [
+        "Aleve Pain Reliever reviews",
+        "Reviews of Aleve Pain Reliever",
+        "Aleve Pain Reliever feedback",
+        "What is customer feedback on Aleve Pain Reliever",
+        "What are customer reviews on Aleve Pain Reliever",
+        "What do people think of Aleve Pain Reliever",
+        "Thoughts on Aleve Pain Reliever"
+      ],
+      "responses": [
+        "Aleve Pain Reliever has 83% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Flonase Nasal Spray",
+      "patterns": [
+        "Flonase Nasal Spray reviews",
+        "Reviews of Flonase Nasal Spray",
+        "Flonase Nasal Spray feedback",
+        "What is customer feedback on Flonase Nasal Spray",
+        "What are customer reviews on Flonase Nasal Spray",
+        "What do people think of Flonase Nasal Spray",
+        "Thoughts on Flonase Nasal Spray"
+      ],
+      "responses": [
+        "Flonase Nasal Spray has 87% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Afrin Nasal Spray",
+      "patterns": [
+        "Afrin Nasal Spray reviews",
+        "Reviews of Afrin Nasal Spray",
+        "Afrin Nasal Spray feedback",
+        "What is customer feedback on Afrin Nasal Spray",
+        "What are customer reviews on Afrin Nasal Spray",
+        "What do people think of Afrin Nasal Spray",
+        "Thoughts on Afrin Nasal Spray"
+      ],
+      "responses": [
+        "Afrin Nasal Spray has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Miralax Laxative Powder",
+      "patterns": [
+        "Miralax Laxative Powder reviews",
+        "Reviews of Miralax Laxative Powder",
+        "Miralax Laxative Powder feedback",
+        "What is customer feedback on Miralax Laxative Powder",
+        "What are customer reviews on Miralax Laxative Powder",
+        "What do people think of Miralax Laxative Powder",
+        "Thoughts on Miralax Laxative Powder"
+      ],
+      "responses": [
+        "Miralax Laxative Powder has 82% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Tums Antacid Tablets",
+      "patterns": [
+        "Tums Antacid Tablets reviews",
+        "Reviews of Tums Antacid Tablets",
+        "Tums Antacid Tablets feedback",
+        "What is customer feedback on Tums Antacid Tablets",
+        "What are customer reviews on Tums Antacid Tablets",
+        "What do people think of Tums Antacid Tablets",
+        "Thoughts on Tums Antacid Tablets"
+      ],
+      "responses": [
+        "Tums Antacid Tablets has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Preparation H Hemorrhoidal Ointment",
+      "patterns": [
+        "Preparation H Hemorrhoidal Ointment reviews",
+        "Reviews of Preparation H Hemorrhoidal Ointment",
+        "Preparation H Hemorrhoidal Ointment feedback",
+        "What is customer feedback on Preparation H Hemorrhoidal Ointment",
+        "What are customer reviews on Preparation H Hemorrhoidal Ointment",
+        "What do people think of Preparation H Hemorrhoidal Ointment",
+        "Thoughts on Preparation H Hemorrhoidal Ointment"
+      ],
+      "responses": [
+        "Preparation H Hemorrhoidal Ointment has 77% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Neosporin Antibiotic Ointment",
+      "patterns": [
+        "Neosporin Antibiotic Ointment reviews",
+        "Reviews of Neosporin Antibiotic Ointment",
+        "Neosporin Antibiotic Ointment feedback",
+        "What is customer feedback on Neosporin Antibiotic Ointment",
+        "What are customer reviews on Neosporin Antibiotic Ointment",
+        "What do people think of Neosporin Antibiotic Ointment",
+        "Thoughts on Neosporin Antibiotic Ointment"
+      ],
+      "responses": [
+        "Neosporin Antibiotic Ointment has 90% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Cortizone-10 Anti-Itch Cream",
+      "patterns": [
+        "Cortizone-10 Anti-Itch Cream reviews",
+        "Reviews of Cortizone-10 Anti-Itch Cream",
+        "Cortizone-10 Anti-Itch Cream feedback",
+        "What is customer feedback on Cortizone-10 Anti-Itch Cream",
+        "What are customer reviews on Cortizone-10 Anti-Itch Cream",
+        "What do people think of Cortizone-10 Anti-Itch Cream",
+        "Thoughts on Cortizone-10 Anti-Itch Cream"
+      ],
+      "responses": [
+        "Cortizone-10 Anti-Itch Cream has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Lotrimin AF Antifungal Cream",
+      "patterns": [
+        "Lotrimin AF Antifungal Cream reviews",
+        "Reviews of Lotrimin AF Antifungal Cream",
+        "Lotrimin AF Antifungal Cream feedback",
+        "What is customer feedback on Lotrimin AF Antifungal Cream",
+        "What are customer reviews on Lotrimin AF Antifungal Cream",
+        "What do people think of Lotrimin AF Antifungal Cream",
+        "Thoughts on Lotrimin AF Antifungal Cream"
+      ],
+      "responses": [
+        "Lotrimin AF Antifungal Cream has 82% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Monistat 1-Day Treatment",
+      "patterns": [
+        "Monistat 1-Day Treatment reviews",
+        "Reviews of Monistat 1-Day Treatment",
+        "Monistat 1-Day Treatment feedback",
+        "What is customer feedback on Monistat 1-Day Treatment",
+        "What are customer reviews on Monistat 1-Day Treatment",
+        "What do people think of Monistat 1-Day Treatment",
+        "Thoughts on Monistat 1-Day Treatment"
+      ],
+      "responses": [
+        "Monistat 1-Day Treatment has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Abreva Cold Sore Treatment",
+      "patterns": [
+        "Abreva Cold Sore Treatment reviews",
+        "Reviews of Abreva Cold Sore Treatment",
+        "Abreva Cold Sore Treatment feedback",
+        "What is customer feedback on Abreva Cold Sore Treatment",
+        "What are customer reviews on Abreva Cold Sore Treatment",
+        "What do people think of Abreva Cold Sore Treatment",
+        "Thoughts on Abreva Cold Sore Treatment"
+      ],
+      "responses": [
+        "Abreva Cold Sore Treatment has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Nicorette Nicotine Gum",
+      "patterns": [
+        "Nicorette Nicotine Gum reviews",
+        "Reviews of Nicorette Nicotine Gum",
+        "Nicorette Nicotine Gum feedback",
+        "What is customer feedback on Nicorette Nicotine Gum",
+        "What are customer reviews on Nicorette Nicotine Gum",
+        "What do people think of Nicorette Nicotine Gum",
+        "Thoughts on Nicorette Nicotine Gum"
+      ],
+      "responses": [
+        "Nicorette Nicotine Gum has 70% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Bayer Low Dose Aspirin",
+      "patterns": [
+        "Bayer Low Dose Aspirin reviews",
+        "Reviews of Bayer Low Dose Aspirin",
+        "Bayer Low Dose Aspirin feedback",
+        "What is customer feedback on Bayer Low Dose Aspirin",
+        "What are customer reviews on Bayer Low Dose Aspirin",
+        "What do people think of Bayer Low Dose Aspirin",
+        "Thoughts on Bayer Low Dose Aspirin"
+      ],
+      "responses": [
+        "Bayer Low Dose Aspirin has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Excedrin Migraine Relief",
+      "patterns": [
+        "Excedrin Migraine Relief reviews",
+        "Reviews of Excedrin Migraine Relief",
+        "Excedrin Migraine Relief feedback",
+        "What is customer feedback on Excedrin Migraine Relief",
+        "What are customer reviews on Excedrin Migraine Relief",
+        "What do people think of Excedrin Migraine Relief",
+        "Thoughts on Excedrin Migraine Relief"
+      ],
+      "responses": [
+        "Excedrin Migraine Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Delsym Cough Suppressant",
+      "patterns": [
+        "Delsym Cough Suppressant reviews",
+        "Reviews of Delsym Cough Suppressant",
+        "Delsym Cough Suppressant feedback",
+        "What is customer feedback on Delsym Cough Suppressant",
+        "What are customer reviews on Delsym Cough Suppressant",
+        "What do people think of Delsym Cough Suppressant",
+        "Thoughts on Delsym Cough Suppressant"
+      ],
+      "responses": [
+        "Delsym Cough Suppressant has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Dramamine Motion Sickness Relief",
+      "patterns": [
+        "Dramamine Motion Sickness Relief reviews",
+        "Reviews of Dramamine Motion Sickness Relief",
+        "Dramamine Motion Sickness Relief feedback",
+        "What is customer feedback on Dramamine Motion Sickness Relief",
+        "What are customer reviews on Dramamine Motion Sickness Relief",
+        "What do people think of Dramamine Motion Sickness Relief",
+        "Thoughts on Dramamine Motion Sickness Relief"
+      ],
+      "responses": [
+        "Dramamine Motion Sickness Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Zyrtec Allergy Relief",
+      "patterns": [
+        "Zyrtec Allergy Relief reviews",
+        "Reviews of Zyrtec Allergy Relief",
+        "Zyrtec Allergy Relief feedback",
+        "What is customer feedback on Zyrtec Allergy Relief",
+        "What are customer reviews on Zyrtec Allergy Relief",
+        "What do people think of Zyrtec Allergy Relief",
+        "Thoughts on Zyrtec Allergy Relief"
+      ],
+      "responses": [
+        "Zyrtec Allergy Relief has 88% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Cepacol Sore Throat Lozenges",
+      "patterns": [
+        "Cepacol Sore Throat Lozenges reviews",
+        "Reviews of Cepacol Sore Throat Lozenges",
+        "Cepacol Sore Throat Lozenges feedback",
+        "What is customer feedback on Cepacol Sore Throat Lozenges",
+        "What are customer reviews on Cepacol Sore Throat Lozenges",
+        "What do people think of Cepacol Sore Throat Lozenges",
+        "Thoughts on Cepacol Sore Throat Lozenges"
+      ],
+      "responses": [
+        "Cepacol Sore Throat Lozenges has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Orajel Toothache Gel",
+      "patterns": [
+        "Orajel Toothache Gel reviews",
+        "Reviews of Orajel Toothache Gel",
+        "Orajel Toothache Gel feedback",
+        "What is customer feedback on Orajel Toothache Gel",
+        "What are customer reviews on Orajel Toothache Gel",
+        "What do people think of Orajel Toothache Gel",
+        "Thoughts on Orajel Toothache Gel"
+      ],
+      "responses": [
+        "Orajel Toothache Gel has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Visine Red Eye Comfort",
+      "patterns": [
+        "Visine Red Eye Comfort reviews",
+        "Reviews of Visine Red Eye Comfort",
+        "Visine Red Eye Comfort feedback",
+        "What is customer feedback on Visine Red Eye Comfort",
+        "What are customer reviews on Visine Red Eye Comfort",
+        "What do people think of Visine Red Eye Comfort",
+        "Thoughts on Visine Red Eye Comfort"
+      ],
+      "responses": [
+        "Visine Red Eye Comfort has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Refresh Tears Lubricant Eye Drops",
+      "patterns": [
+        "Refresh Tears Lubricant Eye Drops reviews",
+        "Reviews of Refresh Tears Lubricant Eye Drops",
+        "Refresh Tears Lubricant Eye Drops feedback",
+        "What is customer feedback on Refresh Tears Lubricant Eye Drops",
+        "What are customer reviews on Refresh Tears Lubricant Eye Drops",
+        "What do people think of Refresh Tears Lubricant Eye Drops",
+        "Thoughts on Refresh Tears Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Refresh Tears Lubricant Eye Drops has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Emergen-C Vitamin C Supplement",
+      "patterns": [
+        "Emergen-C Vitamin C Supplement reviews",
+        "Reviews of Emergen-C Vitamin C Supplement",
+        "Emergen-C Vitamin C Supplement feedback",
+        "What is customer feedback on Emergen-C Vitamin C Supplement",
+        "What are customer reviews on Emergen-C Vitamin C Supplement",
+        "What do people think of Emergen-C Vitamin C Supplement",
+        "Thoughts on Emergen-C Vitamin C Supplement"
+      ],
+      "responses": [
+        "Emergen-C Vitamin C Supplement has 82% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Airborne Immune Support Supplement",
+      "patterns": [
+        "Airborne Immune Support Supplement reviews",
+        "Reviews of Airborne Immune Support Supplement",
+        "Airborne Immune Support Supplement feedback",
+        "What is customer feedback on Airborne Immune Support Supplement",
+        "What are customer reviews on Airborne Immune Support Supplement",
+        "What do people think of Airborne Immune Support Supplement",
+        "Thoughts on Airborne Immune Support Supplement"
+      ],
+      "responses": [
+        "Airborne Immune Support Supplement has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Melatonin Sleep Aid",
+      "patterns": [
+        "Melatonin Sleep Aid reviews",
+        "Reviews of Melatonin Sleep Aid",
+        "Melatonin Sleep Aid feedback",
+        "What is customer feedback on Melatonin Sleep Aid",
+        "What are customer reviews on Melatonin Sleep Aid",
+        "What do people think of Melatonin Sleep Aid",
+        "Thoughts on Melatonin Sleep Aid"
+      ],
+      "responses": [
+        "Melatonin Sleep Aid has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of ZzzQuil Nighttime Sleep Aid",
+      "patterns": [
+        "ZzzQuil Nighttime Sleep Aid reviews",
+        "Reviews of ZzzQuil Nighttime Sleep Aid",
+        "ZzzQuil Nighttime Sleep Aid feedback",
+        "What is customer feedback on ZzzQuil Nighttime Sleep Aid",
+        "What are customer reviews on ZzzQuil Nighttime Sleep Aid",
+        "What do people think of ZzzQuil Nighttime Sleep Aid",
+        "Thoughts on ZzzQuil Nighttime Sleep Aid"
+      ],
+      "responses": [
+        "ZzzQuil Nighttime Sleep Aid has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Advil PM Pain Reliever and Sleep Aid",
+      "patterns": [
+        "Advil PM Pain Reliever and Sleep Aid reviews",
+        "Reviews of Advil PM Pain Reliever and Sleep Aid",
+        "Advil PM Pain Reliever and Sleep Aid feedback",
+        "What is customer feedback on Advil PM Pain Reliever and Sleep Aid",
+        "What are customer reviews on Advil PM Pain Reliever and Sleep Aid",
+        "What do people think of Advil PM Pain Reliever and Sleep Aid",
+        "Thoughts on Advil PM Pain Reliever and Sleep Aid"
+      ],
+      "responses": [
+        "Advil PM Pain Reliever and Sleep Aid has 75% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Theraflu Multi-Symptom Severe Cold Relief",
+      "patterns": [
+        "Theraflu Multi-Symptom Severe Cold Relief reviews",
+        "Reviews of Theraflu Multi-Symptom Severe Cold Relief",
+        "Theraflu Multi-Symptom Severe Cold Relief feedback",
+        "What is customer feedback on Theraflu Multi-Symptom Severe Cold Relief",
+        "What are customer reviews on Theraflu Multi-Symptom Severe Cold Relief",
+        "What do people think of Theraflu Multi-Symptom Severe Cold Relief",
+        "Thoughts on Theraflu Multi-Symptom Severe Cold Relief"
+      ],
+      "responses": [
+        "Theraflu Multi-Symptom Severe Cold Relief has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Sudafed PE Sinus Pressure + Pain",
+      "patterns": [
+        "Sudafed PE Sinus Pressure + Pain reviews",
+        "Reviews of Sudafed PE Sinus Pressure + Pain",
+        "Sudafed PE Sinus Pressure + Pain feedback",
+        "What is customer feedback on Sudafed PE Sinus Pressure + Pain",
+        "What are customer reviews on Sudafed PE Sinus Pressure + Pain",
+        "What do people think of Sudafed PE Sinus Pressure + Pain",
+        "Thoughts on Sudafed PE Sinus Pressure + Pain"
+      ],
+      "responses": [
+        "Sudafed PE Sinus Pressure + Pain has 80% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Alka-Seltzer Original Effervescent Tablets",
+      "patterns": [
+        "Alka-Seltzer Original Effervescent Tablets reviews",
+        "Reviews of Alka-Seltzer Original Effervescent Tablets",
+        "Alka-Seltzer Original Effervescent Tablets feedback",
+        "What is customer feedback on Alka-Seltzer Original Effervescent Tablets",
+        "What are customer reviews on Alka-Seltzer Original Effervescent Tablets",
+        "What do people think of Alka-Seltzer Original Effervescent Tablets",
+        "Thoughts on Alka-Seltzer Original Effervescent Tablets"
+      ],
+      "responses": [
+        "Alka-Seltzer Original Effervescent Tablets has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Prilosec OTC",
+      "patterns": [
+        "Prilosec OTC reviews",
+        "Reviews of Prilosec OTC",
+        "Prilosec OTC feedback",
+        "What is customer feedback on Prilosec OTC",
+        "What are customer reviews on Prilosec OTC",
+        "What do people think of Prilosec OTC",
+        "Thoughts on Prilosec OTC"
+      ],
+      "responses": [
+        "Prilosec OTC has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Polysporin First Aid Antibiotic Ointment",
+      "patterns": [
+        "Polysporin First Aid Antibiotic Ointment reviews",
+        "Reviews of Polysporin First Aid Antibiotic Ointment",
+        "Polysporin First Aid Antibiotic Ointment feedback",
+        "What is customer feedback on Polysporin First Aid Antibiotic Ointment",
+        "What are customer reviews on Polysporin First Aid Antibiotic Ointment",
+        "What do people think of Polysporin First Aid Antibiotic Ointment",
+        "Thoughts on Polysporin First Aid Antibiotic Ointment"
+      ],
+      "responses": [
+        "Polysporin First Aid Antibiotic Ointment has 88% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Systane Lubricant Eye Drops",
+      "patterns": [
+        "Systane Lubricant Eye Drops reviews",
+        "Reviews of Systane Lubricant Eye Drops",
+        "Systane Lubricant Eye Drops feedback",
+        "What is customer feedback on Systane Lubricant Eye Drops",
+        "What are customer reviews on Systane Lubricant Eye Drops",
+        "What do people think of Systane Lubricant Eye Drops",
+        "Thoughts on Systane Lubricant Eye Drops"
+      ],
+      "responses": [
+        "Systane Lubricant Eye Drops has 85% positive reviews from customers"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Reviews of Nicoderm CQ Nicotine Patches",
+      "patterns": [
+        "Nicoderm CQ Nicotine Patches reviews",
+        "Reviews of Nicoderm CQ Nicotine Patches",
+        "Nicoderm CQ Nicotine Patches feedback",
+        "What is customer feedback on Nicoderm CQ Nicotine Patches",
+        "What are customer reviews on Nicoderm CQ Nicotine Patches",
+        "What do people think of Nicoderm CQ Nicotine Patches",
+        "Thoughts on Nicoderm CQ Nicotine Patches"
+      ],
+      "responses": [
+        "Nicoderm CQ Nicotine Patches has 78% positive reviews from customers"
+      ],
+      "context_set": ""
+    }
+  ]
+}
