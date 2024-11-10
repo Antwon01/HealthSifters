@@ -62,4 +62,26 @@ export default class APIRequest {
         .then(data => {return data})
         .catch(error => console.log(error))
     }
+
+    static getNavItems() {
+        return fetch('http://localhost:8080/navItems', {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' },
+        })
+          .then(response => response.json())
+          .then(data => data)
+          .catch(error => console.log(error));
+    }
+    
+      // Calls the endpoint to add a new navbar item
+      static addNavItem(body) {
+        return fetch('http://localhost:8080/navItems', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        })
+          .then(response => response.json())
+          .then(data => data)
+          .catch(error => console.log(error));
+    }
 }

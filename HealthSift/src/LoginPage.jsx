@@ -63,7 +63,7 @@
 
                 <RedirectButton location="forgotPassword" style="loginBtns" title="Forgot Password"/>
 
-                <RedirectButton location="singUp" style="loginBtns" title="Sign Up"/>
+                <RedirectButton location="signUp" style="loginBtns" title="Sign Up"/>
 
             </div>
 
