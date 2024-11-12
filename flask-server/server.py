@@ -143,31 +143,41 @@ def sign_up():
     password = data['password']
     re_password = data['repassword']
 
+    # Password confirmation check
+    if password != re_password:
+        return jsonify({'error': 'Passwords do not match.'}), 400
+
     # Load existing users
     users_data = load_users()
     users = users_data['users']
 
     # Check if user already exists
     if any(user['email'] == email for user in users):
-        
-        # user already exists.
+        # User already exists.
         return jsonify({'error': -1}), 409
 
     # Hash the password
     hashed_password = generate_password_hash(password)
 
+    # Determine if the user is an admin based on email domain
+    is_admin = email.endswith('@admin.example')
+
     # Create new user
     new_user = {
         "email": email,
         "password": hashed_password,
-        "is_admin": False  # Default to False. Set to True manually for admin users.
+        "is_admin": is_admin,
+        "verified": False  # Add a verified flag for email verification
     }
     users.append(new_user)
     save_users(users_data)
 
-    logger.info(f"New user registered: {email}")
+    logger.info(f"New user registered: {email} (Admin: {is_admin})")
 
-    # sign up successfully
+    # Placeholder for sending verification email
+    # send_verification_email(email)
+
+    # Sign up successfully
     return jsonify({'status': 1}), 201
 
 @app.route("/loginInformation", methods=['POST'])
@@ -176,6 +186,7 @@ def login():
     """
     User Login Endpoint
     Expects JSON with 'username' (email) and 'password'.
+    Returns {'status': 1} for successful user login.
     """
     try:
         data = login_schema.load(request.get_json())
@@ -190,11 +201,11 @@ def login():
     users = users_data['users']
     
     # Find user
-    user = next((user for user in users if user['email'] == email), None)
+    user = next((user for user in users if user['email'] == email and not user.get('is_admin', False)), None)
 
     if user and check_password_hash(user['password'], password):
         logger.info(f"User {email} logged in successfully.")
-        return jsonify({'status': 1}), 200
+        return jsonify({'status': 1}), 200  # Status 1 for regular users
     else:
         logger.warning(f"Failed login attempt for user {email}.")
         return jsonify({'error': -1}), 401
@@ -205,6 +216,7 @@ def admin_login():
     """
     Admin Login Endpoint
     Expects JSON with 'username' (email) and 'password'.
+    Returns {'status': 2} for successful admin login.
     """
     try:
         data = login_schema.load(request.get_json())
@@ -223,7 +235,7 @@ def admin_login():
 
     if admin_user and check_password_hash(admin_user['password'], password):
         logger.info(f"Admin {email} logged in successfully.")
-        return jsonify({'status': 1}), 200
+        return jsonify({'status': 2}), 200  # Status 2 for admins
     else:
         logger.warning(f"Failed admin login attempt for user {email}.")
         return jsonify({'error': -1}), 401

@@ -2,28 +2,26 @@ export default class APIRequest {
     
     // calls the loginInformation end point from the back end.
     static userLoginInfo(body){
-        // sends body which includes username and password and returns the object returned from backend
         return fetch('http://localhost:8080/loginInformation', {
-            'method': 'POST',
-            headers : {'Content-type' : 'application/json'},
-            body : JSON.stringify(body)
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(body)
         })
         .then(response => response.json())
-        .then(data => {return data})
-        .catch(error => console.log(error))
+        .then(data => data)
+        .catch(error => console.log(error));
     }
 
-    // calls the adminInformation end point from the back end
+    // Admin login
     static adminLoginInformation(body) {
-        // sends body which includes username and password and returns the object returned from backend
         return fetch('http://localhost:8080/adminInformation', {
-            'method' : 'POST',
-            headers : {'Content-type' : 'application/json'},
-            body : JSON.stringify(body)
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(body)
         })
         .then(response => response.json())
-        .then(data => {return data})
-        .catch(error => console.log(error))
+        .then(data => data)
+        .catch(error => console.log(error));
     }
 
     // calls the forgotPassword end point from the back end
