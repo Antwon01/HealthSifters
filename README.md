@@ -34,4 +34,7 @@ FRONT END
   - Run the command npm create vite@latest my-react-app -- --template react to install React using Vite. 
   - Change directories into your new app. 
   - Run npm install to install dependencies. 
-  - Run npm run dev to start your local development server. 
+  - Run npm run dev to start your local development server.
+
+INSTALL DEPENDENCIES
+  - pip install -r requirementn.txt
