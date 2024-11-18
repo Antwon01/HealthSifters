@@ -10,6 +10,7 @@ from marshmallow import Schema, fields, ValidationError
 import logging
 import pandas as pd
 from pymongo import MongoClient # TODO: add to requirements.txt
+import certifi
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -95,7 +96,8 @@ def setup_db(data_path):
     print("setup_db is running") # testing purposes 
 
     # set up MongoDB
-    client = MongoClient('mongodb://localhost:27017/')
+    # client = MongoClient('mongodb://localhost:27017/') # for local mongodb
+    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
     db = client['healthsiftDB'] # database name
 
     # set up collection 

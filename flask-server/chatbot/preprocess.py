@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 import re
 import json 
+import certifi
 
 # iterates over the medicine collections and prints json of each medicine document 
 def print_medicines(medicine_collection):
@@ -281,6 +282,60 @@ def add_link_to_intents(medicine_collection, intents_path):
     
         print("")
 
+# add comparisons between medicines to intents.json
+def add_medicine_comparisons_to_intents(medicine_collection, intents_path):
+    # iterate over medicines
+    for medicine_entry1 in medicine_collection.find():
+        for medicine_entry2 in medicine_collection.find():
+            # get medicine names of both medicines
+            name_medicine1 = medicine_entry1['Medicine Name']
+            name_medicine2 = medicine_entry2['Medicine Name']
+
+            # if the two medicines are the same, skip to the next iteration
+            if name_medicine1 == name_medicine2:
+                continue
+
+            # get medicine information of both medicines
+            use_medicine1 = medicine_entry1['Medicine Use']
+            use_medicine2 = medicine_entry2['Medicine Use']
+
+            # generate response(s)
+            response1 = f"{name_medicine1} {use_medicine1.lower()}. On the other hand, {name_medicine2} {use_medicine2.lower()}."
+            responses = [response1]
+
+            # generate patterns
+            pattern1 = f"{name_medicine1} vs {name_medicine2}"
+            pattern2 = f"{name_medicine1} versus {name_medicine2}"
+            pattern3 = f"Compare {name_medicine1} and {name_medicine2}"
+            pattern4 = f"Uses of {name_medicine1} versus {name_medicine2}"
+            pattern5 = f"{name_medicine1} or {name_medicine2}"
+            patterns = [pattern1, pattern2, pattern3, pattern4, pattern5]
+
+            # make json entry 
+            new_uses_intent = {
+                "tag": f"Compare {name_medicine1} and {name_medicine2}",
+                "patterns":  patterns,
+                "responses": responses,
+                "context_set": ""
+            }
+
+            # save to intents.json
+            with open(intents_path, 'r+') as file:
+                # load data in intents.json
+                data = json.load(file)
+
+                # add new_uses_intent into data from intents.json
+                data["intents"].append(new_uses_intent)
+
+                # move to beginning of intents.json file 
+                file.seek(0)
+        
+                # write data back to intents.json
+                json.dump(data, file, indent=2)
+        
+            print("")
+
+
 
 # add all intents to intents.json
 def insert_intents(medicine_collection, intents_path):
@@ -304,10 +359,15 @@ def insert_intents(medicine_collection, intents_path):
     add_link_to_intents(medicine_collection, intents_path)
     print("added pharmacy links to intents")
 
+    # Hard coded approach is inefficient and affects accuracy of the chatbot
+    # insert medicine comparisons to intents
+    # add_medicine_comparisons_to_intents(medicine_collection, intents_path)
+    # print("added medicine comparisons to intents")
+
 # main 
 
 # connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
 
 # get the database 
 db = client['healthsiftDB'] 

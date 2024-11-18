@@ -94,7 +94,7 @@ def get_response(intents_list, intents_json):
 
     return "I'm sorry, I didn't understand that."
 
-# Example interaction loop (optional)
+# interaction loop
 if __name__ == "__main__":
     print("Start chatting with the bot (type 'quit' to stop)!")
     while True:
@@ -106,3 +106,10 @@ if __name__ == "__main__":
         intents_list = predict_class(message, model)
         response = get_response(intents_list, intents)
         print(response)
+
+''' Brainstorming ways to handle medicine comparison '''
+# intents_list = predict_class(message, model)
+# if intents_list[select class with highest probability] == medicine comparison
+    # parse for medicine 1 and medicine 2 
+    # get data on medicine 1 and medicine 2 from the database 
+    # print response 
