@@ -90,9 +90,15 @@ def get_response(intents_list, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if i['tag'] == tag:
-            return random.choice(i['responses'])
+            if i['tag'] == "General comparison":
+                return get_general_comparison_response()
+            else:
+                return random.choice(i['responses'])
 
     return "I'm sorry, I didn't understand that."
+
+def get_general_comparison_response():
+    return "Temporary response for general comparison"
 
 # interaction loop
 if __name__ == "__main__":

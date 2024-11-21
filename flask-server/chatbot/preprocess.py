@@ -335,7 +335,93 @@ def add_medicine_comparisons_to_intents(medicine_collection, intents_path):
         
             print("")
 
+# add 'comparison' in general to intents.json
+def add_comparison_to_intents(intents_path):
+    # generate response(s)
+    response1 = f"The user is attempting to compare two medicines."
+    responses = [response1]
 
+    # generate patterns
+    pattern1 = f"compare"
+    pattern2 = f"differences between"
+    pattern3 = f"similarities between"
+    pattern4 = f"contrast"
+    pattern5 = f"versus"
+    pattern6 = f"vs"
+    pattern7 = f"what are the differences between"
+    pattern8 = f"How does differ from"
+    pattern9 = f"compare and"
+    pattern10 = f"contrast and"
+    pattern11 = f"which is better"
+    pattern12 = f"which is worse"
+    patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8, pattern9, pattern10, pattern11, pattern12]
+
+    # make json entry 
+    new_uses_intent = {
+        "tag": f"Comparison",
+        "patterns":  patterns,
+        "responses": responses,
+        "context_set": ""
+    }
+
+    # save to intents.json
+    with open(intents_path, 'r+') as file:
+        # load data in intents.json
+        data = json.load(file)
+
+        # add new_uses_intent into data from intents.json
+        data["intents"].append(new_uses_intent)
+
+        # move to beginning of intents.json file 
+        file.seek(0)
+
+        # write data back to intents.json
+        json.dump(data, file, indent=2)
+
+    print("")
+
+# add 'comparison' in general to intents.json trial 2
+def add_comparison2_to_intents(medicine_collection, intents_path):
+    paired_comparisons = []
+    # iterate over medicines
+    for medicine_entry1 in medicine_collection.find():
+        for medicine_entry2 in medicine_collection.find():
+            # get medicine names of both medicines
+            name_medicine1 = medicine_entry1['Medicine Name']
+            name_medicine2 = medicine_entry2['Medicine Name']
+
+            # if the two medicines are the same, skip to the next iteration
+            if name_medicine1 == name_medicine2:
+                continue
+
+            paired_comparison1 = f"Compare {name_medicine1} and {name_medicine2}"
+            paired_comparison2 = f"What are differences between {name_medicine1} and {name_medicine2}"
+            paired_comparisons.append(paired_comparison1)
+            paired_comparisons.append(paired_comparison2)
+
+    # make json entry 
+    new_uses_intent = {
+        "tag": f"General comparison",
+        "patterns":  paired_comparisons,
+        "responses": ["The user is trying to compare two medicines 2!"],
+        "context_set": ""
+    }
+
+    # save to intents.json
+    with open(intents_path, 'r+') as file:
+        # load data in intents.json
+        data = json.load(file)
+
+        # add new_uses_intent into data from intents.json
+        data["intents"].append(new_uses_intent)
+
+        # move to beginning of intents.json file 
+        file.seek(0)
+
+        # write data back to intents.json
+        json.dump(data, file, indent=2)
+
+    print("")
 
 # add all intents to intents.json
 def insert_intents(medicine_collection, intents_path):
@@ -363,6 +449,14 @@ def insert_intents(medicine_collection, intents_path):
     # insert medicine comparisons to intents
     # add_medicine_comparisons_to_intents(medicine_collection, intents_path)
     # print("added medicine comparisons to intents")
+
+    # add intent to detect general comparison
+    add_comparison_to_intents(intents_path)
+    print("added general comparison detection to intents")
+
+    # add intent to detect general comparison trial 2
+    add_comparison2_to_intents(medicine_collection, intents_path)
+    print("added general comparison trial 2 to intents")
 
 # main 
 
