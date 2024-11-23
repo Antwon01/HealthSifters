@@ -1,7 +1,7 @@
-import filterIcon from './assets/filter-svgrepo-com.svg'
-import APIRequest from "./APIRequest.js"
+import filterIcon from '../assets/filter-svgrepo-com.svg'
+import APIRequest from "../APIRequest.js"
 import { useState, useEffect, useRef } from 'react'
-import Filters from './Filters';
+import Filters from './Filters.jsx';
 
 function SearchBar() {
   

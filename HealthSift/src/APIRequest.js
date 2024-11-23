@@ -62,4 +62,21 @@ export default class APIRequest {
         .then(data => {return data})
         .catch(error => console.log(error))
     }
+
+    static toBase64UsingFetch(url) {
+        // Fetch the image as a blob, then convert it to base64
+        return fetch(url)
+            .then(response => {
+                return response.blob(); // Get the response as a blob (binary large object)
+            })
+            .then(blob => {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result); // Resolve with the base64 string
+                    reader.onerror = reject; // Reject on error
+                    reader.readAsDataURL(blob); // Convert blob to base64
+                });
+            })
+            .catch(error => console.error(error));
+    }
 }

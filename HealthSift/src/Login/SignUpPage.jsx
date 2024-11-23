@@ -1,6 +1,6 @@
-import APIRequest from './APIRequest.js';
-import LoginInformation from './LoginInformation.jsx';
-import RedirectButton from './RedirectButton.jsx';
+import APIRequest from '../APIRequest.js';
+import LoginInformation from '../Components/LoginInformation.jsx';
+import RedirectButton from '../Components/RedirectButton.jsx';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ function SignUp() {
             // if the sign up was successful (1), redirect to homepage
             if (response.status > 0) {
                 
-                navigate("/homepage");
+                navigate("/");
 
             } else {
                 console.log("Incorrect");

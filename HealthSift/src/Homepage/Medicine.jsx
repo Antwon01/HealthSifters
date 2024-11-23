@@ -1,4 +1,4 @@
-import profilePic from "./assets/fakepi.png"
+import profilePic from "../assets/fakepi.png"
 
 function Medicine() {
   return (

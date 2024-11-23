@@ -1,7 +1,8 @@
-import RedirectButton from "./RedirectButton.jsx";
-import LoginInformation from "./LoginInformation.jsx";  
+import RedirectButton from '../Components/RedirectButton.jsx';
+import LoginInformation from "../Components/LoginInformation.jsx";  
+import Error from '../Components/Error.jsx';
 import { useState } from "react";
-import APIRequest from "./APIRequest.js"
+import APIRequest from "../APIRequest.js"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -10,6 +11,7 @@ function AdminLoginPage() {
   // use useStates to store the admin's username and password
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
+  const [displayError, setError] = useState(false)
   const navigate = useNavigate();
 
   function handleSubmit(e) {
@@ -26,7 +28,7 @@ function AdminLoginPage() {
             navigate("/homepage");
 
         } else {
-            console.log("Incorrect");
+            setError(true);
         }
 
     })
@@ -42,6 +44,8 @@ function AdminLoginPage() {
       <div className="admin">
 
               <p className="adminTitle">HealthSift</p>
+
+              <Error setError={displayError} message="Sorry, try again. Invalid Email or Password."/>
 
               <p className="poppinsFont adminLoginTitle">Admin Login</p>
 
