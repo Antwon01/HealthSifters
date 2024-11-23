@@ -3,6 +3,8 @@ import json
 import pickle
 import numpy as np
 import os
+from pymongo import MongoClient
+import certifi
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -79,7 +81,7 @@ def predict_class(sentence, model):
 
     return return_list
 
-def get_response(intents_list, intents_json):
+def get_response(intents_list, intents_json, message):
     """
     Retrieves a random response from the list of possible responses for the predicted intent.
     """
@@ -91,14 +93,77 @@ def get_response(intents_list, intents_json):
     for i in list_of_intents:
         if i['tag'] == tag:
             if i['tag'] == "General comparison":
-                return get_general_comparison_response()
+                return get_general_comparison_response(message)
             else:
                 return random.choice(i['responses'])
 
     return "I'm sorry, I didn't understand that."
 
-def get_general_comparison_response():
-    return "Temporary response for general comparison"
+def get_general_comparison_response(user_input):
+    medicines_in_user_input = parse_for_medicines(user_input)
+
+    if len(medicines_in_user_input) == 2:
+
+        # connect to MongoDB
+        client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+
+        # get the database 
+        db = client['healthsiftDB'] 
+
+        # get the collection 
+        medicine_collection = db['medicine']
+
+        # save medicine names in variables for ease of use 
+        medicine1_name = medicines_in_user_input[0]
+        medicine2_name = medicines_in_user_input[1]
+
+        # get documents from database for the two medicines 
+        medicine1_document = medicine_collection.find_one({"Medicine Name": medicine1_name})
+        medicine2_document = medicine_collection.find_one({"Medicine Name": medicine2_name})
+
+        # get uses of each medicine
+        medicine1_use = medicine1_document['Medicine Use']
+        medicine2_use = medicine2_document['Medicine Use']
+
+        # response to send back to user 
+        response = f"{medicine1_name} {medicine1_use.lower()}. On the other hand, {medicine2_name} {medicine2_use.lower()}."
+        return response
+    
+    else:
+        return f"Please mention exactly two medicines if you would like me to compare them for you"
+
+def parse_for_medicines(user_input):
+    # TODO: this functions expects that the user input contains the medicines full names and with perfect spelling. Making this more dynamic would be good
+
+    # connect to MongoDB
+    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+
+    # get the database 
+    db = client['healthsiftDB'] 
+
+    # get the collection 
+    medicine_collection = db['medicine']
+
+    # create list of all medicine names
+    medicines = []
+    for medicine_entry in medicine_collection.find():
+        # get medicine name 
+        name_medicine = medicine_entry['Medicine Name']
+        medicines.append(name_medicine)
+
+    # check which medicine names the text contains
+    medicines_in_input = []
+    for medicine in medicines:
+        if medicine.lower() in user_input.lower():
+            medicines_in_input.append(medicine)
+
+    # return the medicine names that were found in the user's input
+    return medicines_in_input
+
+
+    
+
+
 
 # interaction loop
 if __name__ == "__main__":
@@ -110,7 +175,7 @@ if __name__ == "__main__":
             break
 
         intents_list = predict_class(message, model)
-        response = get_response(intents_list, intents)
+        response = get_response(intents_list, intents, message)
         print(response)
 
 ''' Brainstorming ways to handle medicine comparison '''
