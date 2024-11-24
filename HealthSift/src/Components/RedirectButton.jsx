@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
   function RedirectButton(props) {
     return (
-      // links the burron to a spefic route established by App.jsx
+      // links the button to a spefic route established by App.jsx
       <Link to={"/" + props.location}>
         <button className={"poppinsFont " + props.style}>{props.title}</button>
       </Link>

@@ -1,6 +1,7 @@
-    import RedirectButton from "./RedirectButton.jsx";
-    import LoginInformation from "./LoginInformation.jsx";
-    import APIRequest from "./APIRequest.js"
+    import RedirectButton from "../components/RedirectButton.jsx";
+    import LoginInformation from "../components/LoginInformation.jsx";
+    import APIRequest from "../APIRequest.js"
+    import Error from "../components/Error.jsx"
     import { useState } from 'react';
     import { useNavigate } from 'react-router-dom';
 
@@ -9,6 +10,7 @@
         // use useState to store the username and password
         const [username, setUsername] = useState("")
         const [password, setPassword] = useState("")
+        const [displayError, setError] = useState(false)
         const navigate = useNavigate();
         
         // handle the login form
@@ -28,7 +30,8 @@
                     navigate("/homepage");
 
                 } else {
-                    console.log("Incorrect");
+                    // set the errror to true so the error message can appear
+                    setError(true);
                 }
 
             })
@@ -44,6 +47,9 @@
             <div className="login">
 
                 <p className="loginTitle">HealthSift</p>
+
+                {/* implementation of the error message */}
+                <Error setError={displayError} message="Sorry, try again. Invalid Email or Password."/>
 
                 {/* form that will handle the email and password collection and call the handleSubmit function when submitted */}
                 <form className="loginForm" onSubmit={handleSubmit}>

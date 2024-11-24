@@ -268,7 +268,7 @@ def searchQuery():
     search_query = data['search']
     # holds the filters the user wants to use. (btw its a list)
     filter_list = data['filters']
-
+    
     return jsonify({'status' : 'got search query'})
 
 # Example Protected Route (Requires Proper Implementation)

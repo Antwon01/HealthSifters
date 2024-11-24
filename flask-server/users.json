@@ -44,6 +44,11 @@
             "email": "11@gmail.com",
             "password": "scrypt:32768:8:1$17V8gFEXyAR93LSC$ec558804e96389dbd85f14a812b8de37714d10c8f6fd2aa518843933f369f409a8d9bf9d6ee5f5ddcc00d3389bd9e21903d9550f9b9c38ad8765908a9f77723b",
             "is_admin": false
+        },
+        {
+            "email": "e@gmail.com",
+            "password": "scrypt:32768:8:1$llGZgbT08jFvl1ZT$016e69ca8d7b0aa7f3490459815aba046fb111ae63090d06711358f14c97cab7103c8fb3f8736865ba465f82103b2e7c993104970e97d4d4b949f37152b633da",
+            "is_admin": false
         }
     ]
 }

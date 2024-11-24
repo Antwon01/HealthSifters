@@ -1,6 +1,6 @@
-import RedirectButton from "./RedirectButton.jsx";
-import APIRequest from './APIRequest.js';
-import LoginInformation from "./LoginInformation.jsx";
+import RedirectButton from '../Components/RedirectButton.jsx';
+import APIRequest from '../APIRequest.js';
+import LoginInformation from "../Components/LoginInformation.jsx";
 import { useState } from "react";
 
 function ForgotPassword() {
