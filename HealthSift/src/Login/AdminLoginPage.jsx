@@ -5,7 +5,6 @@ import { useState } from "react";
 import APIRequest from "../APIRequest.js"
 import { useNavigate } from 'react-router-dom';
 
-
 function AdminLoginPage() {
 
   // use useStates to store the admin's username and password
@@ -14,29 +13,24 @@ function AdminLoginPage() {
   const [displayError, setError] = useState(false)
   const navigate = useNavigate();
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const data = {username, password};
+    function handleSubmit(e) {
+        e.preventDefault();
+        const data = {username, password};
 
-    // calls the adminLoginInformation API and send the username and password for processing
-    APIRequest.adminLoginInformation(data)
-    .then(response => {
-
-        // if the login was successful (1), redirect to homepage.
-        if (response.status > 0) {
-          
-            navigate("/homepage");
-
-        } else {
-            setError(true);
-        }
-
-    })
-    .catch(error => {
-        console.log(error);
-    });
-    
-  }
+        // calls the adminLoginInformation API and send the username and password for processing
+        APIRequest.adminLoginInformation(data)
+        .then(response => {
+            // if the status is 2, redirect to adminHomePage.
+            if (response.status === 2) {
+                navigate("/adminHomePage");
+            } else {
+                console.log("Incorrect credentials");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }
 
   return (
     <div className="adminLoginPage">
@@ -63,8 +57,7 @@ function AdminLoginPage() {
               </form>
 
               {/* redirects the user to sign in */}
-              <RedirectButton style="adminLoginReturnBtn" title="Back to Sign In"/>
-
+              <RedirectButton location="/" style="adminLoginReturnBtn" title="Back to Sign In"/>
       </div>
       
     </div>
