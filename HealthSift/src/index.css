@@ -797,6 +797,7 @@ body {
   background-color: rgba(242,242,242,1.00);
 }
 
+/* style the library container that will hold library medicines*/
 .libraryContainer {
   display: flex;
   align-items: flex-start;
@@ -859,6 +860,7 @@ body {
   width: auto;
 }
 
+/* style the remove btn */
 .cardRemoveBtn {
   position: absolute;
   top: 230px;

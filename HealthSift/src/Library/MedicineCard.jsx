@@ -3,6 +3,7 @@ function MedicineCard({index = 0, picSrc = "", title="", description="", brand="
 
      <div className='libraryMedicineCard'>
 
+        {/* image of the medicine */}
         <img className="cardPicture" src={picSrc} alt="Profile Picture"/>
 
         <div className="poppinsFont cardInformation">
