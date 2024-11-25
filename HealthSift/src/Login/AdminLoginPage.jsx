@@ -1,6 +1,6 @@
-import RedirectButton from '../Components/RedirectButton.jsx';
-import LoginInformation from "../Components/LoginInformation.jsx";  
-import Error from '../Components/Error.jsx';
+import RedirectButton from '../components/RedirectButton.jsx';
+import LoginInformation from "../components/LoginInformation.jsx";  
+import Error from '../components/Error.jsx';
 import { useState } from "react";
 import APIRequest from "../APIRequest.js"
 import { useNavigate } from 'react-router-dom';
@@ -57,7 +57,7 @@ function AdminLoginPage() {
               </form>
 
               {/* redirects the user to sign in */}
-              <RedirectButton location="/" style="adminLoginReturnBtn" title="Back to Sign In"/>
+              <RedirectButton style="adminLoginReturnBtn" title="Back to Sign In"/>
       </div>
       
     </div>

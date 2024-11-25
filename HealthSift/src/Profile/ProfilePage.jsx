@@ -1,5 +1,5 @@
 import ProfilePicture from "./ProfilePicture.jsx"
-import ProfileInformation from "../Components/ProfileInformation.jsx"
+import ProfileInformation from "../components/ProfileInformation.jsx"
 import { useState } from "react";
 
 function ProfilePage() {

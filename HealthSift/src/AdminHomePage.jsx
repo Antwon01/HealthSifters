@@ -1,7 +1,7 @@
 // AdminHomePage.jsx
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar.jsx";
-import Search from "./Search.jsx";
+import Navbar from "./homepage/Navbar.jsx";
+import Search from "./homepage/Search.jsx";
 import APIRequest from "./APIRequest.js";
 import "./index.css"; // Ensure your CSS is imported
 

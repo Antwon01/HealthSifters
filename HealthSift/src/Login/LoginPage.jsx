@@ -5,7 +5,7 @@
     import { useState } from 'react';
     import { useNavigate } from 'react-router-dom';
 
-    function Login() {
+    function LoginPage() {
         
         // use useState to store the username and password
         const [username, setUsername] = useState("")

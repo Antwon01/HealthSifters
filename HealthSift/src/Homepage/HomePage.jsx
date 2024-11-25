@@ -1,7 +1,7 @@
 import Navbar from "./Navbar.jsx";
 import Search from "./Search.jsx";
-import Library from "../Library/LibraryPage.jsx"
-import ProfilePage from "../Profile/ProfilePage.jsx";
+import Library from "../library/LibraryPage.jsx"
+import ProfilePage from "../profile/ProfilePage.jsx";
 import { Route, Routes } from "react-router-dom";
 
 function HomePage() {
