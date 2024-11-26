@@ -888,3 +888,44 @@ body {
   background-color: white;
   position: relative;
 }
+
+/* ------------- Chatbot ------------- */
+
+/* adjust and style the format for the chatbot box */
+.chatbotbox {
+  position: absolute;
+  height: 30%;
+  width: 15%;
+  top: 67%;
+  left: 83%;
+  border-radius: 5%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7BEC0;
+  align-items: center;
+  z-index: 100;
+}
+
+/* adjust and style the format for the user input field for the chatbot here */
+.userInputField {
+  position: relative;
+  border-radius: 7%;
+  height: 100%;
+  width: 100%;
+}
+
+/* adjust and style the format of the submit button for the chatbot bot */
+.chatbotButton {
+  border-radius: 7%;
+  height: 70%;
+}
+
+/* adjust the style and format of the field that will hold the chatbot's responses */
+.chatbotReplyField {
+  background-color: #ff6961;
+  border-radius: 5%;
+  padding: 5%;
+  width: 75%;
+}

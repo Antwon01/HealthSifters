@@ -11,6 +11,11 @@ import logging
 import pandas as pd
 from pymongo import MongoClient # TODO: add to requirements.txt
 import certifi
+import sys
+sys.path.append('/HealthSifters/flask-server/chatbot/')
+from chatbot import get_chatbot_response  
+
+
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -270,6 +275,19 @@ def searchQuery():
     filter_list = data['filters']
     
     return jsonify({'status' : 'got search query'})
+
+@app.route("/sendUserInputToChatbot", methods=['POST'])
+def sendUserInputToChatbot():
+    data = request.get_json()
+
+    # holds what the user's input for the chatbot 
+    user_input = data['userInput']
+
+    # send user input to chatbot and get response 
+    response = get_chatbot_response(user_input)
+
+    # send chatbot's response back to the frontend 
+    return jsonify({'chatbotReply' : response})
 
 # Example Protected Route (Requires Proper Implementation)
 @app.route("/protected", methods=['GET'])
