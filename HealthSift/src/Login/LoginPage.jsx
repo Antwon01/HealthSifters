@@ -1,7 +1,7 @@
-    import RedirectButton from "../components/RedirectButton.jsx";
-    import LoginInformation from "../components/LoginInformation.jsx";
+    import RedirectButton from "../Components/RedirectButton.jsx";
+    import LoginInformation from "../Components/LoginInformation.jsx";
     import APIRequest from "../APIRequest.js"
-    import Error from "../components/Error.jsx"
+    import Error from "../Components/Error.jsx"
     import { useState } from 'react';
     import { useNavigate } from 'react-router-dom';
 
