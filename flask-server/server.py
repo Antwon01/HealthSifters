@@ -10,7 +10,7 @@ from marshmallow import Schema, fields, ValidationError
 import logging
 import pandas as pd
 from pymongo import MongoClient # TODO: add to requirements.txt
-import certifi
+import certifi # TODO: add to requirements.txt
 import sys
 sys.path.append('/HealthSifters/flask-server/chatbot/')
 from chatbot import get_chatbot_response  
@@ -102,7 +102,7 @@ def setup_db(data_path):
 
     # set up MongoDB
     # client = MongoClient('mongodb://localhost:27017/') # for local mongodb
-    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where()) # TODO: hash the client url 
     db = client['healthsiftDB'] # database name
 
     # set up collection 
@@ -114,19 +114,19 @@ def setup_db(data_path):
 # method to add data to the database 
 def add_orig_data(csv_path, db, medicine):
 
-    print("add_orig_data() is running") # testing purposes 
+    print("add_orig_data() is running")  
 
     # add data to medicine collection if it is empty 
     if medicine.count_documents({}) == 0:
-        print("num docs in medicine was == 0. Records about to be added to db") # testing purposes 
+        print("num docs in medicine was == 0. Records about to be added to db") 
 
         df = pd.read_csv(csv_path) # read data from medicine data csv 
         default_medicines = df.to_dict(orient='records')
 
         # insert the read data to the db 
         medicine.insert_many(default_medicines)
-        print("healthsiftDB message: Default medicines added to the database.") # testing purposes 
-        print(len(default_medicines), "added to healthsiftDB") # testing purposes 
+        print("healthsiftDB message: Default medicines added to the database.")  
+        print(len(default_medicines), "added to healthsiftDB") 
     else:
         print("num docs was not 0")
 

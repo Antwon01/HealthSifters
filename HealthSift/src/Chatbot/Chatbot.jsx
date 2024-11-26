@@ -47,18 +47,3 @@ function ChatbotBox() {
   }
   
   export default ChatbotBox
-
-  /**
-  function handleUserInput(e) {
-    //e.preventDefault();
-
-    // get the value of  user input field
-    const userInput = document.getElementById("userinputfield").value;
-
-    // save user input as json for later usage 
-    const data = { userInput };
-
-    APIRequest.sendUserInputToChatbot(data)
-    .then(response => console.log(response.status))
-}
-    */
