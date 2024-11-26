@@ -160,11 +160,17 @@ def parse_for_medicines(user_input):
     # return the medicine names that were found in the user's input
     return medicines_in_input
 
-
+def get_chatbot_response(user_input):
     
+    # send user input to chatbot and get response 
+    intents_list = predict_class(user_input, model)
+    response = get_response(intents_list, intents, user_input)
 
+    print(response) # testing purposes  
 
-
+    # return chatbot's response 
+    return response 
+    
 # interaction loop
 if __name__ == "__main__":
     print("Start chatting with the bot (type 'quit' to stop)!")

@@ -46,15 +46,19 @@
             "is_admin": false
         },
         {
-            "email": "hello@admin.example",
-            "password": "scrypt:32768:8:1$7VSeIeIJ3I00AIZz$f97cee5f001733734334008ee5c1c4f9ab5eb660fac61c991adfd6f99925ed7e729a6a0c1c31f66b7cdc7432c34ab5f39b3a10b99ea9a0d4689803b2d1b8846e",
-            "is_admin": true
+            "email": "e@gmail.com",
+            "password": "scrypt:32768:8:1$llGZgbT08jFvl1ZT$016e69ca8d7b0aa7f3490459815aba046fb111ae63090d06711358f14c97cab7103c8fb3f8736865ba465f82103b2e7c993104970e97d4d4b949f37152b633da",
+            "is_admin": false
         },
         {
-            "email": "e1@gmail.com",
-            "password": "scrypt:32768:8:1$JOJkc2oMuWyMB3wI$bf3d6b085e410d32a473bc7c1cf06e6064da96950cf3d9fcea32ecb3ca14d906a71f6870b58cc06222da50364bb8dfc207c2a4058f6dc882740af41d35288f9a",
-            "is_admin": false,
-            "verified": false
+            "email": "usertest@gmail.com",
+            "password": "scrypt:32768:8:1$bo7a5dDt3oXnBFVd$90ed0863eccea86788344208026f3d776a4eb45ded106c46eda956e72de14fde725c693d60b98b13891ede8dfe643d83088f0ebcbb99dfe15c32b1a8c7d0331f",
+            "is_admin": false
+        },
+        {
+            "email": "admintest@admin.com",
+            "password": "scrypt:32768:8:1$bb7I4HwYVx4qZkKe$bb4fb30e2a3bcf67bc80d2a39b6388402b1b0b26f8786e7c41de3367ede953d25fbd37d4e2800dfce69e32562f9b87e2c3d167f2f75f7962255edf5095609557",
+            "is_admin": true
         }
     ]
 }

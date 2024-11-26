@@ -99,4 +99,15 @@ export default class APIRequest {
             })
             .catch(error => console.error(error));
     }
+
+    static sendUserInputToChatbot(body) {
+        return fetch('http://localhost:8080/sendUserInputToChatbot', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+            body: JSON.stringify(body)
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
 }
