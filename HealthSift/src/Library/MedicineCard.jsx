@@ -1,5 +1,11 @@
-function MedicineCard({index = 0, picSrc = "", title="", description="", brand="", link="", remove}) {
-  return (
+import { useMedicineList } from "./MedicineCardContext.jsx"
+import { useState } from "react";
+
+function MedicineCard({index = 0, picSrc = "", title="", description="", brand="", link=""}) {
+  
+  const { removeMedicineCard } = useMedicineList();
+  
+    return (
 
      <div className='libraryMedicineCard'>
 
@@ -11,7 +17,7 @@ function MedicineCard({index = 0, picSrc = "", title="", description="", brand="
             {/* name of medicine */}
             <p className="medicineTittle">{title}</p>
 
-            <button className="cardRemoveBtn poppoinsFont" onClick={() => remove(index)}> Remove </button>
+            <button className="cardRemoveBtn poppoinsFont" onClick={() => removeMedicineCard(index)}> Remove </button>
 
             {/* brand of medicine */}
             <p className="medicineBrand"><em>{brand}</em></p>

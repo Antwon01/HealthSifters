@@ -52,8 +52,9 @@
         },
         {
             "email": "e1@gmail.com",
-            "password": "scrypt:32768:8:1$T1rwElXGPlPOR0tR$da43ff54cd982262c673b7f3c6e6737a9bd12aa44cdf4e47b001d45acee1cb39d074ac140ebb8c8c9ba235fb458d3a049150e2285165dc4a3c6f50e5d139c221",
-            "is_admin": true
+            "password": "scrypt:32768:8:1$JOJkc2oMuWyMB3wI$bf3d6b085e410d32a473bc7c1cf06e6064da96950cf3d9fcea32ecb3ca14d906a71f6870b58cc06222da50364bb8dfc207c2a4058f6dc882740af41d35288f9a",
+            "is_admin": false,
+            "verified": false
         }
     ]
 }
