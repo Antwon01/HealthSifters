@@ -4,7 +4,8 @@ import React, { useRef } from "react";
 
 function ChatbotBox() {
 
-    let userInputRef = useRef();
+    let userInputRef = useRef(); // TODO: alter the code so it uses this 
+    // TODO: add Ref for chatbotReplyField too maybe
    
     function handleUserInput(e) {
         e.preventDefault();
@@ -36,7 +37,7 @@ function ChatbotBox() {
 
         <p className="chatbotReplyField" id="chatbotreplyfield"> </p>
 
-        <form onSubmit={handleUserInput}>
+        <form className="chatbotForm" onSubmit={handleUserInput}>
             <input className= "userInputField" type="textarea" id="userinputfield" ref={userInputRef} name="userinput" placeholder="Start chatting here..."></input>
             <button type="submit" className="chatbotButton">Submit</button> 
         </form>
