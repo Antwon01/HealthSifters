@@ -1,5 +1,6 @@
 import SearchBar from "./SearchBar.jsx"
 import Medicine from "./Medicine.jsx";
+import Chat from "../chatbot/Chat.jsx"
 import medicinePic from "../assets/allegraTest.jpg"
 
 function Search() {
@@ -28,6 +29,8 @@ function Search() {
           <Medicine medicine={medicine}/>
           
         </div>
+
+        <Chat/>
 
     </div>
   )

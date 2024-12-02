@@ -59,6 +59,12 @@
             "email": "admintest@admin.com",
             "password": "scrypt:32768:8:1$bb7I4HwYVx4qZkKe$bb4fb30e2a3bcf67bc80d2a39b6388402b1b0b26f8786e7c41de3367ede953d25fbd37d4e2800dfce69e32562f9b87e2c3d167f2f75f7962255edf5095609557",
             "is_admin": true
+        },
+        {
+            "email": "reid@gmail.com",
+            "password": "scrypt:32768:8:1$Xfc65ZT7EIEwbbpn$631fbf7429ea33c7b36dc7a00db1938a55583bacb55104247645e03599afb6e0e65e4ef3d9f4f8b3d5a374db25fc96b9eabcd43e030704eaf8464d9e0e2d8c56",
+            "is_admin": false,
+            "verified": false
         }
     ]
 }
