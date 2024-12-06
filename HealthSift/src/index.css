@@ -819,12 +819,48 @@ body {
 }
 
 /* styles the medicines */
-.libraryFilters {
+.libraryFiltersContainer {
   margin: 40px 0px 20px 0px;
+  padding: 10px;
   height: 50%;
   width: 25%;
   border-radius: 20px;
-  background-color: green;
+  background-color: white;
+}
+
+/* sytles the title of the filter container */
+.libraryFilterTitle {
+  font-weight: 600;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+/* the coinatiner where the filters are being held */
+.librarytitleContiner {
+  width: 100%;
+  border-bottom: 1px solid rgb(168, 166, 166);
+}
+
+/* style the filters */
+.libraryFilters {
+  list-style: none;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.libraryFilters > li {
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.libraryFilters > li:hover {
+  background-color: #D3D3D3;
 }
 
 /* style the medicine card */
