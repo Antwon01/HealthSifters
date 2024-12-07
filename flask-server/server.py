@@ -107,8 +107,6 @@ def setup_db(data_path):
 
     # set up collection 
     medicine = db['medicine']
-    medicine.delete_many({}) # clears db for now so that i can verify how many records are being added in 
-
     add_orig_data(data_path, db, medicine)
 
 # method to add data to the database 
