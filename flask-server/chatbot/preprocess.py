@@ -149,13 +149,24 @@ def add_uses_to_intents(medicine_collection, intents_path):
         responses = [response1]
 
         # generate patterns
-        pattern1 = f"What is {name_medicine} used for"
-        pattern2 = f"What are uses of {name_medicine}"
-        pattern3 = f"What can  I use {name_medicine} for"
-        pattern4 = f"What is {name_medicine}"
-        pattern5 = f"{name_medicine}"
-        pattern6 = f"What conditions does {name_medicine} treat"
-        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6]
+        names_split = name_medicine.split()
+        # names are first word of medicine or full medicine name 
+        names = [names_split[0], name_medicine]
+
+        patterns = []
+        for name in names:
+            pattern1 = f"What is {name} used for"
+            pattern2 = f"What are uses of {name}"
+            pattern3 = f"What can  I use {name} for"
+            pattern4 = f"What is {name}"
+            pattern5 = f"{name}"
+            pattern6 = f"What conditions does {name} treat"
+            patterns.append(pattern1)
+            patterns.append(pattern2)
+            patterns.append(pattern3)
+            patterns.append(pattern4)
+            patterns.append(pattern5)
+            patterns.append(pattern6)
 
         # make json entry 
         new_uses_intent = {
@@ -282,106 +293,8 @@ def add_link_to_intents(medicine_collection, intents_path):
     
         print("")
 
-# add comparisons between medicines to intents.json
-def add_medicine_comparisons_to_intents(medicine_collection, intents_path):
-    # iterate over medicines
-    for medicine_entry1 in medicine_collection.find():
-        for medicine_entry2 in medicine_collection.find():
-            # get medicine names of both medicines
-            name_medicine1 = medicine_entry1['Medicine Name']
-            name_medicine2 = medicine_entry2['Medicine Name']
-
-            # if the two medicines are the same, skip to the next iteration
-            if name_medicine1 == name_medicine2:
-                continue
-
-            # get medicine information of both medicines
-            use_medicine1 = medicine_entry1['Medicine Use']
-            use_medicine2 = medicine_entry2['Medicine Use']
-
-            # generate response(s)
-            response1 = f"{name_medicine1} {use_medicine1.lower()}. On the other hand, {name_medicine2} {use_medicine2.lower()}."
-            responses = [response1]
-
-            # generate patterns
-            pattern1 = f"{name_medicine1} vs {name_medicine2}"
-            pattern2 = f"{name_medicine1} versus {name_medicine2}"
-            pattern3 = f"Compare {name_medicine1} and {name_medicine2}"
-            pattern4 = f"Uses of {name_medicine1} versus {name_medicine2}"
-            pattern5 = f"{name_medicine1} or {name_medicine2}"
-            patterns = [pattern1, pattern2, pattern3, pattern4, pattern5]
-
-            # make json entry 
-            new_uses_intent = {
-                "tag": f"Compare {name_medicine1} and {name_medicine2}",
-                "patterns":  patterns,
-                "responses": responses,
-                "context_set": ""
-            }
-
-            # save to intents.json
-            with open(intents_path, 'r+') as file:
-                # load data in intents.json
-                data = json.load(file)
-
-                # add new_uses_intent into data from intents.json
-                data["intents"].append(new_uses_intent)
-
-                # move to beginning of intents.json file 
-                file.seek(0)
-        
-                # write data back to intents.json
-                json.dump(data, file, indent=2)
-        
-            print("")
-
-# add 'comparison' in general to intents.json
-def add_comparison_to_intents(intents_path):
-    # generate response(s)
-    response1 = f"The user is attempting to compare two medicines."
-    responses = [response1]
-
-    # generate patterns
-    pattern1 = f"compare"
-    pattern2 = f"differences between"
-    pattern3 = f"similarities between"
-    pattern4 = f"contrast"
-    pattern5 = f"versus"
-    pattern6 = f"vs"
-    pattern7 = f"what are the differences between"
-    pattern8 = f"How does differ from"
-    pattern9 = f"compare and"
-    pattern10 = f"contrast and"
-    pattern11 = f"which is better"
-    pattern12 = f"which is worse"
-    patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8, pattern9, pattern10, pattern11, pattern12]
-
-    # make json entry 
-    new_uses_intent = {
-        "tag": f"Comparison",
-        "patterns":  patterns,
-        "responses": responses,
-        "context_set": ""
-    }
-
-    # save to intents.json
-    with open(intents_path, 'r+') as file:
-        # load data in intents.json
-        data = json.load(file)
-
-        # add new_uses_intent into data from intents.json
-        data["intents"].append(new_uses_intent)
-
-        # move to beginning of intents.json file 
-        file.seek(0)
-
-        # write data back to intents.json
-        json.dump(data, file, indent=2)
-
-    print("")
-
-# add 'comparison' in general to intents.json trial 2
-def add_comparison2_to_intents(medicine_collection, intents_path):
+# add 'general comparison' to intents.json
+def add_comparison_to_intents(medicine_collection, intents_path):
     paired_comparisons = []
     # iterate over medicines
     for medicine_entry1 in medicine_collection.find():
@@ -396,8 +309,15 @@ def add_comparison2_to_intents(medicine_collection, intents_path):
 
             paired_comparison1 = f"Compare {name_medicine1} and {name_medicine2}"
             paired_comparison2 = f"What are differences between {name_medicine1} and {name_medicine2}"
+            
+            # medicines can be compared using first word of the name too 
+            paired_comparison3 = f"Compare {name_medicine1.split()[0]} and {name_medicine2.split()[0]}"
+            paired_comparison4 = f"What are differences between {name_medicine1.split()[0]} and {name_medicine2.split()[0]}"
+
             paired_comparisons.append(paired_comparison1)
             paired_comparisons.append(paired_comparison2)
+            paired_comparisons.append(paired_comparison3)
+            paired_comparisons.append(paired_comparison4)
 
     # make json entry 
     new_uses_intent = {
@@ -445,18 +365,9 @@ def insert_intents(medicine_collection, intents_path):
     add_link_to_intents(medicine_collection, intents_path)
     print("added pharmacy links to intents")
 
-    # Hard coded approach is inefficient and affects accuracy of the chatbot
-    # insert medicine comparisons to intents
-    # add_medicine_comparisons_to_intents(medicine_collection, intents_path)
-    # print("added medicine comparisons to intents")
-
     # add intent to detect general comparison
-    add_comparison_to_intents(intents_path)
+    add_comparison_to_intents(medicine_collection, intents_path)
     print("added general comparison detection to intents")
-
-    # add intent to detect general comparison trial 2
-    add_comparison2_to_intents(medicine_collection, intents_path)
-    print("added general comparison trial 2 to intents")
 
 # main 
 
