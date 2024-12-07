@@ -1,5 +1,5 @@
-import RedirectButton from "../Components/RedirectButton.jsx";
-import ProfilePicture from "../Profile/ProfilePicture.jsx"
+import RedirectButton from "../components/RedirectButton.jsx";
+import ProfilePicture from "../profile/ProfilePicture.jsx"
 import { Link } from "react-router-dom"
 import { useProfile } from '../Profile/ProfilePicContext.jsx';
 

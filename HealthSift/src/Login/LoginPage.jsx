@@ -5,7 +5,7 @@
     import { useState } from 'react';
     import { useNavigate } from 'react-router-dom';
 
-    function Login() {
+    function LoginPage() {
         
         // use useState to store the username and password
         const [username, setUsername] = useState("")
@@ -25,11 +25,12 @@
             .then(response => {
                 
                 // if the status is 1, redirect to homepage
-                if (response.status > 0) {
+                if (response.status === 1) {
                     
                     navigate("/homepage");
 
                 } else {
+                    console.log("Incorret credentials");
                     // set the errror to true so the error message can appear
                     setError(true);
                 }
@@ -43,9 +44,7 @@
 
     return (
         <div className="loginPage">
-
             <div className="login">
-
                 <p className="loginTitle">HealthSift</p>
 
                 {/* implementation of the error message */}
@@ -53,28 +52,16 @@
 
                 {/* form that will handle the email and password collection and call the handleSubmit function when submitted */}
                 <form className="loginForm" onSubmit={handleSubmit}>
-
-                    {/* create a text filed for username and password  and capture it on username and password states */}
                     <LoginInformation text="Username" type="username" getInfo={setUsername} labelStyle="loginLabel" inputStyle="loginInformation"/>
-
                     <LoginInformation text="Password" type="password" getInfo={setPassword} labelStyle="loginLabel" inputStyle="loginInformation"/>
-
-                    {/* when the button is clicked we will submit the form */}
                     <button className="signInbtn poppinsFont" type="submit">Sign In</button>
-
                 </form>
-
-                {/* This buttons will redirect you to the specified location when clicked. */}
                 <RedirectButton location="adminLogin" style="loginBtns" title="Login as Admin"/>
-
                 <RedirectButton location="forgotPassword" style="loginBtns" title="Forgot Password"/>
-
-                <RedirectButton location="singUp" style="loginBtns" title="Sign Up"/>
-
+                <RedirectButton location="signUp" style="loginBtns" title="Sign Up"/>
             </div>
-
         </div>
     )
 }
 
-export default Login
+export default LoginPage

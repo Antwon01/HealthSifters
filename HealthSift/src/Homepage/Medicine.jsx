@@ -1,31 +1,34 @@
-import profilePic from "../assets/fakepi.png"
+import { useMedicineList } from "../library/MedicineCardContext.jsx"
 
-function Medicine() {
+function Medicine({medicine}) {
+
+  const { addMedicineCard } = useMedicineList();
+
   return (
 
     <div className="medicineCard">
 
         {/* display the image of the medicine */}
-        <img className="medicinePicture" src={profilePic} alt="Profile Picture"/>
+        <img className="medicinePicture" src={medicine.picture} alt="Profile Picture"/>
 
         {/* holds all related information of the medicine. */}
         <div className="poppinsFont medicineInformation">
 
             {/* name of medicine */}
-            <p className="medicineTittle">Allegra 120mg Tablet</p>
+            <p className="medicineTittle">{medicine.title}</p>
 
             {/* brand of medicine */}
-            <p className="medicineBrand"><em>Sanofi India Ltd</em></p>
+            <p className="medicineBrand"><em>{medicine.brand}</em></p>
             
             {/* description of the medicine */}
-            <p>Treatment of Sneezing and runny nose due to allergiesTreatment of Allergic conditions</p>
+            <p>{medicine.description}</p>
 
             {/* medicine link */}
-            <p className="medicineLink">CVS Link</p>
+            <p className="medicineLink">{medicine.link}</p>
     
         </div>
 
-        <button className="addMedicineBtn">
+        <button className="addMedicineBtn" onClick={() => addMedicineCard(medicine)}>
 
           {/* adds a plus sign to the button */}
           <div className="vertical"></div>

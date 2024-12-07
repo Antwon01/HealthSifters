@@ -3,32 +3,37 @@ import ForgotPasswordPage from "../Login/ForgotPasswordPage.jsx";
 import AdminLoginPage from "../Login/AdminLoginPage.jsx"
 import SignUpPage from "../Login/SignUpPage.jsx";
 import HomePage from "../Homepage/HomePage.jsx";
-import { ProfileProvider } from '../Profile/ProfilePicContext.jsx';
+import AdminHomePage from "../AdminHomePage.jsx";
+import { ProfileProvider } from '../profile/ProfilePicContext.jsx';
+import { MedicineCardProvider } from'../library/MedicineCardContext.jsx';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
+    <MedicineCardProvider>
     <ProfileProvider>
       <Routes>
+        {/* Route for LoginPage */}
+        <Route path="/" element={<LoginPage/>} />
         
-        {/* set the route "/" to LoginPage */}
-        <Route path="/" element={<LoginPage/>}/>
-        
-        {/* set the route "/adminLogin" to AdminLoginPage */}
-        <Route path="/adminLogin" element={<AdminLoginPage/>}/>
+        {/* Route for AdminLoginPage */}
+        <Route path="/adminLogin" element={<AdminLoginPage/>} />
 
-        {/* set the route "/forgotPassword" to ForgotPasswordPage */}
-        <Route path="/forgotPassword" element={<ForgotPasswordPage/>}/>
+        {/* Route for ForgotPasswordPage */}
+        <Route path="/forgotPassword" element={<ForgotPasswordPage/>} />
 
-        {/* set the route "/singUp" to SignUpPage */}
-        <Route path="/singUp" element={<SignUpPage/>}/>
+        {/* Route for SignUpPage */}
+        <Route path="/signUp" element={<SignUpPage/>} />
 
-        {/* set the route "/homepage" to HomePage */}
-        <Route path="/homepage/*"element={<HomePage/>}/>
+        {/* Route for HomePage */}
+        <Route path="/homepage/*" element={<HomePage/>} />
 
+        {/* Route for AdminHomePage */}
+        <Route path="/adminHomePage" element={<AdminHomePage/>} />
       </Routes>
     </ProfileProvider>
+    </MedicineCardProvider>
   )
 }
 

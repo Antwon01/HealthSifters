@@ -2,7 +2,6 @@ import Navbar from "./Navbar.jsx";
 import Search from "./Search.jsx";
 import Library from "../Library/LibraryPage.jsx"
 import ProfilePage from "../Profile/ProfilePage.jsx";
-import ChatbotBox from "../Chatbot/Chatbot.jsx"
 import { Route, Routes } from "react-router-dom";
 
 function HomePage() {
@@ -11,8 +10,6 @@ function HomePage() {
 
         {/* display navbar */}
         <Navbar/>
-
-        <ChatbotBox/>
 
         <Routes>
 

@@ -1,10 +1,9 @@
-import RedirectButton from '../Components/RedirectButton.jsx';
-import LoginInformation from "../Components/LoginInformation.jsx";  
-import Error from '../Components/Error.jsx';
+import RedirectButton from '../components/RedirectButton.jsx';
+import LoginInformation from "../components/LoginInformation.jsx";  
+import Error from '../components/Error.jsx';
 import { useState } from "react";
 import APIRequest from "../APIRequest.js"
 import { useNavigate } from 'react-router-dom';
-
 
 function AdminLoginPage() {
 
@@ -14,29 +13,24 @@ function AdminLoginPage() {
   const [displayError, setError] = useState(false)
   const navigate = useNavigate();
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const data = {username, password};
+    function handleSubmit(e) {
+        e.preventDefault();
+        const data = {username, password};
 
-    // calls the adminLoginInformation API and send the username and password for processing
-    APIRequest.adminLoginInformation(data)
-    .then(response => {
-
-        // if the login was successful (1), redirect to homepage.
-        if (response.status > 0) {
-          
-            navigate("/homepage");
-
-        } else {
-            setError(true);
-        }
-
-    })
-    .catch(error => {
-        console.log(error);
-    });
-    
-  }
+        // calls the adminLoginInformation API and send the username and password for processing
+        APIRequest.adminLoginInformation(data)
+        .then(response => {
+            // if the status is 2, redirect to adminHomePage.
+            if (response.status === 2) {
+                navigate("/adminHomePage");
+            } else {
+                console.log("Incorrect credentials");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }
 
   return (
     <div className="adminLoginPage">
@@ -64,7 +58,6 @@ function AdminLoginPage() {
 
               {/* redirects the user to sign in */}
               <RedirectButton style="adminLoginReturnBtn" title="Back to Sign In"/>
-
       </div>
       
     </div>

@@ -1,6 +1,6 @@
 import APIRequest from '../APIRequest.js';
-import LoginInformation from '../Components/LoginInformation.jsx';
-import RedirectButton from '../Components/RedirectButton.jsx';
+import LoginInformation from '../components/LoginInformation.jsx';
+import RedirectButton from '../components/RedirectButton.jsx';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -71,4 +71,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default SignUp;
