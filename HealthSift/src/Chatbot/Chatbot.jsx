@@ -22,6 +22,7 @@ function ChatbotBox() {
             console.log("Chatbot Reply:", response);
             displayChatbotResponse(response.chatbotReply);
         });
+
     }
 
     function displayChatbotResponse(response) {
