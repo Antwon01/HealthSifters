@@ -213,6 +213,7 @@ body {
 
 /* style the sign up container */
 .signUpContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,6 +283,23 @@ body {
 /* remove any margin to any of the paragraphs under signUpLabel */
 .signUpLabel p {
   margin-bottom: 0px;
+}
+
+/* -------------- Verification  --------------------- */
+
+/* container where we are going to hold al lthe password requirments */
+.verificationContainer {
+  position: absolute;
+  left: -280px;
+  height: 160px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.verificationRequirement {
+  text-decoration: line-through;
 }
 
 /* -------------- Forgot Password --------------------- */
@@ -855,12 +873,18 @@ body {
   width: auto;
   font-size: 15px;
   padding: 5px;
+  height: 26px;
   border-radius: 5px;
+  
   transition: background 0.3s ease;
 }
 
 .libraryFilters > li:hover {
   background-color: #D3D3D3;
+}
+
+.libraryCheck {
+  margin-left: auto;
 }
 
 /* style the medicine card */

@@ -1,8 +1,33 @@
 import { useMedicineList } from "../library/MedicineCardContext.jsx"
-
+import APIRequest from "../APIRequest.js"
 function Medicine({medicine}) {
 
   const { addMedicineCard } = useMedicineList();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    
+    const data = {medicine}
+
+    // get confimation from the backend and if the passsword is correct redirect to homepage.
+    APIRequest.addMedicineToLibrary(data)
+    .then(response => {
+        
+      const medicines = response.library // returns anrray of medicine objects
+      
+      medicines.forEach((med, index) => {
+        // Add the index to each medicine
+        const medicineWithIndex = { ...med, index };
+        console.log(medicineWithIndex);
+        addMedicineCard(medicineWithIndex); // Pass the medicine with the index
+    });
+
+    })
+    .catch(error => {
+        console.log(error);
+    });
+
+}
 
   return (
 
@@ -28,7 +53,7 @@ function Medicine({medicine}) {
     
         </div>
 
-        <button className="addMedicineBtn" onClick={() => addMedicineCard(medicine)}>
+        <button className="addMedicineBtn" onClick={handleSubmit}>
 
           {/* adds a plus sign to the button */}
           <div className="vertical"></div>

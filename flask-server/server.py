@@ -25,6 +25,7 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'your_secret_key')  # Replace
 
 DATA_FILE = 'users.json'
 LOCK = Lock()  # To ensure thread-safe file operations
+LOG_IN_USER = [] # stores the information of the log in user
 
 # Initialize CORS
 CORS(app, origins="*")  # Restrict to specific origins in production
@@ -82,6 +83,7 @@ class SignUpSchema(Schema):
     email = fields.Email(required=True)
     password = fields.Str(required=True, validate=lambda p: len(p) >= 8)
     repassword = fields.Str(required=True)
+    verification = fields.Bool(required=True)
 
 sign_up_schema = SignUpSchema()
 
@@ -139,7 +141,7 @@ setup_db("data/medicines.csv") # you have to make sure mongodb is set up on your
 def sign_up():
     """
     User Sign-Up Endpoint
-    Expects JSON with 'email', 'password', and 'repassword'.
+    Expects JSON with 'email', 'password', 'repassword', and 'verification.
     """
     try:
         data = sign_up_schema.load(request.get_json())
@@ -149,10 +151,16 @@ def sign_up():
     email = data['email']
     password = data['password']
     re_password = data['repassword']
+    verification = data['verification']
+
+    print(verification)
+    # If verification is false the password is invalid. (verfication: one symbol, one capital letter, one number)
+    if not verification:
+        return jsonify({'error': "Password does not meet requirements", 'status' : -3}), 400
 
     # Password confirmation check
     if password != re_password:
-        return jsonify({'error': 'Passwords do not match.'}), 400
+        return jsonify({'error': 'Passwords do not match.', 'status': -2}), 400
 
     # Load existing users
     users_data = load_users()
@@ -161,7 +169,7 @@ def sign_up():
     # Check if user already exists
     if any(user['email'] == email for user in users):
         # User already exists.
-        return jsonify({'error': -1}), 409
+        return jsonify({'status': -1}), 409
 
     # Hash the password
     hashed_password = generate_password_hash(password)
@@ -174,6 +182,7 @@ def sign_up():
         "email": email,
         "password": hashed_password,
         "is_admin": is_admin,
+        "library" : [],
         "verified": False  # Add a verified flag for email verification
     }
     users.append(new_user)
@@ -212,6 +221,7 @@ def login():
 
     if user and check_password_hash(user['password'], password):
         logger.info(f"User {email} logged in successfully.")
+        LOG_IN_USER.append(user)
         return jsonify({'status': 1}), 200  # Status 1 for regular users
     else:
         logger.warning(f"Failed login attempt for user {email}.")
@@ -288,6 +298,17 @@ def searchQuery():
     
     return jsonify({'status' : 'got search query'})
 
+@app.route("/libraryQuery", methods=['POST'])
+def libraryQuery():
+    data = request.get_json()
+
+    # holds the filters the user wants to use. (btw its a list)
+    filter_list = data
+
+    print(f"{filter_list}")
+    
+    return jsonify({'status' : 'got search query'})
+
 @app.route("/sendUserInputToChatbot", methods=['POST'])
 def sendUserInputToChatbot():
     data = request.get_json()
@@ -300,6 +321,87 @@ def sendUserInputToChatbot():
 
     # send chatbot's response back to the frontend 
     return jsonify({'chatbotReply' : response})
+
+@app.route("/addMedicineToLibrary", methods=['POST'])
+def addMedicineToLibrary():
+    data = request.get_json()
+    
+    # holds the medicine we want to add
+    medicine = data['medicine']
+
+     # Ensure the library key exists and is a list
+    if 'library' not in LOG_IN_USER[0]:
+        LOG_IN_USER[0]['library'] = []
+
+
+    LOG_IN_USER[0]['library'].append(medicine) # add the medicine to the library of the user.
+
+    library = LOG_IN_USER[0]['library']
+
+    #load users
+    users_data = load_users()
+
+    for user in users_data['users']:
+        if user['email'] == LOG_IN_USER[0]['email']:
+            user['library'] = LOG_IN_USER[0]['library']
+            break
+    
+    # save the updated libraries
+    save_users(users_data)
+
+    # send the updated library back to the frontend
+    return jsonify({'library' : library})
+
+@app.route("/removeMedicine", methods=['POST'])
+def removeMedicine():
+
+    data = request.get_json()
+
+     # holds the medicine we want to add
+    medicine = data['medicineToRemove']
+
+     # Ensure the library key exists and is a list
+    if 'library' not in LOG_IN_USER[0]:
+        LOG_IN_USER[0]['library'] = []
+
+    # sets the library into a variable
+    library = LOG_IN_USER[0]['library']
+
+    # check if the medicine we want to remove is in the list, if so remove it
+    if medicine in library:
+        library.remove(medicine)
+
+    #load users
+    users_data = load_users()
+
+    # update user 
+    for user in users_data['users']:
+        if user['email'] == LOG_IN_USER[0]['email']:
+            user['library'] = library
+            break
+    
+    # save the updated libraries
+    save_users(users_data)
+
+    # send the updated library back to the frontend
+    return jsonify({'library' : library})
+
+@app.route("/logout", methods=['POST'])
+def logout():
+
+    global LOG_IN_USER 
+
+    with Lock():
+        LOG_IN_USER = [] # set the LOG_IN_USER to empty.
+
+    return jsonify({"status" : 1})
+
+@app.route("/libraryMedicines", methods=['GET'])
+def libraryMedicines():
+
+    # return the library of the user to display on the library page
+    return jsonify({"library" : LOG_IN_USER[0]['library']})
+
 
 # Example Protected Route (Requires Proper Implementation)
 @app.route("/protected", methods=['GET'])

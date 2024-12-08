@@ -65,6 +65,7 @@ function SearchBar() {
         <>
 
           <form className='searchForm' onSubmit={handleSubmit}>
+            
             {/* adds a search bar */}
             <input className="searchBar poppinsFont" type="text" placeholder='Search' onChange={(e) => setSearchVal(e.target.value)}/>
             

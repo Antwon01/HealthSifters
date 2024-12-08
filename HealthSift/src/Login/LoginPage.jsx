@@ -40,7 +40,7 @@
                 console.log(error);
             });
 
-    }
+        }
 
     return (
         <div className="loginPage">

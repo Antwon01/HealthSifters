@@ -110,4 +110,57 @@ export default class APIRequest {
         .then(data => {return data})
         .catch(error => console.log(error))
     }
+
+    static libraryQuery(body) {
+        return fetch('http://localhost:8080/libraryQuery', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+            body: JSON.stringify(body)
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
+
+    static addMedicineToLibrary(body) {
+        return fetch('http://localhost:8080/addMedicineToLibrary', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+            body: JSON.stringify(body)
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
+
+    static removeMedicineFromLibrary(body) {
+        return fetch('http://localhost:8080/removeMedicine', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+            body: JSON.stringify(body)
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
+
+    static logout() {
+        return fetch('http://localhost:8080/logout', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
+
+    static getLibraryMedecines() {
+        return fetch('http://localhost:8080/libraryMedicines', {
+            'method' : 'GET',
+            headers : {'Content-type' : 'application/json'}
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
 }
