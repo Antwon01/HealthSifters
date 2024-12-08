@@ -301,11 +301,11 @@ def searchQuery():
 @app.route("/searchQueryNoFilter", methods=['POST'])
 def searchQueryNoFilter():
     data = request.get_json()
+
     # holds what the user whats to search for
     search_query = data['search']
 
     # connect to MongoDB
-
     key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
     encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
     fernet = Fernet(key)
@@ -323,6 +323,7 @@ def searchQueryNoFilter():
     words_to_ignore = ['a', 'the', 'in', 'for', 'by', 'i', 'to', 'this']
     processed_search_words = []
 
+    # remove words to ignore from the search input 
     for word in search_words:
         if not (word in words_to_ignore):
             processed_search_words.append(word)
@@ -332,11 +333,13 @@ def searchQueryNoFilter():
     for word in processed_search_words:
         # look for each token of processed user input in Medicine Names and Medicine Uses (full word matches only, ignore case)
         db_query1 = { "Medicine Name": { "$regex": f"\\b{word}\\b", "$options": "i" } }
-        db_query2 = { "Medicine Uses": { "$regex": f"\\b{word}\\b", "$options": "i" } }
+        db_query2 = { "Medicine Use": { "$regex": f"\\b{word}\\b", "$options": "i" } }
 
+        # find results in the database
         results1 = medicine_collection.find(db_query1)
         results2 = medicine_collection.find(db_query2)
 
+        # get medicine data for all results and append to search_results[]
         for result in results1:
             medicine_data = get_medicine_data_helper(result)
             search_results.append(medicine_data)

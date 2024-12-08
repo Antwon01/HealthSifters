@@ -101,6 +101,7 @@ def get_response(intents_list, intents_json, message):
     return "I'm sorry, I didn't understand that."
 
 def get_general_comparison_response(user_input):
+    # determine what medicines the user has in their input
     medicines_in_user_input = parse_for_medicines(user_input)
 
     if len(medicines_in_user_input) == 2:
@@ -173,16 +174,18 @@ def parse_for_medicines(user_input):
 
 def get_chatbot_response(user_input):
     
+    """
+    Processes user input and generates chatbot response to send back to frontend of the web application
+    """
+
     # send user input to chatbot and get response 
     intents_list = predict_class(user_input, model)
     response = get_response(intents_list, intents, user_input)
 
-    print(response) # testing purposes  
-
     # return chatbot's response 
     return response 
     
-# interaction loop
+# interaction loop for testing purposes 
 if __name__ == "__main__":
     print("Start chatting with the bot (type 'quit' to stop)!")
     while True:
