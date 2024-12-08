@@ -5,14 +5,14 @@ import { useState } from "react";
 
 function FavoriteMedicine() {
 
-  const { medicineCards, removeMedicineCard } = useMedicineList();
+  const { medicineCards} = useMedicineList();
 
   return (
     <div className='libraryMedicines'>
 
       {/* dipslay medicine cards.  */}
         {medicineCards.map((medicine, index) => (
-          <MedicineCard key={index} index={index} picSrc={medicinePic} title={medicine.title} brand={medicine.brand} description={medicine.description} link={medicine.link} />
+          <MedicineCard key={index} index={index} name={medicine.name} use={medicine.use} reviews={medicine.reviews} link={medicine.link} />
         ))}
         
     </div>

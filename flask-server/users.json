@@ -1,69 +1,69 @@
 {
     "users": [
         {
-            "email": "example@gmail.com",
-            "password": "scrypt:32768:8:1$me4VbYFlJ3MkkD9L$2440fe6bf16aa71fccbda8591019a52571aefa2ebf2829c97b4d95b91d85c1fa01e9617a185292d33eeb7aea6e86add27ea7e9e533aae8c6f2c1b9d7316be139",
-            "is_admin": false
-        },
-        {
-            "email": "example2@gmail.com",
-            "password": "scrypt:32768:8:1$ubJCUPHUdQDufRyN$bd9a9ca7047725f1fe787354ca74a8827196536ce875083c6da94044f35bbc739e338c8271754ebf8a062ccf4362e4ac93251bc8b3992e18cda4607a7be51e0e",
-            "is_admin": false
-        },
-        {
-            "email": "example3@gmail.com",
-            "password": "scrypt:32768:8:1$RqrNmsaeYhdRx2PQ$87aa32bda8fdc5b8c483922bc4872367f3c938e0d9c5babeb2a20238a7a780bbeed68bf8ec969a0f8736ec77fa1a40f1cf6ae58aecff5a84d6926b7650ca54f9",
-            "is_admin": false
-        },
-        {
-            "email": "example4@gmail.com",
-            "password": "scrypt:32768:8:1$wTAfPjOgcvYmom2A$e8672e6a93deed29b228fabb23bb982a5df00ba814769a023ea3dd8f3d795513897147003ebd8b3f539e48577b77e0e224c15afed6cd0e6089d54f34028c66e7",
-            "is_admin": false
-        },
-        {
-            "email": "example5@gmail.com",
-            "password": "scrypt:32768:8:1$NrkxAwPryo4LvsPI$b99742df6514c499f5977ba3493225c2fc2f4de8f4bda9542048dc24046c8ff2f1c7d72676d78a180df47a49f205964ea72153e33a4257b86c840ad27c1adbf3",
-            "is_admin": false
-        },
-        {
-            "email": "admin@gmail.com",
-            "password": "scrypt:32768:8:1$ACTL1JYFl1PWEO4h$84655a9aca553cbbde378c902be453ec8e1b0a7100928505e38b0b1722c07e2666bdd76750a7d3394c3432e26faa5471ae1ef5fdf660970f3af246d835e28198",
-            "is_admin": true
-        },
-        {
-            "email": "hello@gmail.com",
-            "password": "scrypt:32768:8:1$jp83HoflAVfk73Xz$71c61c1fae5037bd25b1604d4f26a262c8f816c07d34ff9838c0b5b7ce4bdfa58304715a72d08ee2333f7f99436759f046e7b674ddf137eac7fcefbcaa7b73d7",
-            "is_admin": false
-        },
-        {
-            "email": "Jose@gmail.com",
-            "password": "scrypt:32768:8:1$EzWvROKpw84ppPgJ$bea6bc9c06cdfdbc035e9f9a4eeaf88c2983781a90857325367c0152a03f20f6a57c5a220d434794fd124fc20f5ea056966e5a6e472be294b3f4efba8b83f681",
-            "is_admin": false
-        },
-        {
-            "email": "11@gmail.com",
-            "password": "scrypt:32768:8:1$17V8gFEXyAR93LSC$ec558804e96389dbd85f14a812b8de37714d10c8f6fd2aa518843933f369f409a8d9bf9d6ee5f5ddcc00d3389bd9e21903d9550f9b9c38ad8765908a9f77723b",
-            "is_admin": false
-        },
-        {
-            "email": "e@gmail.com",
-            "password": "scrypt:32768:8:1$llGZgbT08jFvl1ZT$016e69ca8d7b0aa7f3490459815aba046fb111ae63090d06711358f14c97cab7103c8fb3f8736865ba465f82103b2e7c993104970e97d4d4b949f37152b633da",
-            "is_admin": false
-        },
-        {
-            "email": "usertest@gmail.com",
-            "password": "scrypt:32768:8:1$bo7a5dDt3oXnBFVd$90ed0863eccea86788344208026f3d776a4eb45ded106c46eda956e72de14fde725c693d60b98b13891ede8dfe643d83088f0ebcbb99dfe15c32b1a8c7d0331f",
-            "is_admin": false
-        },
-        {
-            "email": "admintest@admin.com",
-            "password": "scrypt:32768:8:1$bb7I4HwYVx4qZkKe$bb4fb30e2a3bcf67bc80d2a39b6388402b1b0b26f8786e7c41de3367ede953d25fbd37d4e2800dfce69e32562f9b87e2c3d167f2f75f7962255edf5095609557",
-            "is_admin": true
-        },
-        {
-            "email": "reid@gmail.com",
-            "password": "scrypt:32768:8:1$Xfc65ZT7EIEwbbpn$631fbf7429ea33c7b36dc7a00db1938a55583bacb55104247645e03599afb6e0e65e4ef3d9f4f8b3d5a374db25fc96b9eabcd43e030704eaf8464d9e0e2d8c56",
+            "email": "1@gmail.com",
+            "password": "scrypt:32768:8:1$SviVVtzRPrdXalmk$b5519a256a186e17a6e70a8292110e75cde02df3026fe26c986dbf2eaf5869559052a973f9c0f7e9a149a8bdb15f8e98c9d086e3b2c68fe66cbd8e878799f7c8",
             "is_admin": false,
+            "library": [
+                {
+                    "link": "https://www.cvs.com/shop/advil-pain-reliever-fever-reducer-200-mg-ibuprofen-tablets-prodid-1040240",
+                    "name": "Advil Ibuprofen Tablets",
+                    "reviews": "85% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
+                },
+                {
+                    "link": "https://www.cvs.com/shop/advil-pm-pain-reliever-nighttime-sleep-aid-coated-caplets-prodid-1040211",
+                    "name": "Advil PM Pain Reliever and Sleep Aid",
+                    "reviews": "75% positive reviews",
+                    "use": "Relieves pain and aids sleep"
+                },
+                {
+                    "link": "https://www.cvs.com/shop/tylenol-extra-strength-acetaminophen-500-mg-caplets-prodid-1080178",
+                    "name": "Tylenol Extra Strength",
+                    "reviews": "90% positive reviews",
+                    "use": "Relieves pain and reduces fever"
+                }
+            ],
+            "verified": false
+        },
+        {
+            "email": "2@gmail.com",
+            "password": "scrypt:32768:8:1$mfyhEkfPKP2CBN8O$5179557e0cbc57c7367e69bafdf7260cdd7d0ab87e0fdcb85ce37ac8608b813de8c6f511eeb4a3de41c6ee7e4b7cd06eb2169f74aa07e25c190a351e6ad47259",
+            "is_admin": false,
+            "library": [
+                {
+                    "link": "https://www.cvs.com/shop/flonase-non-drowsy-24hr-allergy-relief-spray-50mcg-flucticasone-propionate-prodid-302860",
+                    "name": "Flonase Nasal Spray",
+                    "reviews": "87% positive reviews",
+                    "use": "Relieves nasal congestion"
+                },
+                {
+                    "link": "https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148",
+                    "name": "Aleve Pain Reliever",
+                    "reviews": "83% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
+                },
+                {
+                    "link": "https://www.cvs.com/shop/imodium-a-d-anti-diarrheal-caplets-prodid-441063",
+                    "name": "Imodium A-D Anti-Diarrheal",
+                    "reviews": "85% positive reviews",
+                    "use": "Relieves diarrhea"
+                }
+            ],
+            "verified": false
+        },
+        {
+            "email": "3@gmail.com",
+            "password": "scrypt:32768:8:1$rnPReFhXD9MvhV1l$eb7c7513e559c5b3e230ccec90700b162f8d843dd4087c9d3cae9e34f789c1ac879ff2e8fe6b46022aacfacbef667ff583875bc2aae3b7f29572b8d287a9b401",
+            "is_admin": false,
+            "library": [
+                {
+                    "link": "https://www.cvs.com/shop/advil-pain-reliever-fever-reducer-200-mg-ibuprofen-tablets-prodid-1040240",
+                    "name": "Advil Ibuprofen Tablets",
+                    "reviews": "85% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
+                }
+            ],
             "verified": false
         }
     ]

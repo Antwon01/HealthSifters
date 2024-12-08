@@ -1,7 +1,9 @@
 import APIRequest from '../APIRequest.js';
 import LoginInformation from '../components/LoginInformation.jsx';
 import RedirectButton from '../components/RedirectButton.jsx';
-import { useState } from 'react';
+import PasswordVerification from './PasswordVerification.jsx';
+import Error from "../Components/Error.jsx"
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -11,13 +13,18 @@ function SignUp() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [repassword, setRePassword] = useState("");
+    const [verification, setVerification] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [error, setError] = useState(false);
+    // const [displayRequirments, setDisplayRequirements] = useState(false);
+
     const navigate = useNavigate();
 
     // handles the submtion of the signUp form
     function handleSubmit(event) {
         event.preventDefault();
        
-        const data = {email,password,repassword};
+        const data = {email,password,repassword,verification};
         
         // calls the signUpInfromation API and sends the email, passwrod, and repassword
         APIRequest.signUpInformation(data)
@@ -25,11 +32,19 @@ function SignUp() {
             
             // if the sign up was successful (1), redirect to homepage
             if (response.status > 0) {
-                
                 navigate("/");
-
-            } else {
-                console.log("Incorrect");
+            } else if (!verification) {
+                setErrorMessage("Password does not meet the requirements")
+                setError(true);
+                console.log("Password does not meet the requirements");
+            } else if (response.status === -2) {
+                setErrorMessage("Password does not match")
+                setError(true);
+                console.log("Password does not match");
+            } else if (response.status === -1) {
+                setErrorMessage("User already exists")
+                setError(true);
+                console.log("User already exists");
             }
 
         })
@@ -46,6 +61,8 @@ function SignUp() {
             <p className='signUpTitle poppinsFont'>Welcome to HealthSift</p>
 
             <p className=" signUpDescription poppinsFont">Please enter an email and a password.</p>
+
+            <Error setError={error} message={errorMessage}/>
             
             {/* collects the email, password, and password confimration and calls handleSubmit on submition */}
             <form className='signUpForm' onSubmit={handleSubmit}>
@@ -61,6 +78,8 @@ function SignUp() {
                 <button className="signUpSendBtn poppinsFont" type='submit'> Login </button>
             
             </form>
+
+            <PasswordVerification password={password} verification={setVerification}/>
 
             {/* redirects the user to sigUp */}
             <RedirectButton style="signUpBtns" title="Back to Sign"/>
