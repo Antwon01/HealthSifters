@@ -38,16 +38,16 @@
                     "use": "Relieves nasal congestion"
                 },
                 {
-                    "link": "https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148",
-                    "name": "Aleve Pain Reliever",
-                    "reviews": "83% positive reviews",
-                    "use": "Relieves pain and reduces inflammation"
-                },
-                {
                     "link": "https://www.cvs.com/shop/imodium-a-d-anti-diarrheal-caplets-prodid-441063",
                     "name": "Imodium A-D Anti-Diarrheal",
                     "reviews": "85% positive reviews",
                     "use": "Relieves diarrhea"
+                },
+                {
+                    "link": "https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148",
+                    "name": "Aleve Pain Reliever",
+                    "reviews": "83% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
                 }
             ],
             "verified": false

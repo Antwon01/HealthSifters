@@ -1,5 +1,5 @@
 import { useMedicineList } from "./MedicineCardContext.jsx"
-import medicinePicture from "../assets/allegraTest.jpg"
+import medicinePicture from "../assets/defaultMedicine.png"
 import APIRequest from "../APIRequest.js"
 import { useState } from "react";
 

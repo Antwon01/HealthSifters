@@ -1,5 +1,5 @@
 import { useMedicineList } from "../library/MedicineCardContext.jsx"
-import medicinePicture from "../assets/allegraTest.jpg"
+import medicinePicture from "../assets/defaultMedicine.png"
 import APIRequest from "../APIRequest.js"
 function Medicine({id="", medicine}) {
 
