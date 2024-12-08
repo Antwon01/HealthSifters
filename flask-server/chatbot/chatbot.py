@@ -133,7 +133,6 @@ def get_general_comparison_response(user_input):
         return f"Please mention exactly two medicines if you would like me to compare them for you"
 
 def parse_for_medicines(user_input):
-    # TODO: this functions expects that the user input contains the medicines full names and with perfect spelling. Making this more dynamic would be good
 
     # connect to MongoDB
     client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
@@ -156,6 +155,11 @@ def parse_for_medicines(user_input):
     for medicine in medicines:
         if medicine.lower() in user_input.lower():
             medicines_in_input.append(medicine)
+        else:
+            for word in user_input.lower().split():
+                if word in medicine.lower().split()[0]:
+                    # user may mention just first word of the medicine's name
+                    medicines_in_input.append(medicine)
 
     # return the medicine names that were found in the user's input
     return medicines_in_input
@@ -183,10 +187,3 @@ if __name__ == "__main__":
         intents_list = predict_class(message, model)
         response = get_response(intents_list, intents, message)
         print(response)
-
-''' Brainstorming ways to handle medicine comparison '''
-# intents_list = predict_class(message, model)
-# if intents_list[select class with highest probability] == medicine comparison
-    # parse for medicine 1 and medicine 2 
-    # get data on medicine 1 and medicine 2 from the database 
-    # print response 

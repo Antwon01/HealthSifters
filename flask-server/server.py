@@ -16,7 +16,6 @@ sys.path.append('/HealthSifters/flask-server/chatbot/')
 from chatbot import get_chatbot_response  
 
 
-
 # Initialize Flask app
 app = Flask(__name__)
 
@@ -109,8 +108,6 @@ def setup_db(data_path):
 
     # set up collection 
     medicine = db['medicine']
-    medicine.delete_many({}) # clears db for now so that i can verify how many records are being added in 
-
     add_orig_data(data_path, db, medicine)
 
 # method to add data to the database 
@@ -298,6 +295,82 @@ def searchQuery():
     
     return jsonify({'status' : 'got search query'})
 
+@app.route("/searchQueryNoFilter", methods=['POST'])
+def searchQueryNoFilter():
+    data = request.get_json()
+    # holds what the user whats to search for
+    search_query = data['search']
+
+    # connect to MongoDB
+    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+    # get the database 
+    db = client['healthsiftDB'] 
+    # get the collection 
+    medicine_collection = db['medicine']
+
+    # process user's search query
+    search_query = search_query.lower().strip()
+    search_words = search_query.split(' ')
+    words_to_ignore = ['a', 'the', 'in', 'for', 'by', 'i', 'to', 'this']
+    processed_search_words = []
+
+    for word in search_words:
+        if not (word in words_to_ignore):
+            processed_search_words.append(word)
+
+    # iterate through medicines and get data on each
+    search_results = []
+    for word in processed_search_words:
+        # look for each token of processed user input in Medicine Names and Medicine Uses (full word matches only, ignore case)
+        db_query1 = { "Medicine Name": { "$regex": f"\\b{word}\\b", "$options": "i" } }
+        db_query2 = { "Medicine Uses": { "$regex": f"\\b{word}\\b", "$options": "i" } }
+
+        results1 = medicine_collection.find(db_query1)
+        results2 = medicine_collection.find(db_query2)
+
+        for result in results1:
+            medicine_data = get_medicine_data_helper(result)
+            search_results.append(medicine_data)
+
+        for result in results2:
+            medicine_data = get_medicine_data_helper(result)
+            search_results.append(medicine_data)
+
+    # remove duplicates from search results list 
+    no_duplicates_search_results = []
+    for medicine in search_results:
+        if medicine not in no_duplicates_search_results:
+            no_duplicates_search_results.append(medicine)
+
+    search_results = no_duplicates_search_results
+
+    # return search results if any are found 
+    if len(search_results) > 0:
+        return jsonify({'status' : 'results successfully retrieved', 'search_results' : search_results}), 200
+    return jsonify({'status' : 'no results found', 'search_results' : []})
+
+def get_medicine_data_helper(medicine):
+    # get data for the medicine
+    name = medicine.get('Medicine Name', 'Name Unknown')
+    use = medicine.get('Medicine Use', 'Use Unknown')
+    side_effects = medicine.get('Medicine Side Effects', 'Side Effects Unknown')
+    ingredients = medicine.get('Medicine Ingredients', 'Ingredients Unknown')
+    reviews = medicine.get('Medicine Customer Reviews', 'No Reviews Available')
+    link = medicine.get('Pharmacy Purchase Link', 'Pharmacy Link Unavailable')
+
+    # create object to store the data 
+    medicine_data = {
+        'Medicine Name' : name,
+        'Medicine Use' : use,
+        'Medicine Side Effects' : side_effects,
+        'Medicine Ingredients' : ingredients,
+        'Medicine Customer Reviews' : reviews,
+        'Pharmacy Purchase Link' : link
+    }
+
+    # return data as object 
+    return medicine_data    
+
 @app.route("/libraryQuery", methods=['POST'])
 def libraryQuery():
     data = request.get_json()
@@ -321,6 +394,32 @@ def sendUserInputToChatbot():
 
     # send chatbot's response back to the frontend 
     return jsonify({'chatbotReply' : response})
+
+@app.route("/getMedicineData", methods=['GET'])
+def sendMedicineDataToFrontend():
+
+    # connect to MongoDB
+    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+
+    # get the database 
+    db = client['healthsiftDB'] 
+
+    # get the collection 
+    medicine_collection = db['medicine']
+
+    # iterate through medicines and get data on each
+    all_medicine_data = []
+    for medicine in medicine_collection.find():
+        # get medicine data object  
+        medicine_data = get_medicine_data_helper(medicine)
+
+        # add object to list of all medicines' data 
+        all_medicine_data.append(medicine_data)
+
+    # send data to frontend as a list of jsons 
+    if len(all_medicine_data) > 0:
+        return jsonify({'status': 'successfully retrieved data', 'medicine_data_list' : all_medicine_data}), 200
+    return jsonify({'status': 'error retrieving data', 'medicine_data_list' : all_medicine_data}), 404
 
 @app.route("/addMedicineToLibrary", methods=['POST'])
 def addMedicineToLibrary():

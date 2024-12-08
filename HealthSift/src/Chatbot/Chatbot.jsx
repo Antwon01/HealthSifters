@@ -24,6 +24,7 @@ function ChatbotBox({visibility='false', setVisibility}) {
             // diplay the chatbot response
             displayChatbotResponse(response.chatbotReply);
         });
+
     }
 
     // diplays the user response to the chatbox

@@ -111,6 +111,17 @@ export default class APIRequest {
         .catch(error => console.log(error))
     }
 
+    static searchQueryNoFilter(body) {
+        return fetch('http://localhost:8080/searchQueryNoFilter', {
+            'method' : 'POST',
+            headers : {'Content-type' : 'application/json'},
+            body: JSON.stringify(body)
+        })
+        .then(response => response.json())
+        .then(data => {return data})
+        .catch(error => console.log(error))
+    }
+
     static libraryQuery(body) {
         return fetch('http://localhost:8080/libraryQuery', {
             'method' : 'POST',
