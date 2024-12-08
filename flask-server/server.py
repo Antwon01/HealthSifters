@@ -16,7 +16,6 @@ sys.path.append('/HealthSifters/flask-server/chatbot/')
 from chatbot import get_chatbot_response  
 
 
-
 # Initialize Flask app
 app = Flask(__name__)
 
@@ -311,12 +310,21 @@ def searchQueryNoFilter():
 
     # iterate through medicines and get data on each
     search_results = []
-    for medicine in medicine_collection.find():
-        for word in processed_search_words:
-            if (word in medicine.get('Medicine Name', '').lower().strip()) or (word in medicine.get('Medicine Use', '').lower().strip()):
-                # get data from medicine collection
-                medicine_data = get_medicine_data_helper(medicine)
-                search_results.append(medicine_data)
+    for word in processed_search_words:
+        # look for each token of processed user input in Medicine Names and Medicine Uses (full word matches only, ignore case)
+        db_query1 = { "Medicine Name": { "$regex": f"\\b{word}\\b", "$options": "i" } }
+        db_query2 = { "Medicine Uses": { "$regex": f"\\b{word}\\b", "$options": "i" } }
+
+        results1 = medicine_collection.find(db_query1)
+        results2 = medicine_collection.find(db_query2)
+
+        for result in results1:
+            medicine_data = get_medicine_data_helper(result)
+            search_results.append(medicine_data)
+
+        for result in results2:
+            medicine_data = get_medicine_data_helper(result)
+            search_results.append(medicine_data)
 
     # remove duplicates from search results list 
     no_duplicates_search_results = []
@@ -352,8 +360,6 @@ def get_medicine_data_helper(medicine):
 
     # return data as object 
     return medicine_data    
-
-
 
 @app.route("/sendUserInputToChatbot", methods=['POST'])
 def sendUserInputToChatbot():
