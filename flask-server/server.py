@@ -9,8 +9,8 @@ from flask_limiter.util import get_remote_address
 from marshmallow import Schema, fields, ValidationError
 import logging
 import pandas as pd
-from pymongo import MongoClient # TODO: add to requirements.txt
-import certifi # TODO: add to requirements.txt
+from pymongo import MongoClient 
+import certifi 
 from cryptography.fernet import Fernet
 import sys
 sys.path.append('/HealthSifters/flask-server/chatbot/')
