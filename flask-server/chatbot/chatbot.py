@@ -5,6 +5,7 @@ import numpy as np
 import os
 from pymongo import MongoClient
 import certifi
+from cryptography.fernet import Fernet
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -100,12 +101,16 @@ def get_response(intents_list, intents_json, message):
     return "I'm sorry, I didn't understand that."
 
 def get_general_comparison_response(user_input):
+    # determine what medicines the user has in their input
     medicines_in_user_input = parse_for_medicines(user_input)
 
     if len(medicines_in_user_input) == 2:
 
         # connect to MongoDB
-        client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+        key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+        encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+        fernet = Fernet(key)
+        client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
 
         # get the database 
         db = client['healthsiftDB'] 
@@ -135,7 +140,10 @@ def get_general_comparison_response(user_input):
 def parse_for_medicines(user_input):
 
     # connect to MongoDB
-    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+    key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+    encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+    fernet = Fernet(key)
+    client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
 
     # get the database 
     db = client['healthsiftDB'] 
@@ -166,16 +174,18 @@ def parse_for_medicines(user_input):
 
 def get_chatbot_response(user_input):
     
+    """
+    Processes user input and generates chatbot response to send back to frontend of the web application
+    """
+
     # send user input to chatbot and get response 
     intents_list = predict_class(user_input, model)
     response = get_response(intents_list, intents, user_input)
 
-    print(response) # testing purposes  
-
     # return chatbot's response 
     return response 
     
-# interaction loop
+# interaction loop for testing purposes 
 if __name__ == "__main__":
     print("Start chatting with the bot (type 'quit' to stop)!")
     while True:

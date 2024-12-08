@@ -65,6 +65,20 @@
                 }
             ],
             "verified": false
+        },
+        {
+            "email": "usertest@gmail.com",
+            "password": "scrypt:32768:8:1$vFYfbvcDpQ5bxblC$8dfa10f097354df9301f3eb2bfe7f1cfc7743faab4bbe88f0cb6164e35cc20df18674e5c8cd85b9658911368b6716862d125803c1a6cac50ee3de0983a29dd28",
+            "is_admin": false,
+            "library": [
+                {
+                    "link": "https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148",
+                    "name": "Aleve Pain Reliever",
+                    "reviews": "83% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
+                }
+            ],
+            "verified": false
         }
     ]
 }

@@ -1,3 +1,13 @@
+# HealthSift
+
+### Team Members: Jose Jimenez, Anthony Montelongo - Navejar, and Durga Rajarajan
+
+## Overview 
+
+HealthSift is a web application that displays trustworthy information on various medicines. Our application allows customer users and healthcare workers to browse for various medicines, search for medicines, add medicines to their library, and interact with a chatbot to get information on different medicines. Admins can also edit medicine information as needed to keep the medicine database of our website up to date and accurate. 
+
+## Setup and Running Instructions 
+
 BACKEND
 
   You will have to create a virstual environment under the flask-server folder. 
@@ -16,16 +26,6 @@ BACKEND
   - Windows:
     - python server.py
 
-  MongoDB:
-  - Installation Instructions:
-    - Mac:
-      - download mongodb: brew tap mongodb/brew
-      - download mongodb community: brew install mongodb-community@6.0
-      - run mongodb: brew services start mongodb/brew/mongodb-community@6.0
-    - Windows:
-      - Tutorial: https://www.youtube.com/watch?v=Ow94d1bP0qI&t=26s
-      
-    The MongoDB runs locally. Running server.py will setup and populate the MongoDB locally if a MongoDB client is properly running.
 
 FRONT END
   - To download React with Vite and Node, you can follow these steps: 
@@ -37,4 +37,4 @@ FRONT END
   - Run npm run dev to start your local development server.
 
 INSTALL DEPENDENCIES
-  - pip install -r requirementn.txt
+  - pip install -r requirements.txt
