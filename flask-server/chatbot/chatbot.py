@@ -5,6 +5,7 @@ import numpy as np
 import os
 from pymongo import MongoClient
 import certifi
+from cryptography.fernet import Fernet
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -105,7 +106,10 @@ def get_general_comparison_response(user_input):
     if len(medicines_in_user_input) == 2:
 
         # connect to MongoDB
-        client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+        key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+        encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+        fernet = Fernet(key)
+        client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
 
         # get the database 
         db = client['healthsiftDB'] 
@@ -135,7 +139,10 @@ def get_general_comparison_response(user_input):
 def parse_for_medicines(user_input):
 
     # connect to MongoDB
-    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+    key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+    encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+    fernet = Fernet(key)
+    client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
 
     # get the database 
     db = client['healthsiftDB'] 

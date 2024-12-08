@@ -11,10 +11,10 @@ import logging
 import pandas as pd
 from pymongo import MongoClient # TODO: add to requirements.txt
 import certifi # TODO: add to requirements.txt
+from cryptography.fernet import Fernet
 import sys
 sys.path.append('/HealthSifters/flask-server/chatbot/')
 from chatbot import get_chatbot_response  
-
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -99,9 +99,12 @@ forgot_password_schema = ForgotPasswordSchema()
 def setup_db(data_path):
     print("setup_db is running") # testing purposes 
 
-    # set up MongoDB
-    # client = MongoClient('mongodb://localhost:27017/') # for local mongodb
-    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where()) # TODO: hash the client url 
+    # set up MongoDB    
+    key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+    encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+    fernet = Fernet(key)
+    client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
+    
     db = client['healthsiftDB'] # database name
 
     # set up collection 
@@ -292,7 +295,13 @@ def searchQueryNoFilter():
     search_query = data['search']
 
     # connect to MongoDB
-    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+
+    key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+    encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+    fernet = Fernet(key)
+    client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
+
+
     # get the database 
     db = client['healthsiftDB'] 
     # get the collection 
@@ -378,7 +387,12 @@ def sendUserInputToChatbot():
 def sendMedicineDataToFrontend():
 
     # connect to MongoDB
-    client = MongoClient('mongodb+srv://pragathidurgarajarajan:healthsifters@healthsiftdb.zjgq3.mongodb.net/', tlsCAFile=certifi.where())
+
+    key = b'sPysYuIb5tuI_cqI3X3RwdHih9isqZse81X3I9e_Nys='
+    encrypted_mongodb_url = b'gAAAAABnVh_wyLcA8K13UxLxq-Fl0s9mE_AW3kxwXSfEAWyp18khjSCN43Lq8EGMpet-TAMxSK5RypiLMERaFipzMicqBt3dw6graVP8IgoHn9YVUQer8cyFw-0N-9pELTmIGLwR9OX0_R7lHLHQu9YcQK_IwVdpitNDsZDNVevGUvvAVyHwDvpZg-QyRhebr-cvKSaTXB1K'
+    fernet = Fernet(key)
+    client = MongoClient(fernet.decrypt(encrypted_mongodb_url).decode(), tlsCAFile=certifi.where()) 
+
 
     # get the database 
     db = client['healthsiftDB'] 
