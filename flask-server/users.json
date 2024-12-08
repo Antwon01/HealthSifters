@@ -6,32 +6,22 @@
             "is_admin": false,
             "library": [
                 {
-                    "picture": "/src/assets/allegraTest.jpg",
-                    "title": "Allegra 120mg Tablet",
-                    "brand": "Sanofi India Ltd",
-                    "description": "Treatment of Sneezing and runny nose due to allergies. Treatment of Allergic conditions.",
-                    "link": "CVS Link"
+                    "link": "https://www.cvs.com/shop/advil-pain-reliever-fever-reducer-200-mg-ibuprofen-tablets-prodid-1040240",
+                    "name": "Advil Ibuprofen Tablets",
+                    "reviews": "85% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
                 },
                 {
-                    "picture": "/src/assets/allegraTest.jpg",
-                    "title": "Allegra 120mg Tablet",
-                    "brand": "Sanofi India Ltd",
-                    "description": "Treatment of Sneezing and runny nose due to allergies. Treatment of Allergic conditions.",
-                    "link": "CVS Link"
+                    "link": "https://www.cvs.com/shop/advil-pm-pain-reliever-nighttime-sleep-aid-coated-caplets-prodid-1040211",
+                    "name": "Advil PM Pain Reliever and Sleep Aid",
+                    "reviews": "75% positive reviews",
+                    "use": "Relieves pain and aids sleep"
                 },
                 {
-                    "picture": "/src/assets/allegraTest.jpg",
-                    "title": "Allegra 120mg Tablet",
-                    "brand": "Sanofi India Ltd",
-                    "description": "Treatment of Sneezing and runny nose due to allergies. Treatment of Allergic conditions.",
-                    "link": "CVS Link"
-                },
-                {
-                    "picture": "/src/assets/allegraTest.jpg",
-                    "title": "Allegra 120mg Tablet",
-                    "brand": "Sanofi India Ltd",
-                    "description": "Treatment of Sneezing and runny nose due to allergies. Treatment of Allergic conditions.",
-                    "link": "CVS Link"
+                    "link": "https://www.cvs.com/shop/tylenol-extra-strength-acetaminophen-500-mg-caplets-prodid-1080178",
+                    "name": "Tylenol Extra Strength",
+                    "reviews": "90% positive reviews",
+                    "use": "Relieves pain and reduces fever"
                 }
             ],
             "verified": false
@@ -42,18 +32,36 @@
             "is_admin": false,
             "library": [
                 {
-                    "picture": "/src/assets/allegraTest.jpg",
-                    "title": "Allegra 120mg Tablet",
-                    "brand": "Sanofi India Ltd",
-                    "description": "Treatment of Sneezing and runny nose due to allergies. Treatment of Allergic conditions.",
-                    "link": "CVS Link"
+                    "link": "https://www.cvs.com/shop/flonase-non-drowsy-24hr-allergy-relief-spray-50mcg-flucticasone-propionate-prodid-302860",
+                    "name": "Flonase Nasal Spray",
+                    "reviews": "87% positive reviews",
+                    "use": "Relieves nasal congestion"
                 },
                 {
-                    "picture": "/src/assets/allegraTest.jpg",
-                    "title": "Allegra 120mg Tablet",
-                    "brand": "Sanofi India Ltd",
-                    "description": "Treatment of Sneezing and runny nose due to allergies. Treatment of Allergic conditions.",
-                    "link": "CVS Link"
+                    "link": "https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148",
+                    "name": "Aleve Pain Reliever",
+                    "reviews": "83% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
+                },
+                {
+                    "link": "https://www.cvs.com/shop/imodium-a-d-anti-diarrheal-caplets-prodid-441063",
+                    "name": "Imodium A-D Anti-Diarrheal",
+                    "reviews": "85% positive reviews",
+                    "use": "Relieves diarrhea"
+                }
+            ],
+            "verified": false
+        },
+        {
+            "email": "3@gmail.com",
+            "password": "scrypt:32768:8:1$rnPReFhXD9MvhV1l$eb7c7513e559c5b3e230ccec90700b162f8d843dd4087c9d3cae9e34f789c1ac879ff2e8fe6b46022aacfacbef667ff583875bc2aae3b7f29572b8d287a9b401",
+            "is_admin": false,
+            "library": [
+                {
+                    "link": "https://www.cvs.com/shop/advil-pain-reliever-fever-reducer-200-mg-ibuprofen-tablets-prodid-1040240",
+                    "name": "Advil Ibuprofen Tablets",
+                    "reviews": "85% positive reviews",
+                    "use": "Relieves pain and reduces inflammation"
                 }
             ],
             "verified": false

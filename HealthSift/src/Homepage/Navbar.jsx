@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 function Navbar() {
 
-  const { addMedicineCard } = useMedicineList();
+  const { addMedicineCard, setMedicineCards } = useMedicineList();
 
   const { profileSrc } = useProfile();
 
@@ -19,6 +19,8 @@ function Navbar() {
     APIRequest.logout()
     .then(response => {
       if (response.status == 1) {
+        // delete any cards that might carry over to the other users session
+        setMedicineCards([]);
         console.log("Logout Succesful");
       }
     })
@@ -37,7 +39,6 @@ function Navbar() {
             medicines.forEach((med, index) => {
               // Add the index to each medicine
               const medicineWithIndex = { ...med, index };
-              console.log(medicineWithIndex);
               addMedicineCard(medicineWithIndex); // Pass the medicine with the index
             });
 

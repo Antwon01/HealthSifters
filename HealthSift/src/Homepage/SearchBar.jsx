@@ -3,7 +3,7 @@ import APIRequest from "../APIRequest.js"
 import { useState, useEffect, useRef } from 'react'
 import Filters from './Filters.jsx';
 
-function SearchBar() {
+function SearchBar({updateList}) {
   
   const [search, setSearchVal] = useState("");
   // takes care of diplying the filter list
@@ -37,10 +37,20 @@ function SearchBar() {
   function handleSubmit(e) {
     e.preventDefault();
     
-    const data = {search, filters}
+    const data = {search}
 
-    APIRequest.searchQuery(data)
-    .then(response => console.log(response.status))
+    APIRequest.searchQueryNoFilter(data)
+    .then(response => {
+      
+      const searchResults = response.search_results;
+
+      console.log(searchResults)
+      updateList(searchResults)
+
+    })
+    .catch(error => {
+      console.log(error);
+    })
   }
 
   // Closes the filter list when the user clicks out side. 

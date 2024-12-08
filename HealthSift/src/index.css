@@ -402,6 +402,7 @@ body {
   padding: 0px;
   height: 100vh;
   width: 150px;
+  top: 0;
   position: sticky;
   background-color: #ff6961;
 }
@@ -926,7 +927,7 @@ body {
 /* style the remove btn */
 .cardRemoveBtn {
   position: absolute;
-  top: 220px;
+  top: 230px;
   background-color: #ff6961;
   border: 2px solid #ff6961;
   border-radius: 15px;
@@ -951,6 +952,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: white;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -1069,6 +1071,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   font-size: 25px;
+  position: fixed;
 }
 
 /* style the message icon */

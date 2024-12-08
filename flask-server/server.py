@@ -360,13 +360,21 @@ def get_medicine_data_helper(medicine):
 
     # create object to store the data 
     medicine_data = {
-        'Medicine Name' : name,
-        'Medicine Use' : use,
-        'Medicine Side Effects' : side_effects,
-        'Medicine Ingredients' : ingredients,
-        'Medicine Customer Reviews' : reviews,
-        'Pharmacy Purchase Link' : link
+        'name' : name,
+        'use' : use,
+        'reviews' : reviews,
+        'link' : link
     }
+
+    # # create object to store the data 
+    # medicine_data = {
+    #     'Medicine Name' : name,
+    #     'Medicine Use' : use,
+    #     'Medicine Side Effects' : side_effects,
+    #     'Medicine Ingredients' : ingredients,
+    #     'Medicine Customer Reviews' : reviews,
+    #     'Pharmacy Purchase Link' : link
+    # }
 
     # return data as object 
     return medicine_data    
