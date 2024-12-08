@@ -33,16 +33,24 @@ def add_side_effects_to_intents(medicine_collection, intents_path):
         response1 = f"{name_medicine} can have side effects including {side_effect_processed.lower()}"
         responses = [response1]
 
-        # generate patterns
-        pattern1 = f"What side effects does {name_medicine} have"
-        pattern2 = f"What side effects does {name_medicine} cause"
-        pattern3 = f"what are the side effects of {name_medicine}"
-        pattern4 = f"side effects {name_medicine}"
-        pattern5 = f"{name_medicine} side effects"
-        pattern6 = f"{name_medicine} effects"
-        pattern7 = f"effects of {name_medicine}"
-        pattern8 = f"side effects of {name_medicine}"
-        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8]
+        names = [name_medicine, name_medicine.lower().split()[0]]
+        patterns = []
+
+        for name in names:
+            # generate patterns
+            pattern1 = f"What side effects does {name} have"
+            pattern2 = f"What side effects does {name} cause"
+            pattern3 = f"what are the side effects of {name}"
+            pattern4 = f"side effects {name}"
+            pattern5 = f"{name} side effects"
+            pattern6 = f"{name} effects"
+            pattern7 = f"effects of {name}"
+            pattern8 = f"side effects of {name}"
+            patterns_temp = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8]
+
+            for pattern in patterns_temp:
+                patterns.append(pattern)
+
 
         # make json entry 
         new_uses_intent = {
@@ -99,16 +107,24 @@ def add_ingredients_to_intents(medicine_collection, intents_path):
             response1 = f"Some of the ingredients that {name_medicine} contains are {ingredients_processed}"
         responses = [response1]
 
-        # generate patterns
-        pattern1 = f"What ingredients does {name_medicine} have"
-        pattern2 = f"Ingredients of {name_medicine}"
-        pattern3 = f"what are the ingredients in {name_medicine}"
-        pattern4 = f"ingredients {name_medicine}"
-        pattern5 = f"{name_medicine} ingredients"
-        pattern6 = f"{name_medicine} composition"
-        pattern7 = f"composition of {name_medicine}"
-        pattern8 = f"what is {name_medicine} composed of"
-        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8]
+        names = [name_medicine, name_medicine.lower().split()[0]]
+        patterns = []
+
+        for name in names:
+            # generate patterns
+            pattern1 = f"What ingredients does {name} have"
+            pattern2 = f"Ingredients of {name}"
+            pattern3 = f"what are the ingredients in {name}"
+            pattern4 = f"ingredients {name}"
+            pattern5 = f"{name} ingredients"
+            pattern6 = f"{name} composition"
+            pattern7 = f"composition of {name}"
+            pattern8 = f"what is {name} composed of"
+            patterns_temp = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8]
+
+            for pattern in patterns_temp:
+                patterns.append(pattern)
+
 
         # make json entry 
         new_uses_intent = {
@@ -206,15 +222,22 @@ def add_review_to_intents(medicine_collection, intents_path):
         response1 = f"{name_medicine} has {review_medicine.lower()} from customers"
         responses = [response1]
 
-        # generate patterns
-        pattern1 = f"{name_medicine} reviews"
-        pattern2 = f"Reviews of {name_medicine}"
-        pattern3 = f"{name_medicine} feedback"
-        pattern4 = f"What is customer feedback on {name_medicine}"
-        pattern5 = f"What are customer reviews on {name_medicine}"
-        pattern6 = f"What do people think of {name_medicine}"
-        pattern7 = f"Thoughts on {name_medicine}"
-        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7]
+        names = [name_medicine, name_medicine.lower().split()[0]]
+        patterns = []
+
+        for name in names:
+            # generate patterns
+            pattern1 = f"{name} reviews"
+            pattern2 = f"Reviews of {name}"
+            pattern3 = f"{name} feedback"
+            pattern4 = f"What is customer feedback on {name}"
+            pattern5 = f"What are customer reviews on {name}"
+            pattern6 = f"What do people think of {name}"
+            pattern7 = f"Thoughts on {name}"
+            patterns_temp = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7]
+
+            for pattern in patterns_temp:
+                patterns.append(pattern)
 
         # make json entry 
         new_uses_intent = {
@@ -254,20 +277,27 @@ def add_link_to_intents(medicine_collection, intents_path):
         response1 = f"{name_medicine} is available at {link_medicine}"
         responses = [response1]
 
-        # generate patterns
-        pattern1 = f"{name_medicine} purchase"
-        pattern2 = f"Where can I buy {name_medicine}"
-        pattern3 = f"Where can I purchase {name_medicine}"
-        pattern4 = f"Buy {name_medicine}"
-        pattern5 = f"Get {name_medicine}"
-        pattern6 = f"Purchase {name_medicine}"
-        pattern7 = f"Where can I get {name_medicine}"
-        pattern8 = f"How can I get {name_medicine}"
-        pattern9 = f"How can I buy {name_medicine}"
-        pattern10 = f"How can I purchase {name_medicine}"
-        pattern11 = f"Where can I buy {name_medicine}"
-        pattern12 = f"Where can I purchase {name_medicine}"
-        patterns = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8, pattern9, pattern10, pattern11, pattern12]
+        names = [name_medicine, name_medicine.lower().split()[0]]
+        patterns = []
+
+        for name in names:
+            # generate patterns
+            pattern1 = f"{name} purchase"
+            pattern2 = f"Where can I buy {name}"
+            pattern3 = f"Where can I purchase {name}"
+            pattern4 = f"Buy {name}"
+            pattern5 = f"Get {name}"
+            pattern6 = f"Purchase {name}"
+            pattern7 = f"Where can I get {name}"
+            pattern8 = f"How can I get {name}"
+            pattern9 = f"How can I buy {name}"
+            pattern10 = f"How can I purchase {name}"
+            pattern11 = f"Where can I buy {name}"
+            pattern12 = f"Where can I purchase {name}"
+            patterns_temp = [pattern1, pattern2, pattern3, pattern4, pattern5, pattern6, pattern7, pattern8, pattern9, pattern10, pattern11, pattern12]
+
+            for pattern in patterns_temp:
+                patterns.append(pattern)
 
         # make json entry 
         new_uses_intent = {
@@ -309,7 +339,7 @@ def add_comparison_to_intents(medicine_collection, intents_path):
 
             paired_comparison1 = f"Compare {name_medicine1} and {name_medicine2}"
             paired_comparison2 = f"What are differences between {name_medicine1} and {name_medicine2}"
-            
+
             # medicines can be compared using first word of the name too 
             paired_comparison3 = f"Compare {name_medicine1.split()[0]} and {name_medicine2.split()[0]}"
             paired_comparison4 = f"What are differences between {name_medicine1.split()[0]} and {name_medicine2.split()[0]}"
