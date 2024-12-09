@@ -32,22 +32,10 @@
             "is_admin": false,
             "library": [
                 {
-                    "link": "https://www.cvs.com/shop/flonase-non-drowsy-24hr-allergy-relief-spray-50mcg-flucticasone-propionate-prodid-302860",
-                    "name": "Flonase Nasal Spray",
-                    "reviews": "87% positive reviews",
-                    "use": "Relieves nasal congestion"
-                },
-                {
-                    "link": "https://www.cvs.com/shop/imodium-a-d-anti-diarrheal-caplets-prodid-441063",
-                    "name": "Imodium A-D Anti-Diarrheal",
-                    "reviews": "85% positive reviews",
-                    "use": "Relieves diarrhea"
-                },
-                {
-                    "link": "https://www.cvs.com/shop/aleve-back-muscle-pain-relief-naproxen-sodium-tablets-prodid-151148",
-                    "name": "Aleve Pain Reliever",
-                    "reviews": "83% positive reviews",
-                    "use": "Relieves pain and reduces inflammation"
+                    "link": "https://www.cvs.com/shop/theraflu-daytime-nighttime-severe-multi-symptom-cold-cough-relief-liquid-berry-2-x-8-3-oz-prodid-557435",
+                    "name": "Theraflu Multi-Symptom Severe Cold Relief",
+                    "reviews": "80% positive reviews",
+                    "use": "Relieves cold and flu symptoms"
                 }
             ],
             "verified": false
