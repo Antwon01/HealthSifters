@@ -38,3 +38,14 @@ FRONT END
 
 INSTALL DEPENDENCIES
   - pip install -r requirements.txt
+
+FINAL STEPS
+ - Download zip folder
+ - Open two terminals
+ - cd to HealthSift folder in one terminal
+ - cd to flask-server folder in the other terminal
+ - In the HealthSift terminal run "npm install" and then "npm run dev"
+ - In the flask-server terminal run "pip install -r requirements.txt" and then "python server.py"
+ - Wait until all the libraries are loaded and for the server to setup
+ - Once everything is read, click the link on HealthSift terminal and ENJOY the APP!
+
