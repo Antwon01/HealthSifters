@@ -6,7 +6,7 @@
 
 HealthSift is a web application that displays trustworthy information on various medicines. Our application allows customer users and healthcare workers to browse for various medicines, search for medicines, add medicines to their library, and interact with a chatbot to get information on different medicines. Admins can also edit medicine information as needed to keep the medicine database of our website up to date and accurate. 
 
-[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=gjvqJ1uh9vg)
+[![Click for video demo 🎥]](https://www.youtube.com/watch?v=gjvqJ1uh9vg)
 
 ## Setup and Running Instructions 
 
